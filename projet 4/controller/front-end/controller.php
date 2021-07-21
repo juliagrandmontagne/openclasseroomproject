@@ -1,24 +1,28 @@
 <?php
+require('Model/front-end/connexion.php');
 
-require('model.php');
-
-function directionaccueil()
-{
+    function directionaccueil()
+    { 
+    require('Model/front-end/acceuil.php');
+   // $lastchapitres = new modelacceuil();
+    //$lastchapitre = $lastchapitres->getdataacceuil($chapitre-text);
     require('view/front-end/Accueil.php');
-}
+    }
 
-function directionauteur()
-{
-    require('view/front-end/Auteur.php');
-}
+    function directionauteur()
+    {
+        require('view/front-end/Auteur.php');
+    }
 
-function directionchapitre()
-{
-    require('view/front-end/Chapitre.php');
-}
+    function directionchapitre()
+    {
+        require('Model/front-end/chapitre.php');
+        
+        require('view/front-end/Chapitre.php');
+    }
 
-function directioncontact()
-{
-    require('view/front-end/contact.php');
-}
+    function directioncontact()
+    {
+        require('view/front-end/contact.php');
+    }
 ?>

@@ -7,10 +7,10 @@
              <div id="barre">
                  <nav>
                      <ul>
-                        <li class="naviguation"><a id="active" href="<?'index.php?action=accueil'?>">Acceuil</a></li>
-                        <li class="naviguation"><a href="<?'index.php?action=chapitre'?>">Chapitres</a></li>
-                        <li class="naviguation"><a href="<?'index.php?action=auteur'?>">Auteur</a></li>
-                        <li class="naviguation"><a href="<?'index.php?action=contact'?>">Contact</a></li>
+                        <li class="naviguation"><a id="active" href="index.php?action=accueil">Acceuil</a></li>
+                        <li class="naviguation"><a href="index.php?action=chapitre">Chapitres</a></li>
+                        <li class="naviguation"><a href="index.php?action=auteur">Auteur</a></li>
+                        <li class="naviguation"><a href="index.php?action=contact">Contact</a></li>
                         
                     </ul>
                  </nav>
