@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : jeu. 08 juil. 2021 à 08:43
+-- Généré le : mar. 03 août 2021 à 16:36
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -38,8 +38,7 @@ CREATE TABLE `Accueil` (
 --
 
 INSERT INTO `Accueil` (`ID`, `titre-last-chapitre`, `chaptirenumber`, `chapitre-text`) VALUES
-(2, 'l\'echec', 9, '\'\\\'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\\'\''),
-(3, 'l\'echec', 9, '\'\\\'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\\'\'');
+(2, 'l\'echec', 9, '\'\\\'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\\'\'');
 
 -- --------------------------------------------------------
 
@@ -55,6 +54,19 @@ CREATE TABLE `Chapitre` (
   `images` json NOT NULL,
   `brouillon` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `Chapitre`
+--
+
+INSERT INTO `Chapitre` (`ID`, `chaptirenumber`, `chapitre-titre`, `chapitre-text`, `images`, `brouillon`) VALUES
+(1, 1, 'la neige', 'icestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntext', '0', 0),
+(1, 1, 'la neige', 'icestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntexticestuntext', '0', 0),
+(2, 2, 'l\'illusion', 'unautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretextunautretext', '0', 0),
+(3, 3, 'l\'igloo', 'cenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntextecenestpasuntexte', '0', 0),
+(4, 4, 'les ourses', 'blibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloubla', '0', 0),
+(4, 4, 'les ourses', 'blibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloublablibloubla', '0', 0),
+(5, 5, 'l\'oublie', 'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext', '0', 1);
 
 -- --------------------------------------------------------
 
