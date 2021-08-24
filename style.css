@@ -52,40 +52,53 @@ font-size: 1.3em;
 color: black;
 text-decoration: none;
 }
-#chapitre-titre
-{
-display: block;
-position: relative;
-top: -430px;
- width: 100px;
- margin-left :200px;
-}
-#chapitre-text
-{
-    display: inline-block;
-    background: #FAEDEA;
-    position: relative;
-    top: -420px;
-    margin-left :40px;
-    width: 400px;
-    height: 380px;
-    overflow: hidden;
-    }
+        #chapitre-titre
+        {
+        display: block;
+        position: relative;
+        top: -430px;
+        width: 100px;
+        margin-left :200px;
+        }
+        #chapitre-text
+        {
+        display: inline-block;
+        background: #FAEDEA;
+        position: relative;
+        top: -420px;
+        margin-left :40px;
+        width: 400px;
+        height: 380px;
+        overflow: hidden;
+        }
+        #chaptirenumber
+        {
+        display: block;
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        padding: 30px;
+        border-width:1px; 
+        border-style:solid; 
+        border-color:black;
+        margin-top:90px;
+        overflow: scroll;
+        }
 #admin
 {
-    display: block;
-    font-size: 1.3em;
+display: block;
+font-size: 1.3em;
 float: right;
 margin-right: 50px;
 background-color: white;
 border:none;
     }
-    #connection
-    {
-        display: block;
-        font-size: 0.7em;
-        margin-top: -10px;
-        }
+#connection
+ {
+display: block;
+font-size: 0.7em;
+margin-top: -10px;
+}
 .naviguation :hover
 {
 color: #020202;
@@ -112,8 +125,11 @@ h3
 }
 #lastchapter
 {
-    display: block;
-    height: 400px;
+display: block;
+height: 400px;
+top: -420px;
+ margin-left :40px;
+       
     width: 400px;
     margin: 10px;
     padding: 30px;
@@ -169,19 +185,7 @@ flex-wrap: wrap;
 margin-top:80px;
 overflow: scroll;
 }
-    #chaptirenumber
-    {
-        display: block;
-        height: 400px;
-        width: 400px;
-        margin: 10px;
-        padding: 30px;
-        border-width:1px; 
-        border-style:solid; 
-        border-color:black;
-        margin-top:90px;
-        overflow: scroll;
-        }
+
 
 .form 
 {    display: flex;
