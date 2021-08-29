@@ -20,5 +20,7 @@ if (isset($_GET['action']))
         }
     }
 }
-else{directionchapitre();}
+else{
+    directionchapitre();
+}
 ?>
