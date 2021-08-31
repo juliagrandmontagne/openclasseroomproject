@@ -52,6 +52,11 @@ font-size: 1.3em;
 color: black;
 text-decoration: none;
 }
+p
+{
+    font-family: Saudagar;
+    font-size: 1.3em;
+ }
         #chapitre-titre
         {
         font-family: caroline;
