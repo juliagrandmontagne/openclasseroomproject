@@ -21,6 +21,6 @@ if (isset($_GET['action']))
     }
 }
 else{
-    directionchapitre();
+    directionaccueil();
 }
 ?>

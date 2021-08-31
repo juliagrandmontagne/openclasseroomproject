@@ -54,18 +54,22 @@ text-decoration: none;
 }
         #chapitre-titre
         {
+        font-family: caroline;
+        font-size:1.9em;
         display: block;
         position: relative;
-        top: -430px;
+        top: -450px;
         width: 100px;
         margin-left :200px;
         }
         #chapitre-text
         {
+        font-family: "Saudagar";
         display: inline-block;
         background: #FAEDEA;
+        word-wrap: break-word;
         position: relative;
-        top: -420px;
+        top: -450px;
         margin-left :40px;
         width: 400px;
         height: 380px;
@@ -83,6 +87,24 @@ text-decoration: none;
         border-color:black;
         margin-top:90px;
         overflow: scroll;
+        }
+        #chapitrenbr
+ {
+        display: block;
+       font-family: "Saudagar";
+      position: relative;
+      top:150px;
+      left: 100px;
+      
+        }
+#nbr
+   {
+        display: block;
+       font-family: "Saudagar";
+       position: relative;
+       left: 125px;
+       top:5px;
+   
         }
 #admin
 {

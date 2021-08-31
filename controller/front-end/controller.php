@@ -14,6 +14,12 @@ function directionchapitre()
         $nbrtwo = $instanceclasse-> lafonction();
 require('view/front-end/Chapitre.php');
     }
-   else
-    { function directionchapitre()};
+    function directionauteur()
+    { 
+        require('view/front-end/Auteur.php');
+    }
+    function directioncontact()
+{
+    require('view/front-end/contact.php');
+}
 ?>
