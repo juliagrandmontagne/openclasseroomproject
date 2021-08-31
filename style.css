@@ -55,8 +55,11 @@ text-decoration: none;
 p
 {
     font-family: Saudagar;
-    font-size: 1.3em;
  }
+ #suite
+ {
+ text-align: center;
+  }
         #chapitre-titre
         {
         font-family: caroline;
@@ -71,7 +74,6 @@ p
         {
         font-family: "Saudagar";
         display: inline-block;
-        background: #FAEDEA;
         word-wrap: break-word;
         position: relative;
         top: -450px;
