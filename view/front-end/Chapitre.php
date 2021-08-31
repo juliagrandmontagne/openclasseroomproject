@@ -7,7 +7,7 @@
 <div class="chapitre">
 <div id="chapitrenbr">Chapitre </div><div id="chaptirenumber"><div id="nbr"><?php echo $donnees['chaptirenumber']?></div></div>
 <div id='chapitre-titre'><?php echo $donnees['chapitre-titre']?></div>
-<div id="chapitre-text"><?php echo $donnees['chapitre-text']?><br><li id="suite"><a href="#">lire la suite</a></li> 
+<div id="chapitre-text"><?php echo $donnees['chapitre-text']?><br><li id="suite"><a id="suite"href="#">lire la suite</a></li> 
 </div><?php endforeach; ?>
 
  </div>
