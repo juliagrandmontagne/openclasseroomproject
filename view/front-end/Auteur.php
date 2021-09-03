@@ -4,8 +4,8 @@
 
     <section id="auteur">
         <div class="presentation">
-          <figure><img src="./../../images/jeanforteroche.jpg" alt="Jean Forteroche " id="auteurpicture"></figure>
-          <div id="authorstory"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+          <figure><img src="images/jeanforteroche.jpg" alt="Jean Forteroche " id="auteurpicture"></figure>
+          <div id="authorstory"><p>Qui es Jean Forteroche ? Certain vous dirons qu'il n'existe tout simplement pas .Que ce site est fictif un simple exercice pour une formation openclassroom et que le résumer des chapitre sont de simple extrais d'autre oeuvre mais n'ecoutez pas ces mécréants d'ailleur tout ce qui est sur intenet est vrais et la photos n'est pas du tout prise sur un site libre de droit voyons...</p></div>
         </div>
     
 	</section>

@@ -7,9 +7,9 @@
    		</section> 
 		   <section id="content">
 			   <div id="description"><p>Bonjours et bienvenu sur le site des aventures de Louise.<br>Vous trouverez sur ce sites les dernier chappires de jeanforteroche des aventures de louise ....<br>.</div>
-			   <?php  foreach ($nbrtwo as $donnees) : ?>
-			   <div id="lastchapter"><h3>Le dernier chapitre (9)</h3><p><?php echo $donnees['chapitre-titre']?></p><?php echo $donnees['chaptirenumber']?><?php echo $donnees['chapitre-text']?>
-				<li id="suite"><a href="#">lire la suite</a></li></div><?php endforeach; ?>
+			   <div id="lastchapter"><h3>Le dernier chapitre (9)</h3><p><?php echo $databd2['chapitre-titre']?></p><?php echo $databd2['chapitre-number']?><?php echo $databd2['chapitre-text']?>
+			   <!-- <img src="</*?php echo $databd2['images']?>" alt="illustrationchapitre" id="illustrationchapitre"*/> -->
+				<li id="suite"><a href="#">lire la suite</a></li></div>
 				
 		   </section>
 		   

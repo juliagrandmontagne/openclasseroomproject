@@ -1,6 +1,6 @@
 <?php
-class mChapitre {
-public function lafonction() {
+class modelchapitre {
+public function connexionbdchapitre() {
 require('Model/front-end/connexion.php');
 $reponse = $bdd->query('SELECT * FROM Chapitre');
 $reponse->execute();
