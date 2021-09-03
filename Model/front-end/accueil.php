@@ -2,7 +2,7 @@
 class modelaccueil {
     public function connexionbdaccueil() {
     require('Model/front-end/connexion.php');
-    $reponse = $bdd->query('SELECT * FROM Chapitre /*ORDER BY id DESC LIMIT 0,1*/');
+    $reponse = $bdd->query('SELECT * FROM Chapitre /*ORDER BY chapitre-number DESC LIMIT 0,1*/');
     $reponse->execute();
             $data = $reponse->fetchAll();
             return $data;
