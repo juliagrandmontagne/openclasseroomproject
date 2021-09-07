@@ -16,7 +16,11 @@ width: 100%;
 height: 100%; 
 
   }
-
+  #illustrationchapitre
+  {
+      display: flex;
+  width:400px ;
+      }
 #slider
 {
 display: flex;
@@ -42,6 +46,7 @@ list-style-type: none;
 display: flex;
 width: 100%;
 
+
 }
 header li
 {
@@ -62,15 +67,19 @@ p
  {
  text-align: center;
   }
+  .chapitre
+  {
+     display: block;
+     justify-content: flex-start;
+  }
         #chapitre-titre
         {
         font-family: caroline;
         font-size:1.9em;
         display: block;
         position: relative;
-        top: -450px;
-        width: 100px;
-        margin-left :200px;
+        width: 180px;
+        margin-left :150px;
         }
         #chapitre-text
         {
@@ -78,8 +87,6 @@ p
         display: inline-block;
         word-wrap: break-word;
         position: relative;
-        top: -450px;
-        margin-left :40px;
         width: 400px;
         height: 380px;
         overflow: hidden;
@@ -97,24 +104,7 @@ p
         margin-top:90px;
         overflow: scroll;
         }
-        #chapitrenbr
- {
-        display: block;
-       font-family: "Saudagar";
-      position: relative;
-      top:150px;
-      left: 100px;
-      
-        }
-#nbr
-   {
-        display: block;
-       font-family: "Saudagar";
-       position: relative;
-       left: 125px;
-       top:5px;
-   
-        }
+
 #admin
 {
 display: block;
@@ -160,7 +150,7 @@ display: block;
 height: 400px;
 top: -420px;
  margin-left :40px;
-       
+ font-family: Saudagar;
     width: 400px;
     margin: 10px;
     padding: 30px;

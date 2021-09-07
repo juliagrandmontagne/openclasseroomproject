@@ -5,11 +5,12 @@
 <?php  foreach ($databd as $donnees) : ?>
  
  <div class="chapitre">
- <div id="chapitrenbr">Chapitre </div><div id="chaptirenumber"><div id="nbr"><?php echo $donnees['chapitre-number ']?></div></div>
- <div id='chapitre-titre'><?php echo $donnees['chapitre-titre']?></div>
+ <div id="chaptirenumber">
+ <div id='chapitre-titre'><?php echo $donnees['chapitre-titre']?><?php echo $donnees['chapitre-number']?></div>
+ 
  <div id="chapitre-text"><?php echo $donnees['chapitre-text']?><br><li id="suite"><a id="suite"href="#">lire la suite</a></li> 
-  <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> 
- </div><?php endforeach; ?>
+  <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> </div>
+ </div><?php endforeach; ?></div>
 
  </div>
 </section>
