@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : jeu. 02 sep. 2021 à 19:30
+-- Généré le : mar. 07 sep. 2021 à 15:26
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `chapitre` (
   `ID` int(255) NOT NULL,
-  `chapitre-number` text NOT NULL,
+  `chapitre-number` int(11) NOT NULL,
   `chapitre-titre` text NOT NULL,
   `chapitre-text` text NOT NULL,
   `images` text NOT NULL,
@@ -40,11 +40,11 @@ CREATE TABLE `chapitre` (
 --
 
 INSERT INTO `chapitre` (`ID`, `chapitre-number`, `chapitre-titre`, `chapitre-text`, `images`, `brouillon`) VALUES
-(1, '1', 'La neige', ' Ouai, ouai, bonne fête, tic tac et compagnie, marmonna-t-il en passant directement de l\'autre côté du comptoir et en se servant lui-même une gaufre chaude. Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', 'images/neige-illustration.jpg', 0),
-(2, '2', 'L’illusion', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n\r\nEst plus important que la fin du monde.', 'images/illusion-illustration.jpg', 0),
-(3, '3', 'L\'igloo', '— J’ai tué un homme.\r\n\r\nIl avait jeté cela d’un ton nonchalant, comme une banalité, entre deux lampées de soupe. Les lunettes d’Ophélie blêmirent. A côté d’elle, la tante Roseline s’étrangla, au bord de la syncope. Berenilde reposa sa coupe de vin d’un geste calme sur la nappe de dentelle.\r\n\r\n— Où ? Quand ?\r\n\r\nOphélie, elle, aurait demandé : « Qui ? Pourquoi ? »\r\n\r\n— A l’aérogare, avant que je n’embarque pour Anima, répondit Thorn d’une voix posée. Un disgracié qu’un individu mal intentionné m’a dépêché aux trousses. J’ai quelque peu précipité mon voyage en conséquence.\r\n\r\n— Tu as bien fait.\r\n\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n\r\n« Tu es un assassin, parfait, passe-moi le sel… »', 'images/igloo-illustration.jpg', 0),
-(4, '4', 'Les ourses', 'Et alors ? J\'ai un corps et je n\'en ai pas honte. En soi, il n\'est ni bon, ni mauvais. Ce n\'est pas lui le problème : c\'est ton regard qui est sale !\r\n\r\n(...)\r\n\r\nSi tu étais aussi saint que tu le prétends, tu ne craindrais pas la vue d\'un corps, même celui d\'une femme nue ! C\'est ta concupiscence qui te fait voir les femmes comme des tentatrices lubriques. C\'est parce que tu es obnubilé par ton propre désir que tu les veux couvertes de la tête aux pieds.', 'images/ourses-illustration.jpg', 0),
-(5, '5', 'L\'oublie', 'Un mort, ce n\'était pas seulement la perte d\'un être cher. C\'est une part entière de soi qui disparaissait dans le néant.[...] Oublier les morts, c\'était comme les tuer une seconde fois.', 'images/oulie-illustration.jpg', 1);
+(1, 1, 'La neige', ' Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', 'images/neige-illustration.jpg', 0),
+(2, 2, 'L’illusion', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n\r\nEst plus important que la fin du monde.', 'images/illusion-illustration.jpg', 0),
+(3, 3, 'L\'igloo', ' J’ai quelque peu précipité mon voyage en conséquence.\r\n— Tu as bien fait.\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n« Tu es un assassin, parfait, passe-moi le sel… »', 'images/igloo-illustration.jpg', 0),
+(4, 4, 'Les ourses', ' Passer les miroirs, ça demande de s\'affronter soi-même, avait dit le grand-oncle. Ceux qui se voilent la face, ceux qui se mentent à eux-mêmes, ceux qui se voient mieux qu\'ils sont, ils pourront jamais. ', 'images/ourses-illustration.jpg', 0),
+(5, 5, 'L\'oublie', 'Un mort, ce n\'était pas seulement la perte d\'un être cher. C\'est une part entière de soi qui disparaissait dans le néant.[...] Oublier les morts, c\'était comme les tuer une seconde fois.', 'images/oulie-illustration.jpg', 1);
 
 -- --------------------------------------------------------
 

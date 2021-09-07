@@ -69,8 +69,9 @@ p
   }
   .chapitre
   {
-     display: block;
-     justify-content: flex-start;
+     
+flex-wrap: wrap;
+justify-content: space-evenly;
   }
         #chapitre-titre
         {
@@ -79,7 +80,7 @@ p
         display: block;
         position: relative;
         width: 180px;
-        margin-left :150px;
+       margin:auto;
         }
         #chapitre-text
         {
@@ -89,12 +90,12 @@ p
         position: relative;
         width: 400px;
         height: 380px;
-        overflow: hidden;
+
         }
         #chaptirenumber
         {
         display: block;
-        height: 400px;
+        height: 440px;
         width: 400px;
         margin: 10px;
         padding: 30px;
@@ -102,7 +103,7 @@ p
         border-style:solid; 
         border-color:black;
         margin-top:90px;
-        overflow: scroll;
+
         }
 
 #admin
