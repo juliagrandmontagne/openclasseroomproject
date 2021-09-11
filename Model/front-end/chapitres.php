@@ -1,7 +1,8 @@
 <?php
-function connexionbdchapitre() {
+class modelchapitres {
+public function connexionbdchapitres() {
 require('Model/front-end/connexion.php');
-$reponse = $bdd->query('SELECT * FROM Chapitre WHERE ID =:identite');
+$reponse = $bdd->query('SELECT * FROM Chapitre');
 $reponse->execute();
         $data = $reponse->fetchAll();
         return $data;

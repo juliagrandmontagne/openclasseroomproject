@@ -6,11 +6,11 @@
 			<figure><img src="images/typing.jpg" alt="machine a écrire" id="slider"></figure>	
    		</section> 
 		   <section id="content">
-			   <div id="description"><p>Bonjours et bienvenu sur le site des aventures de Louise.<br>Vous trouverez sur ce sites les dernier chappires de jeanforteroche des aventures de louise ....<br>.</div>
+			   <div id="description"><p>Bonjours et bienvenu sur le site des aventures de Louise.<br>Vous trouverez sur ce sites les dernier chapitres de jeanforteroche pas du ,tout des extrais ramdom d'autre livre voyon....<br>.</div>
 			   <?php  foreach ($databd2 as $donnees) : ?>
 			   <div id="lastchapter"><h3>Le dernier chapitre : <?php echo $donnees['chapitre-number']?> <?php echo $donnees['chapitre-titre']?></h3><?php echo $donnees['chapitre-text']?>
 			   
-				<li id="suite"><a href="#">lire la suite</a></li><img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> </div><?php endforeach; ?>
+				<li id="suite"><a href="Accueil.php">lire la suite</a></li><img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> </div><?php endforeach; ?>
 				
 		   </section>
 		   

@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 
         <div class="form">
-            <form action="traitement.php" method="post" >
+            <form action="traitement.php" method="post" enctype="multipart/form-data" >
             <fieldset class="info">
                 <legend>Nous contacter</legend>
             </fieldset>

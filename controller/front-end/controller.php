@@ -9,10 +9,10 @@ require('view/front-end/Accueil.php');
 }
 function directionchapitre()
    {
-require('Model/front-end/chapitre.php');
-$instanceclasse = new modelchapitre();
-$databd = $instanceclasse-> connexionbdchapitre();
-require('view/front-end/Chapitre.php');
+require('Model/front-end/chapitres.php');
+$instanceclasse = new modelchapitres();
+$databd = $instanceclasse-> connexionbdchapitres();
+require('view/front-end/Chapitres.php');
    }
     function directionauteur()
     { 
