@@ -12,7 +12,7 @@ if (isset($_GET['action']))
             directionauteur();
             break;
             case 'chapitre':
-            directionchapitre();
+            directionchapitres();
             break;
             case 'contact';
             directioncontact();
