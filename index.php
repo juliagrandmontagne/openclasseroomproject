@@ -17,6 +17,8 @@ if (isset($_GET['action']))
             case 'contact';
             directioncontact();
             break;
+            case'chapitre-indv';
+            directionchapitre()
         }
     }
 }
