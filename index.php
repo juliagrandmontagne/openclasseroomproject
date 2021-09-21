@@ -8,17 +8,18 @@ if (isset($_GET['action']))
             case 'accueil':
             directionaccueil();
             break;
-            case 'auteur';
+            case 'auteur':
             directionauteur();
             break;
-            case 'chapitre':
+            case 'chapitres':
             directionchapitres();
             break;
-            case 'contact';
+            case 'chapitre':
+            directionchapitre();
+            break;
+            case 'contact':
             directioncontact();
             break;
-            case'chapitre-indv';
-            directionchapitre()
         }
     }
 }
