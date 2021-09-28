@@ -10,7 +10,9 @@
 			   <?php  foreach ($databd2 as $donnees) : ?>
 			   <div id="lastchapter"><h3>Le dernier chapitre <?php echo $donnees['chapitre-titre']?><?php echo $donnees['chapitre-number']?></h3><?php echo $donnees['chapitre-text']?>
 			   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> 
-				<li id="suite"><a href="#">lire la suite</a></li></div><?php endforeach; ?>
+			   <?php $identite=$donnees['ID']?>
+			   <a id="suite"href="index.php?action=chapitre&id=<?php echo "$identite"?>">lire la suite</a></li></div>
+				<?php endforeach; ?>
 				
 		   </section>
 		   
