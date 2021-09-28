@@ -2,7 +2,8 @@
 class modelchapitre {
 public function connexionbdchapitre() {
 require('Model/front-end/connexion.php');
-$reponse = $bdd->query('SELECT * FROM Chapitre /*WHERE id= ?*/');
+$search='SELECT * FROM Chapitre WHERE id=' . $_GET["id"];
+$reponse = $bdd->query($search);
 $reponse->execute();
         $data = $reponse->fetchAll();
         return $data;
