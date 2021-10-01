@@ -122,10 +122,24 @@ justify-content: space-evenly;
         border-color:black;
         margin-top:90px;
         }
+        #chaptirenumber-individuel
+         {
+               display: block;
+
+         }
         #illustrationchapitre-inv
         {
-               display: block;
+            display: flex;
+            width:100%;
+           max-width: 800px;
+margin: auto;
+     }
+     #texte
+           {
+               display: flex;
              width:100%;
+            max-width: 800px;
+            margin: auto;
      }
         
 #admin
