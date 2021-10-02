@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mar. 07 sep. 2021 à 15:26
+-- Généré le : sam. 02 oct. 2021 à 21:47
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -54,11 +54,21 @@ INSERT INTO `chapitre` (`ID`, `chapitre-number`, `chapitre-titre`, `chapitre-tex
 
 CREATE TABLE `commentaire` (
   `ID` int(11) NOT NULL,
-  `name-admin` text NOT NULL,
+  `name-user` text NOT NULL,
   `comment` text NOT NULL,
   `signaler` tinyint(1) NOT NULL,
-  `valider/suprimer` tinyint(1) NOT NULL
+  `id-chapitre` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `commentaire`
+--
+
+INSERT INTO `commentaire` (`ID`, `name-user`, `comment`, `signaler`, `id-chapitre`) VALUES
+(1, 'rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1),
+(8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 0, 1),
+(9, 'paul Forteroche', 'lui c\'est assasinclassroom', 0, 2),
+(18, 'rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -100,7 +110,8 @@ ALTER TABLE `chapitre`
 -- Index pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `commantaire-chapitre` (`id-chapitre`);
 
 --
 -- Index pour la table `contact`
@@ -123,6 +134,16 @@ ALTER TABLE `user`
 --
 ALTER TABLE `chapitre`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `commentaire`
+--
+ALTER TABLE `commentaire`
+  ADD CONSTRAINT `commantaire-chapitre` FOREIGN KEY (`id-chapitre`) REFERENCES `chapitre` (`ID`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
