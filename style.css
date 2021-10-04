@@ -45,9 +45,8 @@ header ul
 list-style-type: none;
 display: flex;
 width: 100%;
-
-
 }
+
 header li
 {
 margin: auto;
@@ -131,9 +130,23 @@ justify-content: space-evenly;
         {
             display: flex;
             width:100%;
-           max-width: 800px;
+           max-width: 900px;
 margin: auto;
      }
+     #titre-commentaire
+     {
+        display: flex;
+        width:100%;
+        text-align: center;
+ }
+     #commentaire-form
+     
+     {
+        display: flex;
+        width:100%;
+       max-width: 800px;
+margin: auto;
+ }
      #texte
            {
                display: flex;
@@ -356,10 +369,6 @@ padding:10px;
     ul
     {
     padding: 0px;
-    }
-    #chaptirenumber/*,#authorstory,#auteurpicture,#lastchapter,#description,*/
-    {
-
     }
     #authorstory
     {

@@ -18,7 +18,7 @@ require('view/front-end/chapitre.php');
    {
 require('Model/front-end/chapitre.php');
 $instanceclasse = new modelchapitre();
-$databd3 = $instanceclasse3-> directioncommentaires();
+$databd3 = $instanceclasse-> connexionbdcommentaire();
 require('view/front-end/chapitre.php');
    }
 function directionchapitres()
