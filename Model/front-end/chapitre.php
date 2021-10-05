@@ -10,11 +10,10 @@ $reponse->execute();
         $rereponseq->cloreCursor();}
 public function connexionbdcommentaire() {
         require('Model/front-end/connexion.php');
-        $search2='SELECT * FROM commentaire' /*WHERE id-chapitre= . $_GET["id"]AND signaller=0*/;
-        $reponse = $bdd->query($search);
+        $reponse = $bdd->query('SELECT * FROM commentaire WHERE id_chapitre=' . $_GET["id"]);
         $reponse->execute();
-        $data = $reponse->fetchAll();
-        return $data;
-        $rereponseq->cloreCursor();}
-}
-?>
+                $data = $reponse->fetchAll();
+                return $data;
+                $rereponseq->cloreCursor();}
+        }
+        ?>

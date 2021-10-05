@@ -20,6 +20,9 @@ if (isset($_GET['action']))
             case 'contact':
             directioncontact();
             break;
+            case 'commentaires':
+            directioncommentaires();
+            break;
         }
     }
 }

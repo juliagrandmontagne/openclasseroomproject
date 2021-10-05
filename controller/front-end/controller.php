@@ -12,15 +12,10 @@ function directionchapitre()
 require('Model/front-end/chapitre.php');
 $instanceclasse = new modelchapitre();
 $databd = $instanceclasse-> connexionbdchapitre();
-require('view/front-end/chapitre.php');
-   }
-   function directioncommentaires()
-   {
-require('Model/front-end/chapitre.php');
-$instanceclasse = new modelchapitre();
 $databd3 = $instanceclasse-> connexionbdcommentaire();
 require('view/front-end/chapitre.php');
    }
+
 function directionchapitres()
    {
 require('Model/front-end/chapitres.php');

@@ -43,10 +43,12 @@
     }
 ?>  -->
             </div>
-
- <div id="commentaire"><div id="lecommentaire"><?php echo $donnees['name-user']?><?php echo $donnees['comment']?></div>
+         <?php endforeach; ?>
+         <?php  foreach ($databd3 as $donnees) : ?>
+         <div id="commentaire"><div id="lecommentaire"><?php echo $donnees['name-user']?><?php echo $donnees['comment']?></div>
+         
    </div>
-<?php endforeach; ?>
+   <?php endforeach; ?>
 
 </section>
 <?php $content = ob_get_clean() ; ?>
