@@ -9,4 +9,5 @@ class modelaccueil {
             $rereponseq->cloreCursor();}
     }
 
+
 ?>
