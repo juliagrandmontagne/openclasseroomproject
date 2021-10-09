@@ -14,12 +14,12 @@ if(
      $sql = "INSERT INTO contact(user_name, user_mail, user_firstname, user_message
        VALUES(:user_name, :user_mail, :user_firstname, :user_message, )");
       require('Model/front-end/connexion.php');
-       $sth= $bdd->prepare($sql);
+       $sth= $bdd->fetchAll($sql);//perpare
       $sth->bindValue(':user_name',$user_name, PDO::PARAM_STR);
        $sth->bindValue(':user_mail',$user_mail, PDO::PARAM_STR);
       $sth->bindValue(':user_firstname',$user_firstname,PDO::PARAM_STR);
       $sth->bindValue(':user_message',$user_message,PDO::PARAM_STR);
- 
+      //$sth->execute();
 }
 else (echo"le formulaire est incomplet" )
 
