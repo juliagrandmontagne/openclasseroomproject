@@ -7,13 +7,16 @@ $reponse = $bdd->query($search);
 $reponse->execute();
         $data = $reponse->fetchAll();
         return $data;
-        $rereponseq->cloreCursor();}
+        $rereponseq->cloreCursor();
+
+}
 public function connexionbdcommentaire() {
         require('Model/front-end/connexion.php');
-        $reponse = $bdd->query('SELECT * FROM commentaire WHERE id_chapitre=' . $_GET["id"]);
+        $reponse = $bdd->query('SELECT * FROM commentaire WHERE idchapitre=' . $_GET["id"]);
         $reponse->execute();
                 $data = $reponse->fetchAll();
                 return $data;
-                $rereponseq->cloreCursor();}
+                $rereponseq->cloreCursor();
+        }
         }
         ?>

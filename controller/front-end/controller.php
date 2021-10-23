@@ -29,6 +29,8 @@ require('view/front-end/chapitres.php');
     }
     function directioncontact()
 {
+  // $instanceclasse4 = new modelcontact ();
+//$databd4 = $instanceclasse4-> connexionbdcontact();
     require('view/front-end/contact.php');
 }
 ?>
