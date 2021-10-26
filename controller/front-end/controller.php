@@ -23,14 +23,15 @@ $instanceclasse = new modelchapitres();
 $databd = $instanceclasse-> connexionbdchapitres();
 require('view/front-end/chapitres.php');
    }
-    function directionauteur()
+function directionauteur()
     { 
-        require('view/front-end/auteur.php');
+   require('view/front-end/auteur.php');
     }
-    function directioncontact()
+function directioncontact()
 {
-  // $instanceclasse4 = new modelcontact ();
-//$databd4 = $instanceclasse4-> connexionbdcontact();
-    require('view/front-end/contact.php');
+   require('Model/front-end/contact.php');
+   $instanceclasse4 = new modelcontact ();
+   $databd4 = $instanceclasse4-> connexionbdcontact();
+   require('view/front-end/contact.php');
 }
 ?>

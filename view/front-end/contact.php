@@ -1,10 +1,6 @@
 <?php $title = 'contact' ; ?>
 <?php ob_start() ; ?>
 
-
-<?php 
-
-
         <div class="form">
             <form action="index.php?action=contact" method="POST" enctype="multipart/form-data" >
             <fieldset class="info">
