@@ -13,7 +13,7 @@
  <div id="commentaire-form">
  <form action="commentaire.php" method="post" >     
                 <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
-                <input class="name_user" name="name_user" placeholder="pseudo" required>
+                <input class="nameuser" name="nameuser" placeholder="pseudo" required>
             
                 <textarea id="comment" name="comment" placeholder="Message" required></textarea>
 
@@ -24,7 +24,7 @@
             </div>
          <?php endforeach; ?>
          <?php  foreach ($databd3 as $donnees) : ?>
-         <div id="commentaire"><div id="lecommentaire"><?php echo $donnees['name-user']?><?php echo $donnees['comment']?></div>
+         <div id="commentaire"><div id="lecommentaire"><?php echo $donnees['nameuser']?><?php echo $donnees['comment']?></div>
          
    </div>
    <?php endforeach; ?>

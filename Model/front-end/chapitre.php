@@ -17,8 +17,8 @@ public function connexionbdcommentaire() {
                 $data = $reponse->fetchAll();
                 return $data;
                 $rereponseq->cloreCursor();
-                $sth = $bdd->prepare('INSERT INTO commentaire (comment, name-user, signaler ,idchapitre) VALUES(?, ?, ?,?');
-                $sth->execute(array($_POST['comment'], $_POST['name-user'],0,. $_GET["id"]));
+               // $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler ,idchapitre) VALUES(?, ?, ?, ?');
+               // $sth->execute(array($_POST['comment'], $_POST['nameuser'],0,. $_GET["id"]));
         }
 
 ?>

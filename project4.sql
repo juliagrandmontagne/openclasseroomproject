@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : sam. 02 oct. 2021 à 21:47
+-- Généré le : sam. 30 oct. 2021 à 18:14
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -54,17 +54,17 @@ INSERT INTO `chapitre` (`ID`, `chapitre-number`, `chapitre-titre`, `chapitre-tex
 
 CREATE TABLE `commentaire` (
   `ID` int(11) NOT NULL,
-  `name-user` text NOT NULL,
+  `nameuser` text NOT NULL,
   `comment` text NOT NULL,
-  `signaler` tinyint(1) NOT NULL,
-  `id-chapitre` int(4) NOT NULL
+  `signaler` tinyint(1) DEFAULT NULL,
+  `idchapitre` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `commentaire`
 --
 
-INSERT INTO `commentaire` (`ID`, `name-user`, `comment`, `signaler`, `id-chapitre`) VALUES
+INSERT INTO `commentaire` (`ID`, `nameuser`, `comment`, `signaler`, `idchapitre`) VALUES
 (1, 'rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1),
 (8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 0, 1),
 (9, 'paul Forteroche', 'lui c\'est assasinclassroom', 0, 2),
@@ -83,6 +83,17 @@ CREATE TABLE `contact` (
   `user_firstname` text NOT NULL,
   `user_message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `contact`
+--
+
+INSERT INTO `contact` (`ID`, `user_name`, `user_mail`, `user_firstname`, `user_message`) VALUES
+(1, 'gvjb', 'jvhb', 'n;', 'fcygvjhbkn,'),
+(2, 'k,ljn', ',klnjh', ',knljk,ùlko', 'ihbjnkm,lkpoj'),
+(3, 'lnjk', 'jnlk,', 'hbjkn', 'bhjkn,'),
+(4, 'jvjbhnj', ' jbkn', 'hgkbjn;', 'cfgvhjhbjn'),
+(11, 'tu preche', 'une convertue e', 'en ', 'fait mais c\'est compliquer');
 
 -- --------------------------------------------------------
 
@@ -111,7 +122,7 @@ ALTER TABLE `chapitre`
 --
 ALTER TABLE `commentaire`
   ADD PRIMARY KEY (`ID`),
-  ADD KEY `commantaire-chapitre` (`id-chapitre`);
+  ADD KEY `commantaire-chapitre` (`idchapitre`);
 
 --
 -- Index pour la table `contact`
@@ -136,6 +147,12 @@ ALTER TABLE `chapitre`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT pour la table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- Contraintes pour les tables déchargées
 --
 
@@ -143,7 +160,7 @@ ALTER TABLE `chapitre`
 -- Contraintes pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  ADD CONSTRAINT `commantaire-chapitre` FOREIGN KEY (`id-chapitre`) REFERENCES `chapitre` (`ID`);
+  ADD CONSTRAINT `commantaire-chapitre` FOREIGN KEY (`idchapitre`) REFERENCES `chapitre` (`ID`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
