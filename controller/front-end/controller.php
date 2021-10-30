@@ -31,7 +31,8 @@ function directioncontact()
 {
    require('Model/front-end/contact.php');
    $instanceclasse4 = new modelcontact ();
-   $databd4 = $instanceclasse4-> connexionbdcontact();
+   $databds = $instanceclasses-> connexionbdcontact();
+
    require('view/front-end/contact.php');
 }
 ?>

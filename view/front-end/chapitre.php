@@ -11,7 +11,7 @@
   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre-inv"> </div>
  </div></div>
  <div id="commentaire-form">
- <form action="commentaire.php" method="post" >     
+ <form action="index.php?action=chapitres " method="post" >     
                 <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
                 <input class="nameuser" name="nameuser" placeholder="pseudo" required>
             
