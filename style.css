@@ -248,6 +248,55 @@ overflow: scroll;
         margin-top:80px;
         
     }
+   /*SECTION COMMENTAIRE*/ 
+    #commentaireform
+{
+ margin-bottom: 100px;
+} 
+    #comment
+        {
+            font: 1em ;
+            width:800px;
+            height: 100px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            border: 1px solid grey; 
+            resize:none;
+            border-radius: 5px;
+            } 
+#commentaireform
+{
+    display: block;
+    justify-content: center;
+    } 
+#lecommentaire
+{
+    display: block;
+    justify-content: center;
+    margin:auto;
+    font: 1em ;
+    width:800px;
+    height: 100px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid grey; 
+    resize:none;
+    border-radius: 5px;
+    } 
+    #nomuser
+    {
+    font-family: caroline;
+    font-size: 1.7em;
+    display: flex;
+   justify-content: center;
+} 
+#messageuser
+{
+font-family: "Saudagar";
+display: flex;
+justify-content: center;
+} 
+/*CHAPITRE*/
 #chapitre
 {
 display: flex;
@@ -280,18 +329,19 @@ text-align: center;
 font-weight: bolder;
 color: white;
 font-family: Saudagar;
-}input
+}
+input
 {
 font: 1em ;
-width:500px;
+width:800px;
 height: 25px;
 margin-top: 10px;
 box-sizing: border-box;
 border: 1px solid grey; 
 resize:none;
 border-radius: 5px;
-
 } 
+
 #msg 
 {
 font: 1em ;
@@ -341,10 +391,10 @@ font-size: 40px;
 margin-top: 30px;
 margin-left:20%;
 }
-#insta , #facebook ,#twitter ,
+/*#insta , #facebook ,#twitter ,
 {
 font-size: 20px;
-}
+}*/
 .piedpage
 {
 color: white;

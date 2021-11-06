@@ -13,13 +13,13 @@
             </legend>
             </fieldset>
                 <label for="user_name">Nom</label>
-                <input type="text" class="name" name="user_name" id="user_name" required>
+                <input type="text" class="name" name="user_name" id="username" required>
                 
                 <label for="mail">E-mail</label>
 				<input type="mail" name="user_mail" id="mail" required>
             
                 <label for="user_firstname">Prénom</label>
-				<input type="text" name="user_firstname" id="user_firstname" required>
+				<input type="text" name="user_firstname" id="userfirstname" required>
             	
 				<label for="msg">Message</label>
                 <textarea id="msg" name="user_message" type="text" required></textarea>

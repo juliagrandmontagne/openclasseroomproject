@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : sam. 30 oct. 2021 à 18:14
+-- Généré le : sam. 06 nov. 2021 à 07:10
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -43,7 +43,7 @@ INSERT INTO `chapitre` (`ID`, `chapitre-number`, `chapitre-titre`, `chapitre-tex
 (1, 1, 'La neige', ' Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', 'images/neige-illustration.jpg', 0),
 (2, 2, 'L’illusion', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n\r\nEst plus important que la fin du monde.', 'images/illusion-illustration.jpg', 0),
 (3, 3, 'L\'igloo', ' J’ai quelque peu précipité mon voyage en conséquence.\r\n— Tu as bien fait.\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n« Tu es un assassin, parfait, passe-moi le sel… »', 'images/igloo-illustration.jpg', 0),
-(4, 4, 'Les ourses', ' Passer les miroirs, ça demande de s\'affronter soi-même, avait dit le grand-oncle. Ceux qui se voilent la face, ceux qui se mentent à eux-mêmes, ceux qui se voient mieux qu\'ils sont, ils pourront jamais. ', 'images/ourses-illustration.jpg', 0),
+(4, 4, 'Les ourses', 'Il y eu un grand fracas lorsque les crochets du Basilic tombèrent en cascade des bras d\'Hermionne. Se ruant sur Ron, elle lui passa les bras autour du cou et l\'embrassa en plein sur la bouche. ', 'images/ourses-illustration.jpg', 0),
 (5, 5, 'L\'oublie', 'Un mort, ce n\'était pas seulement la perte d\'un être cher. C\'est une part entière de soi qui disparaissait dans le néant.[...] Oublier les morts, c\'était comme les tuer une seconde fois.', 'images/oulie-illustration.jpg', 1);
 
 -- --------------------------------------------------------
@@ -57,7 +57,7 @@ CREATE TABLE `commentaire` (
   `nameuser` text NOT NULL,
   `comment` text NOT NULL,
   `signaler` tinyint(1) DEFAULT NULL,
-  `idchapitre` int(4) NOT NULL
+  `idchapitre` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -65,10 +65,9 @@ CREATE TABLE `commentaire` (
 --
 
 INSERT INTO `commentaire` (`ID`, `nameuser`, `comment`, `signaler`, `idchapitre`) VALUES
-(1, 'rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1),
+(1, 'Rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1),
 (8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 0, 1),
-(9, 'paul Forteroche', 'lui c\'est assasinclassroom', 0, 2),
-(18, 'rembourser', 'nope c\'est pas de jean forteroche sa', 0, 1);
+(9, 'Paul Forteroche', 'lui c\'est assasinclassroom', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -145,6 +144,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `chapitre`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT pour la table `commentaire`
+--
+ALTER TABLE `commentaire`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `contact`

@@ -11,7 +11,7 @@
   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre-inv"> </div>
  </div></div>
  <div id="commentaire-form">
- <form action="index.php?action=chapitres " method="post" >     
+ <form action="index.php?action=chapitres " method="post" id="commentaireform" >     
                 <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
                 <input class="nameuser" name="nameuser" placeholder="pseudo" required>
             
@@ -24,7 +24,7 @@
             </div>
          <?php endforeach; ?>
          <?php  foreach ($databd3 as $donnees) : ?>
-         <div id="commentaire"><div id="lecommentaire"><?php echo $donnees['nameuser']?><?php echo $donnees['comment']?></div>
+         <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?></div></div>
          
    </div>
    <?php endforeach; ?>
