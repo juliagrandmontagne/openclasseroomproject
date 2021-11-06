@@ -23,13 +23,11 @@ $reponse->execute();
                  $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler ,idchapitre) VALUES(?, ?, ?, ?');
                 $sth->execute(array($_POST['comment'], $_POST['nameuser'],0, 1));   
                 require('Model/front-end/connexion.php');
-                $search='SELECT * FROM Chapitre WHERE id=' . $_GET["id"];
-                $reponse = $bdd->query($search);
+                $reponse = $bdd->query('SELECT * FROM commentaire WHERE idchapitre=' . $_GET["id"]);
                 $reponse->execute();
                         $data = $reponse->fetchAll();
                         return $data;
                         $rereponseq->cloreCursor();
-                
                 }
                 }
                 ?>
