@@ -23,9 +23,10 @@ if (isset($_GET['action']))
             case 'commentaires':
             directioncommentaires();
             break;
-            case 'commentaires':
-                commentaire();
-                break;
+            //case 'creercommentaires':
+              //  commentaire();
+               // directionchapitre();
+               // break;
 
         }
     }

@@ -11,17 +11,18 @@ function directionchapitre()
    {
 require('Model/front-end/chapitre.php');
 $instanceclasse = new modelchapitre();
-$databd = $instanceclasse-> connexionbdchapitre();
+$databd = $instanceclassedeux-> connexionbdchapitre();
 $databd3 = $instanceclasse-> connexionbdcommentaire();
 require('view/front-end/chapitre.php');
    }
-function commentaire()
-{
-require('Model/front-end/chapitre.php');
-$instanceclasse = new modelchapitre();
-$databd = $instanceclasse->creercommentaire();
-require('view/front-end/chapitre.php');
-   }
+//function commentaire()
+//{
+//require('Model/front-end/chapitre.php');
+//$instanceclasse = new modelccommentaire();
+//$instanceclasse = new modelchapitre();
+//$databd = $instanceclasse->creercommentaire();
+//require('view/front-end/chapitre.php');
+ //  }
 function directionchapitres()
    {
 require('Model/front-end/chapitres.php');
