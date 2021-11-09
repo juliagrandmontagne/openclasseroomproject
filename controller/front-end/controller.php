@@ -18,11 +18,11 @@ require('view/front-end/chapitre.php');
 function commentaire()
 {
 require('Model/front-end/commentaire.php');
-$instanceclasse = new modelccommentaire();
+$instanceclasse = new modelcommentaire();
 //$instanceclasse = new modelchapitre();
 $databd = $instanceclasse->creercommentaire();
 require('view/front-end/chapitre.php');
- / }
+  }
 function directionchapitres()
    {
 require('Model/front-end/chapitres.php');

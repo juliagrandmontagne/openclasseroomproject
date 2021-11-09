@@ -26,7 +26,7 @@ if (isset($_GET['action']))
             case 'creerCommentaire':
                 commentaire();
                // directionchapitre();
-                break;
+            break;
 
         }
     }
