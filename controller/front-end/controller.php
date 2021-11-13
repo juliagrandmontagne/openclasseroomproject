@@ -19,7 +19,6 @@ function commentaire()
 {
 require('Model/front-end/commentaire.php');
 $instanceclasse = new modelcommentaire();
-//$instanceclasse = new modelchapitre();
 $databd = $instanceclasse->creercommentaire();
 require('view/front-end/chapitre.php');
   }
@@ -38,8 +37,21 @@ function directionauteur()
 function directioncontact()
 {
    require('Model/front-end/contact.php');
-   $instanceclasse4 = new modelcontact ();
-   $databd4 = $instanceclasse4-> connexionbdcontact();
+   $instanceclassecontact = new modelcontact ();
+   $databd4 = $instanceclassecontact-> connexionbdcontact();
    require('view/front-end/contact.php');
+}
+function seconnecter()
+{
+   require('view/front-end/connexion.php');
+}
+function tableaudebord()
+{
+   require('Model/front-end/tableaudebord.php');
+   $instanceclasseadmin = new modeltableaudebord ();
+   $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
+   $databdmail =$instanceclasseadmin-> connexionbdmail();
+   require('view/front-end/tableaudebord.php');
+   
 }
 ?>

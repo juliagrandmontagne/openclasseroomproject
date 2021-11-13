@@ -24,10 +24,15 @@ if (isset($_GET['action']))
             directioncommentaires();
             break;
             case 'creerCommentaire':
-                commentaire();
+            commentaire();
                // directionchapitre();
             break;
-
+            case 'seconnecter':
+                seconnecter();
+              break;
+             case 'tableaudebord':
+                tableaudebord();
+                break;
         }
     }
 }

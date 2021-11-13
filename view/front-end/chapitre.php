@@ -24,7 +24,7 @@
             </div>
          <?php endforeach; ?>
          <?php  foreach ($databd3 as $donnees) : ?>
-         <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?></div></div>
+         <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?></div><input class="report" type="submit" id="btn-submit" value="signaler" ></div>
          
    </div>
    <?php endforeach; ?>
