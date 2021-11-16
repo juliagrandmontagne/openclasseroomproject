@@ -2,11 +2,14 @@
 <?php ob_start() ; ?>
 
 <section class="mailadmin">
- 
+<div id="main">
 <?php  foreach ($databdmail as $donnees) : ?>
-    <?php echo $donnees['user_name']?><?php echo $donnees['user_mail']?><?php echo $donnees['user_firstname']?><?php echo $donnees['user_message']?>
-    </div><?php endforeach; ?>
-
+    <div id="maileadmin"> <div>pseudo:<?php echo $donnees['user_name']?><br>
+</div><div>email:<?php echo $donnees['user_mail']?><br></div>
+<div>prénom:<?php echo $donnees['user_firstname']?><br></div>
+<div>message:<?php echo $donnees['user_message']?></div>
+   </div> <?php endforeach; ?>
+   </div>
 </section>
 
 <?php $content = ob_get_clean() ; ?>
