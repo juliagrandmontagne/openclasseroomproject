@@ -3,6 +3,7 @@
 
 <section class="mailadmin">
 <div id="main">
+<li class="retour"><a class="retour" href="index.php?action=tableaudebord">retour</a></li>
 <?php  foreach ($databdmail as $donnees) : ?>
     <div id="maileadmin"> <div>pseudo:<?php echo $donnees['user_name']?><br>
 </div><div>email:<?php echo $donnees['user_mail']?><br></div>

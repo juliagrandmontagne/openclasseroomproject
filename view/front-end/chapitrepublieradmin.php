@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
     <section class="chapitrepublieradmin">
         <div id="main">
-        
+        <li class="retour"><a class="retour" href="index.php?action=tableaudebord">retour</a></li>
             <?php  foreach ($databdadminchapitre as $donnees) : ?>
                 <div id="chaptireadmin"><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
                 <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div>
