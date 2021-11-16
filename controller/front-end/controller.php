@@ -48,10 +48,25 @@ function seconnecter()
 function tableaudebord()
 {
    require('Model/front-end/tableaudebord.php');
-   $instanceclasseadmin = new modeltableaudebord ();
-   $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
-   $databdmail =$instanceclasseadmin-> connexionbdmail();
    require('view/front-end/tableaudebord.php');
+   
+}
+function adminchapitre()
+{
+   require('Model/front-end/tableaudebord.php');
+   $instanceclasseadmin = new modeltableaudebord ();
+  $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
+  // $databdmail =$instanceclasseadmin-> connexionbdmail();
+   require('view/front-end/chapitrepublieradmin.php');
+   
+}
+function mailadmin()
+{
+   require('Model/front-end/tableaudebord.php');
+   $instanceclasseadmin = new modeltableaudebord ();
+  //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
+   $databdmail =$instanceclasseadmin-> connexionbdmail();
+   require('view/front-end/mailadmin.php');
    
 }
 ?>

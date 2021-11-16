@@ -25,14 +25,19 @@ if (isset($_GET['action']))
             break;
             case 'creerCommentaire':
             commentaire();
-               // directionchapitre();
             break;
             case 'seconnecter':
-                seconnecter();
-              break;
-             case 'tableaudebord':
-                tableaudebord();
-                break;
+            seconnecter();
+            break;
+            case 'tableaudebord':
+            tableaudebord();
+            break;
+            case 'adminchapitre':
+            adminchapitre();
+            break;
+            case 'mailadmin':
+            mailadmin();
+            break;
         }
     }
 }
