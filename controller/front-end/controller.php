@@ -49,7 +49,6 @@ function tableaudebord()
 {
    require('Model/front-end/tableaudebord.php');
    require('view/front-end/tableaudebord.php');
-   
 }
 function adminchapitre()
 {
@@ -58,7 +57,6 @@ function adminchapitre()
   $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
   // $databdmail =$instanceclasseadmin-> connexionbdmail();
    require('view/front-end/chapitrepublieradmin.php');
-   
 }
 function mailadmin()
 {
@@ -67,6 +65,24 @@ function mailadmin()
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
    $databdmail =$instanceclasseadmin-> connexionbdmail();
    require('view/front-end/mailadmin.php');
-   
+}
+function brouillon()
+{
+   require('Model/front-end/brouillon.php');
+   $instanceclasse = new modelbrouillon ();
+  //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
+   $databd =$instanceclasse-> connexionbrouillon();
+   require('view/front-end/brouillon.php');
+}
+function admincommentaire()
+{
+   require('Model/front-end/commentaire.php');
+   $instanceclasse = new modelcommentaire();
+   $databd = $instanceclasse->admincommentaire();
+   require('view/front-end/admincommentaire.php');
+}
+function newchapitre()
+{
+   require('view/front-end/creerchapitre.php');
 }
 ?>

@@ -38,6 +38,16 @@ if (isset($_GET['action']))
             case 'mailadmin':
             mailadmin();
             break;
+            case 'brouillon':
+            brouillon();
+            break;
+            case 'admincommentaire':
+            admincommentaire();
+            break;
+            case 'newchapitre':
+                newchapitre();
+                break;
+           
         }
     }
 }

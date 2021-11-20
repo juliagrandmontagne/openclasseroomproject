@@ -6,8 +6,9 @@
             <?php  foreach ($databdadminchapitre as $donnees) : ?>
                 <div id="chaptireadmin"><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
                 <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div>
-                <div id="textadmin"><?php echo $donnees['chapitre-text']?>
-                <button class="send" type="submit" id="btn-submit">Editer</button></div></div>
+                <div id="textadmin"><?php echo $donnees['resumer']?>
+                <button class="send" type="submit" id="btn-submit">Editer</button>
+                <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
                 
             <br>
             
