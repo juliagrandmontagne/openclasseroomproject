@@ -1,6 +1,6 @@
 <?php $title = 'admincommentaire' ; ?>
 <?php ob_start() ; ?>
-<section class="brouillon">
+<section id="main">
 <li class="retour"><a class="retour" href="index.php?action=tableaudebord">retour</a></li>
 <?php  foreach ($databd as $donnees) : ?>
          <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?></div>

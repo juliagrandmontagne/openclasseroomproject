@@ -14,39 +14,33 @@ margin: 0;
 padding: 0;
 width: 100%;
 height: 100%; 
-
-  }
-  #chapitrepublieradmin
-  {
-    display: block;
-  margin-top:900px;
-   
- }
- #main
- {
-    display: block;
+}
+#chapitrepublieradmin
+{
+display: block;
+margin-top:900px;
+}
+#main
+{
+display: block;
 margin-top: 100px;
- }
+}
 #chaptireadmin
 {
-    display: block;
-    height: 80px;
-  
-    border-width:1px; 
-    border-style:solid; 
-    border-color:black;
-   
- }
+display: block;
+height: 80px;
+border-width:1px; 
+border-style:solid; 
+border-color:black;
+}
  #maileadmin
- {
-    display: block;
-    height: 100px;
-  
-    border-width:1px; 
-    border-style:solid; 
-    border-color:black;
-   
- }
+{
+display: block;
+height: 100px;
+border-width:1px; 
+border-style:solid; 
+border-color:black; 
+}
 #illustrationchapitre
 {
 display: flex;
@@ -77,7 +71,6 @@ list-style-type: none;
 display: flex;
 width: 100%;
 }
-
 header li
 {
 margin: auto;
@@ -97,164 +90,160 @@ background-color: white;
 }
 .tableaubordmenunavigation
 {
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    }
+list-style-type: none;
+display: flex;
+width: 100%;
+}
 .tableaubordmenu
 {
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    }
+list-style-type: none;
+display: flex;
+width: 100%;
+justify-content: center;
+}
 .tableaubord
 {
-    font-family: Saudagar;
-    font-size: 1em;
-    }
+font-family: Saudagar;
+font-size: 1em;
+}
 .soustableaubord
 {
-    font-family: Saudagar;
-  background-color: #020202;
-  color: white;
-  padding: 20px;
-  text-decoration:none; 
-  margin-left: 10px;
-    }
-    h4
-    {
-        font-family: Saudagar;
-      padding: 50px;
-      font-size: 20px;
-      text-decoration:none; 
-      justify-content: center;
-      margin-left: 30px;
-        }
+font-family: Saudagar;
+background-color: #020202;
+color: white;
+padding: 20px;
+text-decoration:none; 
+margin-left: 10px;
+}
+h4
+{
+font-family: Saudagar;
+padding: 50px;
+font-size: 20px;
+text-decoration:none; 
+justify-content: center;
+margin-left: 30px;
+}
 p
 {
-    font-family: Saudagar;
- }
+display: block;
+font-family: Saudagar;
+margin: auto;
+}
  #formulaire
- {
-    display: flex;
-    margin: auto;
+{
+display: flex;
+margin: auto;
 width:900px; 
-
 margin-top: 70px;
-
- }
- #connexion
- {
-    display:block;
-    margin-top: 200px;
- }
- #connexionutilisateur
- {
-    display:block;
+}
+#connexion
+{
+display:block;
+margin-top: 200px;
+}
+#connexionutilisateur
+{
+display:block;
 justify-content: center;
-         }
- #messageconnexion
- {
+}
+#messageconnexion
+{
 display:flex;
 margin-top: 50px;
 width: 100%;
 margin: auto;
 padding-top: 70px;
-     }
- #suite
- {
- text-align: center;
-  }
-  .chapitres
-  {
-    display: flex;
+}
+#suite
+{
+text-align: center;
+}
+.chapitres
+{
+display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
-  }
-  #chapitre-titre-individuel
-  {
-    font-family: caroline;
-    font-size:1.9em;
-    display: flex;
-    width: 100%;
-   margin-top:100px;
-    justify-content: center;
-   
-    }
-        #chapitre-titre
-        {
-        font-family: caroline;
-        font-size:1.9em;
-        display: block;
-        position: relative;
-        width: 180px;
-       margin:auto;
-        }
-        #chapitre-text-individuel
-         {
-        font-family: "Saudagar";
-        display: block;
-        word-wrap: break-word;
-        position: relative;
-        width: 90%;
-        margin: auto;
-        }
-        #chapitre-text
-        {
-        font-family: "Saudagar";
-        display: inline-block;
-        word-wrap: break-word;
-        position: relative;
-        width: 400px;
-        height: 380px;
-        }
-        #chaptirenumber
-        {
-        display: block;
-        height: 440px;
-        width: 400px;
-        margin: 10px;
-        padding: 30px;
-        border-width:1px; 
-        border-style:solid; 
-        border-color:black;
-        margin-top:90px;
-        }
-        #chaptirenumber-individuel
-         {
-               display: block;
-
-         }
-        #illustrationchapitre-inv
-        {
-            display: flex;
-            width:100%;
-           max-width: 900px;
+}
+#chapitre-titre-individuel
+{
+font-family: caroline;
+font-size:1.9em;
+display: flex;
+width: 100%;
+margin-top:100px;
+justify-content: center; 
+}
+#chapitre-titre
+{
+font-family: caroline;
+font-size:1.9em;
+display: block;
+position: relative;
+width: 180px;
+margin:auto;
+}
+#chapitre-text-individuel
+{
+font-family: "Saudagar";
+display: block;
+word-wrap: break-word;
+position: relative;
+width: 90%;
 margin: auto;
-     }
-     #titre-commentaire
-     {
-        display: flex;
-        width:100%;
-        text-align: center;
- }
-     #commentaire-form
-     
-     {
-        display: flex;
-        width:100%;
-       max-width: 800px;
+}
+#chapitre-text
+{
+font-family: "Saudagar";
+display: inline-block;
+word-wrap: break-word;
+position: relative;
+width: 400px;
+height: 380px;
+}
+#chaptirenumber
+{
+display: block;
+height: 440px;
+width: 400px;
+margin: 10px;
+padding: 30px;
+border-width:1px; 
+border-style:solid; 
+border-color:black;
+margin-top:90px;
+}
+#chaptirenumber-individuel
+{
+display: block;
+}
+#illustrationchapitre-inv
+{
+display: flex;
+width:100%;
+max-width: 900px;
 margin: auto;
- }
-     #texte
-           {
-               display: flex;
-             width:100%;
-            max-width: 800px;
-            margin: auto;
-     }
-        
+}
+#titre-commentaire
+{
+display: flex;
+width:100%;
+text-align: center;
+}
+#commentaire-form     
+{
+display: flex;
+width:100%;
+max-width: 800px;
+margin: auto;
+}
+#texte
+{
+display: flex;
+width:100%;
+max-width: 800px;
+margin: auto;
+}        
 #admin
 {
 display: block;
@@ -263,7 +252,7 @@ float: right;
 margin-right: 50px;
 background-color: white;
 border:none;
-    }
+}
 #connection
  {
 display: block;
@@ -285,29 +274,29 @@ h3
 font-family: Saudagar;
 font-size: 1.3em;
 display: flex;
- justify-content: space-around;
+justify-content: space-around;
 font-weight : normal;
-    }
+}
 #content
 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 #lastchapter
 {
 display: block;
 height: 460px;
 top: -420px;
- margin-left :40px;
- font-family: Saudagar;
-    width: 400px;
-    margin: 10px;
-    padding: 30px;
-    border-width:1px; 
- border-style:solid; 
- border-color:black;
- overflow: scroll;
+margin-left :40px;
+font-family: Saudagar;
+width: 400px;
+margin: 10px;
+padding: 30px;
+border-width:1px; 
+border-style:solid; 
+border-color:black;
+overflow: scroll;
 }
 #description
 {
@@ -323,72 +312,71 @@ overflow: scroll;
 }
 #auteurpicture
 {
-    display: grid;
-   width: 600px;
-   margin:80px;
-    }
+display: grid;
+width: 600px;
+margin:80px;
+}
 #authorstory
 {
-    display: block;
-    height: 345px;
-    width: 400px;
-    margin: 10px;
-    padding: 30px;
-    border-width:1px; 
-    border-style:solid; 
-    border-color:black;
-    margin-top:90px;
-    overflow: scroll;
-    }
-    .presentation
-    {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top:80px;
-        
-    }
-   /*SECTION COMMENTAIRE*/ 
-    #commentaireform
+display: block;
+height: 345px;
+width: 400px;
+margin: 10px;
+padding: 30px;
+border-width:1px; 
+border-style:solid; 
+border-color:black;
+margin-top:90px;
+overflow: scroll;
+}
+.presentation
 {
- margin-bottom: 100px;
-} 
-    #comment
-        {
-            font: 1em ;
-            width:800px;
-            height: 100px;
-            margin-top: 10px;
-            box-sizing: border-box;
-            border: 1px solid grey; 
-            resize:none;
-            border-radius: 5px;
-            } 
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top:80px;        
+}
+/*SECTION COMMENTAIRE*/ 
 #commentaireform
 {
-    display: block;
-    justify-content: center;
-    } 
+margin-bottom: 100px;
+} 
+#comment
+{
+font: 1em ;
+width:800px;
+height: 100px;
+margin-top: 10px;
+box-sizing: border-box;
+border: 1px solid grey; 
+resize:none;
+border-radius: 5px;
+} 
+#commentaireform
+{
+display: block;
+justify-content: center;
+} 
 #lecommentaire
 {
-    display: block;
-    justify-content: center;
-    margin:auto;
-    font: 1em ;
-    width:800px;
-    height: 100px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey; 
-    resize:none;
-    border-radius: 5px;
-    } 
-    #nomuser
-    {
-    font-family: caroline;
-    font-size: 1.7em;
-    display: flex;
-   justify-content: center;
+display: block;
+justify-content: center;
+margin:auto;
+font: 1em ;
+width:800px;
+height: 100px;
+margin-top: 10px;
+box-sizing: border-box;
+border: 1px solid grey; 
+resize:none;
+border-radius: 5px;
+} 
+#nomuser
+{
+font-family: caroline;
+font-size: 1.7em;
+display: flex;
+justify-content: center;
 } 
 #messageuser
 {
@@ -396,7 +384,6 @@ font-family: "Saudagar";
 display: flex;
 justify-content: center;
 } 
-
 /*CHAPITRE*/
 #chapitre
 {
@@ -406,11 +393,24 @@ flex-wrap: wrap;
 margin-top:80px;
 overflow: scroll;
 }
-
-
+.formcreer
+{    
+display: flex;
+margin: auto;
+width:900px; 
+height:600px;
+margin-top: 70px;
+padding: 20px;
+border: 1px ;
+background-color: black;
+z-index: 900;
+opacity: 0.65;
+border-radius: 10%;
+}
 .form 
-{    display: flex;
-    margin: auto;
+{    
+display: flex;
+margin: auto;
 width:900px; 
 height:500px;
 margin-top: 70px;
@@ -446,13 +446,14 @@ border-radius: 5px;
 #msg 
 {
 font: 1em ;
-width: 500px;
+width: 800px;
 height: 200px;
 box-sizing: border-box;
 border: 1px solid grey; 
 resize:none;
 border-radius: 5px;
 justify-content: center;
+
 } 
 .send
 {
@@ -467,6 +468,7 @@ label
 {
 display: inline-block;
 width: 80px;
+color: white;
 }
 legend
 {
@@ -515,7 +517,7 @@ padding:10px;
  {
     h1
     {
-        font-size: 30px;
+    font-size: 30px;
     }
     ul
     {
@@ -523,55 +525,54 @@ padding:10px;
     }
     #authorstory
     {
-        width: 300px;
-        height:500px;
-        }
- #auteurpicture
-        {
-            width: 300px;
-        margin:0px;
-            }
-            #lastchapter
-        {
-        width: 300px;
-        height:550px;
-        }
-        #description
-        {
-            width: 300px;
-            height:550px;
-            }
-            .form
-            {
-                width: 350px;
-                height:500px;
-                }
-
-.info
-{
-font-weight: bolder;
-color: white;
-font-family: Saudagar;
-}
-#msg 
-{
-font: 1em ;
-width: 300px;
-height: 200px;
-box-sizing: border-box;
-border: 1px solid grey; 
-resize:none;
-border-radius: 5px;
-justify-content: center;
-} 
-#resaux
-{
-position :none;
-color:black;
-border-radius: 100px;
-left: 45%;
-font-size: 10px;
-margin-top: -50px;
-margin-left:0%;
-}
+    width: 300px;
+    height:500px;
+    }
+    #auteurpicture
+    {
+    width: 300px;
+    margin:0px;
+    }
+    #lastchapter
+    {
+    width: 300px;
+    height:550px;
+    }
+    #description
+    {
+    width: 300px;
+    height:550px;
+    }
+    .form
+    {
+    width: 350px;
+    height:500px;
+    }
+    .info
+    {
+    font-weight: bolder;
+    color: white;
+    font-family: Saudagar;
+    }
+    #msg 
+    {
+    font: 1em ;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid grey; 
+    resize:none;
+    border-radius: 5px;
+    justify-content: center;
+    } 
+    #resaux
+    {
+    position :none;
+    color:black;
+    border-radius: 100px;
+    left: 45%;
+    font-size: 10px;
+    margin-top: -50px;
+    margin-left:0%;
+    }
 }

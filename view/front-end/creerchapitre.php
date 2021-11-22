@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 <section class="brouillon">
 <li class="retour"><a class="retour" href="index.php?action=tableaudebord">retour</a></li>
-        <div class="form">
+        <div class="formcreer">
             <form action="#" method="POST" enctype="multipart/form-data" >
                 <label for="user_name">Nom</label>
                 <input type="text" class="name" name="user_name" id="username" required>
