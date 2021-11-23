@@ -25,6 +25,7 @@ margin-top:900px;
 display: block;
 margin-top: 100px;
 }
+
 #chaptireadmin
 {
 display: block;
@@ -297,6 +298,12 @@ border-width:1px;
 border-style:solid; 
 border-color:black;
 overflow: scroll;
+}
+#descriptionacueil
+{
+display: block;
+margin-top:60px;
+font-size: 1.3em;
 }
 #description
 {
