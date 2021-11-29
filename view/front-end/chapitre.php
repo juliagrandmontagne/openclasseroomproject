@@ -22,7 +22,11 @@
          <?php  foreach ($databd3 as $donnees) : ?>
          <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div>
          <div id="messageuser"><?php echo $donnees['comment']?></div>
-         <input class="send" type="submit" id="signaler" value="signaler" ></div>
+         <form>
+               <input id="none" type="text"value="1">
+               <input id="none" type="text"value="$donnees['ID']">
+         <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>
+      </form>
          
    </div>
    <?php endforeach; ?>

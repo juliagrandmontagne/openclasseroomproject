@@ -1,7 +1,7 @@
 <?php $title = 'creerchapitre' ; ?>
 <?php ob_start() ; ?>
 <section class="brouillon">
-<li class="retour"><a class="retour" href="index.php?action=tableaudebord">retour</a></li>
+
         <div class="formcreer">
             <form action="#" method="POST" enctype="multipart/form-data" >
                 <label for="user_name">Nom</label>
@@ -23,4 +23,4 @@
         </div>
 </section>
 <?php $content = ob_get_clean() ; ?>
-<?php require('template.php'); ?>
+<?php include('templateadminagain.php'); ?>
