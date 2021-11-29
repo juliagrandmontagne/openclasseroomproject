@@ -7,7 +7,7 @@
                 <div id="chaptireadmin">
 <div id="buble">
 <h3>
-                    <p>le chapitre numéro:</p><div id="chifreadmin"><?php echo $donnees['chapitre-number']?>
+                    <div id="chifreadmin"><?php echo $donnees['chapitre-number']?>
                 </div>
                 <div id="titreadmin"><?php echo $donnees['chapitre-titre']?>
                 </div>

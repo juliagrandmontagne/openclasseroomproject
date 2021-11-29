@@ -6,8 +6,8 @@
 
   <div id="main">
    
-                <div id="chaptireadmin"><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
-                <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div>
+                <div id="chaptireadmin"><h3><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
+                <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div></h3>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
                 <button class="send" type="submit" id="btn-submit">Editer</button>
                 <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
