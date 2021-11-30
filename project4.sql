@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mar. 23 nov. 2021 à 12:44
+-- Généré le : mar. 30 nov. 2021 à 12:10
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -94,11 +94,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`ID`, `user_name`, `user_mail`, `user_firstname`, `user_message`) VALUES
-(1, 'gvjb', 'jvhb', 'n;', 'fcygvjhbkn,'),
-(2, 'k,ljn', ',klnjh', ',knljk,ùlko', 'ihbjnkm,lkpoj'),
-(3, 'lnjk', 'jnlk,', 'hbjkn', 'bhjkn,'),
-(4, 'jvjbhnj', ' jbkn', 'hgkbjn;', 'cfgvhjhbjn'),
-(11, 'tu preche', 'une convertue e', 'en ', 'fait mais c\'est compliquer');
+(11, 'Petersen', 'todd@mail.com', 'Todd A. ', 'Je vous écris suite à l’envoi de mon email ci-dessous. Je n’ai eu à ce jour aucun retour de la part de votre équipe. Si cela vous intéresse toujours d’échanger avec moi, n’hésitez pas à me communiquer vos disponibilités.\r\nSi non, savez-vous à quelle personne je pourrais m’adresser pour échanger ?\r\nMerci pour votre aide,\r\nTodd'),
+(12, 'Chun', 'chun@mail.com', 'Carla R. ', 'Merci pour votre email. Je viens de clore votre dossier et aurais juste une petite question à vous poser. Pourquoi n’êtes-vous pas intéressé ? Est-ce à cause de quelque chose que j’ai (mal) fait ?\r\nSi vous avez en tête un point sur lequel je pourrais m’améliorer, faites-le moi savoir. Je suis toujours à la recherche de feedbacks.\r\nMerci pour votre aide,\r\nCarla ');
 
 -- --------------------------------------------------------
 
@@ -161,7 +158,7 @@ ALTER TABLE `commentaire`
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Contraintes pour les tables déchargées
