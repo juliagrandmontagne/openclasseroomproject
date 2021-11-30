@@ -15,7 +15,17 @@ class modelcommentaire
       $data = $reponse->fetchAll();
       return $data;
       $rereponseq->cloreCursor();}
-         
-}
+
+      public function admincommentairevalider()
+      {
+        require('Model/front-end/connexion.php');
+        $reponse = $bdd->query('SELECT * FROM commentaire WHERE valider=1');
+        $reponse->execute();
+        $data = $reponse->fetchAll();
+        return $data;
+        $rereponseq->cloreCursor();}
+           
+  }     
+
 ?>
             

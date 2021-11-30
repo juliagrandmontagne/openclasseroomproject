@@ -80,7 +80,7 @@ overflow: scroll;
     padding:0px;
     margin: 0px;
     font-size: 15px;
-    margin right: -50%;
+
     }
     .connexion
     {
@@ -314,13 +314,12 @@ margin: auto;
 .retour
 {
 display: block;
-width: 40px;
+width: 170px;
 border-width:1px; 
 border-style:solid; 
 border-color:black;
 border-radius: 30px;
-margin-top:80px;
-margin-left:50px;
+margin: auto;
 padding: 10px;
 text-decoration: none;
 color: white;

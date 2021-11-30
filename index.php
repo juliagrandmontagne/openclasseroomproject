@@ -43,6 +43,9 @@ if (isset($_GET['action']))
             break;
             case 'admincommentaire':
             admincommentaire();
+            case 'admincommentaireold':
+            admincommentaireold();
+            break;
             break;
             case 'newchapitre':
                 newchapitre();

@@ -81,6 +81,13 @@ function admincommentaire()
    $databd = $instanceclasse->admincommentaire();
    require('view/front-end/admincommentaire.php');
 }
+function admincommentaireold()
+{
+   require('Model/front-end/commentaire.php');
+   $instanceclasse = new modelcommentaire();
+   $databd = $instanceclasse->admincommentairevalider();
+   require('view/front-end/oldcommentaire.php');
+}   
 function newchapitre()
 {
    require('view/front-end/creerchapitre.php');
