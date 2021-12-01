@@ -41,6 +41,7 @@ function directioncontact()
    $databd4 = $instanceclassecontact-> connexionbdcontact();
    require('view/front-end/contact.php');
 }
+/*SECTION BACK-END*/ 
 function seconnecter()
 {
    require('view/front-end/connexion.php');

@@ -1,6 +1,6 @@
 <?php $title = 'contact' ; ?>
 <?php ob_start() ; ?>
-
+<section id="main">
         <div class="form">
             <form action="index.php?action=contact" method="POST" enctype="multipart/form-data" >
             <fieldset class="info">
@@ -28,6 +28,6 @@
             
             </form>
         </div>
-
+</section>
 <?php $content = ob_get_clean() ; ?>
 <?php require('template.php'); ?>

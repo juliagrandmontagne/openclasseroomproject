@@ -11,11 +11,11 @@
  </div></div>
  <div id="commentaire-form">
  
- <form action="index.php?action=creerCommentaire " method="post" id="commentaireform" >     
+ <form action="index.php?action=creerCommentaire" method="post" id="commentaireform" >     
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
-      <input class="send" type="submit" id="btn-submit" value="Envoyer" >      
+      <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
 </form>
 </div>
          <?php endforeach; ?>
