@@ -50,6 +50,9 @@ if (isset($_GET['action']))
             case 'newchapitre':
                 newchapitre();
                 break;
+            case 'admincommentairesignaler':
+                admincommentairesignaler();
+            break;
            
         }
     }

@@ -24,7 +24,15 @@ class modelcommentaire
         $data = $reponse->fetchAll();
         return $data;
         $rereponseq->cloreCursor();}
-           
+
+        public function admincommentairesignaler()
+      {
+        require('Model/front-end/connexion.php');
+        $reponse = $bdd->query('SELECT * FROM commentaire WHERE signaler=1');
+        $reponse->execute();
+        $data = $reponse->fetchAll();
+        return $data;
+        $rereponseq->cloreCursor();}   
   }     
 
 ?>

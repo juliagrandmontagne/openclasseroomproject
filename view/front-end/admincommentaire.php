@@ -6,7 +6,7 @@
       <ul class="tableaubordmenu">
       <li class="licommentaire" ><a class="tableauxcommentaire" href="index.php?action=admincommentaireold">commentaire déjà valider</a></li>
       <li class="licommentaire" ><a class="tableauxcommentaire" href="index.php?action=admincommentaire">commentaire a valider</a></li>
-      <li class="licommentaire" ><a class="tableauxcommentaire" href="index.php?action=">commentaire signaler</a></li>
+      <li class="licommentaire" ><a class="tableauxcommentaire" href="index.php?action=admincommentairesignaler">commentaire signaler</a></li>
       </ul>
       </nav>
       <h4>Bienvenue sur la liste des chapitre en attente de validation</h4>
