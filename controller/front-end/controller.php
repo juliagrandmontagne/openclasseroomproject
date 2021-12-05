@@ -15,13 +15,7 @@ $databd = $instanceclasse-> connexionbdchapitre();
 $databd3 = $instanceclasse-> connexionbdcommentaire();
 require('view/front-end/chapitre.php');
    }
-function commentaire()
-{
-require('Model/front-end/commentaire.php');
-$instanceclasse = new modelcommentaire();
-$databd = $instanceclasse->creercommentaire();
-require('view/front-end/chapitre.php');
-  }
+
 function directionchapitres()
    {
 require('Model/front-end/chapitres.php');
@@ -42,10 +36,7 @@ function directioncontact()
    require('view/front-end/contact.php');
 }
 /*SECTION BACK-END*/ 
-function seconnecter()
-{
-   require('view/front-end/connexion.php');
-}
+
 function tableaudebord()
 {
    require('Model/front-end/tableaudebord.php');
@@ -73,7 +64,7 @@ function brouillon()
    $instanceclasse = new modelbrouillon ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
    $databd =$instanceclasse-> connexionbrouillon();
-   require('view/front-end/brouillon.php');
+   require('view/back/brouillon.php');
 }
 function admincommentaire()
 {
@@ -87,17 +78,17 @@ function admincommentaireold()
    require('Model/front-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentairevalider();
-   require('view/front-end/oldcommentaire.php');
+   require('view/back/oldcommentaire.php');
 }  
 function admincommentairesignaler() 
 {
    require('Model/front-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentairesignaler();
-   require('view/front-end/admincommentairesignaler.php');
+   require('view/back/admincommentairesignaler.php');
 } 
 function newchapitre()
 {
-   require('view/front-end/creerchapitre.php');
+   require('view/back/creerchapitre.php');
 }
 ?>

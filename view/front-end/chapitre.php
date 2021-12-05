@@ -1,6 +1,6 @@
 <?php $title = 'chapitre' ; ?>
 <?php ob_start() ; ?>
-<section class="chapitre">
+<section id="main">
 <?php  foreach ($databd as $donnees) : ?>
  
 

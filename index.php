@@ -1,5 +1,6 @@
 <?php 
 require('controller/front-end/controller.php');
+require('controller/back-end/controller.php');
 if (isset($_GET['action'])) 
 {
     {
