@@ -4,8 +4,8 @@ class modelcommentaire
     public function creercommentaire()
     {
       require('Model/front-end/connexion.php');
-      $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler ,idchapitre) VALUES(?, ?, ?, ?)');
-      $sth->execute(array($_POST['comment'], $_POST['nameuser'],0, $_POST["idchapitre"]));   
+      $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler, valider, idchapitre) VALUES(?, ?, ?, ?, ?)');
+      $sth->execute(array($_POST['comment'], $_POST['nameuser'],0,0, $_POST['chapitrenumber']));   
     }
     public function admincommentaire()
     {

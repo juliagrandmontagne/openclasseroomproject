@@ -5,7 +5,7 @@
  
 
  <div id="chaptirenumber-individuel">
- <div id='chapitre-titre-individuel'><?php echo $donnees['chapitre-number']?><?php echo $donnees['chapitre-titre']?></div>
+ <div id='chapitre-titre-individuel'><?php echo $donnees['chapitrenumber']?><?php echo $donnees['chapitre-titre']?></div>
  <div id="chapitre-text-individuel"><div id="texte"><?php echo $donnees['chapitre-text']?></div>
   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre-inv"> </div>
  </div></div>
@@ -15,16 +15,19 @@
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
+      <input id="none" type="text" value= "<?php echo $donnees['chapitrenumber']?>" >
       <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
 </form>
 </div>
          <?php endforeach; ?>
          <?php  foreach ($databd3 as $donnees) : ?>
-         <div id="commentaire"><div id="lecommentaire"><div id="nomuser"><?php echo $donnees['nameuser']?></div>
+         <div id="commentaire">
+         <div id="lecommentaire">
+         <div id="nomuser"><?php echo $donnees['nameuser']?></div>
          <div id="messageuser"><?php echo $donnees['comment']?></div>
          <form>
-               <input id="none" type="text"value="1">
-               <input id="none" type="text"value="$donnees['ID']">
+               <input id="none" type="text" value="1">
+               <input id="none" type="text" value="$donnees['ID']">
          <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>
       </form>
          
