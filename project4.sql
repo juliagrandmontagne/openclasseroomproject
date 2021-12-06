@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mar. 30 nov. 2021 à 12:10
+-- Généré le : lun. 06 déc. 2021 à 19:10
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `chapitre` (
   `ID` int(255) NOT NULL,
-  `chapitre-number` int(11) NOT NULL,
+  `chapitrenumber` int(11) NOT NULL,
   `chapitre-titre` text NOT NULL,
   `resumer` text NOT NULL,
   `chapitre-text` text NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `chapitre` (
 -- Déchargement des données de la table `chapitre`
 --
 
-INSERT INTO `chapitre` (`ID`, `chapitre-number`, `chapitre-titre`, `resumer`, `chapitre-text`, `images`, `brouillon`) VALUES
+INSERT INTO `chapitre` (`ID`, `chapitrenumber`, `chapitre-titre`, `resumer`, `chapitre-text`, `images`, `brouillon`) VALUES
 (1, 1, 'La neige', 'Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', ' Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', 'images/neige-illustration.jpg', 0),
 (2, 2, 'L’illusion', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n\r\nEst plus important que la fin du monde.', 'images/illusion-illustration.jpg', 0),
 (3, 3, 'L\'igloo', ' J’ai quelque peu précipité mon voyage en conséquence.\r\n— Tu as bien fait.\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n« Tu es un assassin, parfait, passe-moi le sel… »', ' — J’ai tué un homme.\r\n\r\nIl avait jeté cela d’un ton nonchalant, comme une banalité, entre deux lampées de soupe. Les lunettes d’Ophélie blêmirent. A côté d’elle, la tante Roseline s’étrangla, au bord de la syncope. Berenilde reposa sa coupe de vin d’un geste calme sur la nappe de dentelle.\r\n\r\n— Où ? Quand ?\r\n\r\nOphélie, elle, aurait demandé : « Qui ? Pourquoi ? »\r\n\r\n— A l’aérogare, avant que je n’embarque pour Anima, répondit Thorn d’une voix posée. Un disgracié qu’un individu mal intentionné m’a dépêché aux trousses. J’ai quelque peu précipité mon voyage en conséquence.\r\n\r\n— Tu as bien fait.\r\n\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n\r\n« Tu es un assassin, parfait, passe-moi le sel… »', 'images/igloo-illustration.jpg', 0),
@@ -58,7 +58,7 @@ CREATE TABLE `commentaire` (
   `nameuser` text NOT NULL,
   `comment` text NOT NULL,
   `signaler` tinyint(1) DEFAULT NULL,
-  `valider` tinyint(1) NOT NULL,
+  `valider` tinyint(1) DEFAULT NULL,
   `idchapitre` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -70,10 +70,10 @@ INSERT INTO `commentaire` (`ID`, `nameuser`, `comment`, `signaler`, `valider`, `
 (1, 'Rembourser', 'nope c\'est pas de jean forteroche sa', 0, 0, 1),
 (8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 0, 0, 1),
 (9, 'Paul Forteroche', 'lui c\'est assasinclassroom', 0, 0, 2),
-(10, 'iygkjblnkmdhzi', 'ihjknzedok', 0, 0, 1),
-(11, 'hbkjn', 'vgjhb', 0, 0, 2),
-(12, 'vgbhjkn', 'gyhj', 0, 0, 2),
-(13, 'n', 'jn,;', 0, 0, 2);
+(10, 'Colleen R. Skelton', 'Super histoire', 0, 0, 1),
+(11, 'Mary R. Brooks', 'Hors de question pas d\'accord', 0, 0, 2),
+(12, 'William Courtois', 'Vraiment très nul', 0, 0, 2),
+(15, 'fds', 'vrcd', 0, 0, 4);
 
 -- --------------------------------------------------------
 
@@ -152,7 +152,7 @@ ALTER TABLE `chapitre`
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT pour la table `contact`
