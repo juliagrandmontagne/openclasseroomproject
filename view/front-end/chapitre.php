@@ -15,7 +15,10 @@
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
-      <input id="none" type="text" value= "<?php echo $donnees['chapitrenumber']?>" >
+      <?php  foreach ($databd3 as $donnees) : ?>
+         <input id="none" type="text" value= "<?php echo  $donnees['idchapitre']?>" >
+         <?php endforeach; ?>
+   
       <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
 </form>
 </div>

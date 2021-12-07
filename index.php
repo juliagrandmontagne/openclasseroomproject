@@ -1,6 +1,6 @@
 <?php 
 require('controller/front-end/controller.php');
-require('controller/back-end/controller.php');
+require('controller/front-end/controllerCommentaire.php');
 if (isset($_GET['action'])) 
 {
     {
