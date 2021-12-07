@@ -49,16 +49,16 @@ if (isset($_GET['action']))
             break;
             break;
             case 'newchapitre':
-                newchapitre();
-                break;
-            case 'admincommentairesignaler':
-                admincommentairesignaler();
+            newchapitre();
             break;
-           
+            case 'admincommentairesignaler':
+            admincommentairesignaler();
+            break;
         }
     }
 }
-else{
-    directionaccueil();
+else
+{
+directionaccueil();
 }
 ?>

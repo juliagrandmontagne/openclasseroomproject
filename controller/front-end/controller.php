@@ -48,7 +48,7 @@ function adminchapitre()
    $instanceclasseadmin = new modeltableaudebord ();
   $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
   // $databdmail =$instanceclasseadmin-> connexionbdmail();
-   require('view/front-end/chapitrepublieradmin.php');
+   require('view/back/chapitrepublieradmin.php');
 }
 function mailadmin()
 {
@@ -56,7 +56,7 @@ function mailadmin()
    $instanceclasseadmin = new modeltableaudebord ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
    $databdmail =$instanceclasseadmin-> connexionbdmail();
-   require('view/front-end/mailadmin.php');
+   require('view/back/mailadmin.php');
 }
 function brouillon()
 {
@@ -71,7 +71,7 @@ function admincommentaire()
    require('Model/front-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentaire();
-   require('view/front-end/admincommentaire.php');
+   require('view/back/admincommentaire.php');
 }
 function admincommentaireold()
 {
