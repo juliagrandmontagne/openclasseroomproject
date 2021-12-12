@@ -12,19 +12,19 @@
  <?php endforeach; ?>
  <div id="commentaire-form">
 
+
  <form action="index.php?action=creerCommentaire" method="post" id="commentaireform" >     
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
        <?php  foreach ($databd3 as $donnees) : ?>
-         <input id="none" name="idchapitre" value= "<?php echo  $donnees['idchapitre']?>" >
-        
-   
+         <input id="none" name="idchapitre" value= "<?php echo $donnees['idchapitre']?>" >
+         <?php endforeach; ?>
       <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
 </form>
 </div>
    
-
+<?php  foreach ($databd3 as $donnees) : ?>
          <div id="commentaire">
          <div id="lecommentaire">
          <div id="nomuser"><?php echo $donnees['nameuser']?></div>

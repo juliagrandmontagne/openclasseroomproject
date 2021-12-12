@@ -6,6 +6,7 @@ class modelcommentaire
       require('Model/front-end/connexion.php');
       $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler, valider, idchapitre) VALUES(?, ?, ?, ?, ?)');
       $sth->execute(array($_POST['comment'], $_POST['nameuser'],0,0, $_POST["idchapitre"]));   
+      header('Location: /projet4/index.php?action=chapitres');
     }
     public function admincommentaire()
     {
