@@ -1,5 +1,8 @@
 <?php $title = 'creerchapitre' ; ?>
 <?php ob_start() ; ?>
+<head>
+  <script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
 <section class="brouillon">
 
         <div class="formcreer">
@@ -14,6 +17,16 @@
 				<input type="text" name="user_firstname" id="userfirstname" required>
             	<label id="ecrire" for="msg">Résumer</label>
                 <textarea id="msg" name="user_message" type="text" required></textarea>
+                <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
 				<label id="ecrire" for="msg">Texte</label>
                 <textarea id="texteduchapitre" name="user_message" type="text" required></textarea>
 				
