@@ -4,7 +4,16 @@
   <script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <section class="brouillon">
-
+<script>
+tinymce.init({
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
         <div class="formcreer">
             <form action="#" method="POST" enctype="multipart/form-data" >
                 <label id="ecrire" for="user_name">Titre du chapitre</label>
@@ -17,19 +26,18 @@
 				<input type="text" name="user_firstname" id="userfirstname" required>
             	<label id="ecrire" for="msg">Résumer</label>
                 <textarea id="msg" name="user_message" type="text" required></textarea>
-                <script>
-    tinymce.init({
-      selector: 'textarea',
-      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
-      toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-    });
-  </script>
+                
+    
 				<label id="ecrire" for="msg">Texte</label>
                 <textarea id="texteduchapitre" name="user_message" type="text" required></textarea>
+              
+                <input type="radio" id="choix" name="drone" value="huey" checked>
+                <label id="ecrire" for="brouillon">brouillon</label>
+                
+                <input type="radio" id="choix" name="drone" value="dewey">
+                <label id="ecrire" for="publier">publier</label>
 				
+ 
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>
             
             </form>
