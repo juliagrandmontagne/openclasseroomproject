@@ -6,34 +6,15 @@ class modelcommentaire
       require('Model/front-end/connexion.php');
       $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler, valider, idchapitre) VALUES(?, ?, ?, ?, ?)');
       $sth->execute(array($_POST['comment'], $_POST['nameuser'],0,0, $_POST["idchapitre"]));   
-      header('Location: /projet4/index.php?action=chapitres');
+      header('Location: index.php?action=chapitres');
     }
-    public function admincommentaire()
+    public function lesignaler ()
     {
       require('Model/front-end/connexion.php');
-      $reponse = $bdd->query('SELECT * FROM commentaire ');
-      $reponse->execute();
-      $data = $reponse->fetchAll();
-      return $data;
-      $rereponseq->cloreCursor();}
-
-      public function admincommentairevalider()
-      {
-        require('Model/front-end/connexion.php');
-        $reponse = $bdd->query('SELECT * FROM commentaire WHERE valider=1');
-        $reponse->execute();
-        $data = $reponse->fetchAll();
-        return $data;
-        $rereponseq->cloreCursor();}
-
-        public function admincommentairesignaler()
-      {
-        require('Model/front-end/connexion.php');
-        $reponse = $bdd->query('SELECT * FROM commentaire WHERE signaler=1');
-        $reponse->execute();
-        $data = $reponse->fetchAll();
-        return $data;
-        $rereponseq->cloreCursor();}   
+      $sth = $bdd->prepare('UPDATE commentaire SET signaler='1' WHERE idchapitre= '$_POST["idchapitre"]);
+      $sth->execute;   
+      header('Location: index.php?action=chapitres');
+    }
   }     
 
 ?>

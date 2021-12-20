@@ -4,56 +4,56 @@
 
 function tableaudebord()
 {
-   require('Model/front-end/tableaudebord.php');
-   require('view/front-end/tableaudebord.php');
+   require('Model/back-end/tableaudebord.php');
+   require('view/back-end/tableaudebord.php');
 }
 function adminchapitre()
 {
-   require('Model/front-end/tableaudebord.php');
+   require('Model/back-end/tableaudebord.php');
    $instanceclasseadmin = new modeltableaudebord ();
   $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
   // $databdmail =$instanceclasseadmin-> connexionbdmail();
-   require('view/back/chapitrepublieradmin.php');
+   require('view/back-end/chapitrepublieradmin.php');
 }
 function mailadmin()
 {
-   require('Model/front-end/tableaudebord.php');
+   require('Model/back-end/tableaudebord.php');
    $instanceclasseadmin = new modeltableaudebord ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
    $databdmail =$instanceclasseadmin-> connexionbdmail();
-   require('view/back/mailadmin.php');
+   require('view/back-end/mailadmin.php');
 }
 function brouillon()
 {
-   require('Model/front-end/brouillon.php');
+   require('Model/back-end/brouillon.php');
    $instanceclasse = new modelbrouillon ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
    $databd =$instanceclasse-> connexionbrouillon();
-   require('view/back/brouillon.php');
+   require('view/back-end/brouillon.php');
 }
 function admincommentaire()
 {
-   require('Model/front-end/commentaire.php');
+   require('Model/back-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentaire();
-   require('view/back/admincommentaire.php');
+   require('view/back-end/admincommentaire.php');
 }
 function admincommentaireold()
 {
-   require('Model/front-end/commentaire.php');
+   require('Model/back-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentairevalider();
-   require('view/back/oldcommentaire.php');
+   require('view/back-end/oldcommentaire.php');
 }  
 function admincommentairesignaler() 
 {
-   require('Model/front-end/commentaire.php');
+   require('Model//back-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
    $databd = $instanceclasse->admincommentairesignaler();
-   require('view/back/admincommentairesignaler.php');
+   require('view/back-end/admincommentairesignaler.php');
 } 
 function newchapitre()
 {
-   require('view/back/creerchapitre.php');
+   require('view/back-end/creerchapitre.php');
 }
 ?>

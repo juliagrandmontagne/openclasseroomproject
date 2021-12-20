@@ -55,6 +55,9 @@ if (isset($_GET['action']))
             case 'admincommentairesignaler':
             admincommentairesignaler();
             break;
+            case 'lesignaler':
+            lesignaler();
+            break;
         }
     }
 }

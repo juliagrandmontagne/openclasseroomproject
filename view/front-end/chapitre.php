@@ -29,7 +29,7 @@
          <div id="lecommentaire">
          <div id="nomuser"><?php echo $donnees['nameuser']?></div>
          <div id="messageuser"><?php echo $donnees['comment']?></div>
-         <form>
+         <form action="lesignaler" method="post">
                <input id="none" type="text" value="1">
                <input id="none" type="text" value="$donnees['ID']">
          <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>

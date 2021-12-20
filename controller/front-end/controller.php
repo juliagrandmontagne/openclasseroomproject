@@ -35,5 +35,11 @@ function directioncontact()
    $databd4 = $instanceclassecontact-> connexionbdcontact();
    require('view/front-end/contact.php');
 }
-
+function lesignaler()
+{
+   require('Model/front-end/commentaire.php');
+   $instanceclasse = new modelcommentaire();
+   $databd = $instanceclasse->admincommentaire();
+   require('view/front-end/chapitre.php');
+}
 ?>
