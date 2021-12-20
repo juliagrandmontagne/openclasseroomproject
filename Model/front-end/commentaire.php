@@ -11,8 +11,8 @@ class modelcommentaire
     public function lesignaler ()
     {
       require('Model/front-end/connexion.php');
-      $sth = $bdd->prepare('UPDATE commentaire SET signaler='1' WHERE idchapitre= '$_POST["idchapitre"]);
-      $sth->execute;   
+    $sth ='UPDATE commentaire SET signaler=1 WHERE idchapitre= '$_POST["idchapitre"];
+   
       header('Location: index.php?action=chapitres');
     }
   }     
