@@ -8,8 +8,9 @@
             <div id="lecommentaire">
                   <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?>
             </div>
-         <input class="send" type="submit" id="btn-submit" value="suprimer">
-         <input class="send" type="submit" id="btn-submit" value="valider"></div>
+            <form>
+         <input class="send" type="submit" id="btn-submit" value="suprimer"></form>
+         <form> <input class="send" type="submit" id="btn-submit" value="valider"></div></form>
          
    </div>
    <?php endforeach; ?>

@@ -42,4 +42,5 @@ function lesignaler()
    $databd = $instanceclasse->admincommentaire();
    require('view/front-end/chapitre.php');
 }
+
 ?>

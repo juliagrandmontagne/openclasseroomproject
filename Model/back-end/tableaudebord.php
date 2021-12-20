@@ -8,13 +8,14 @@ class modeltableaudebord
                 $data = $reponse->fetchAll();
                 return $data;
                 $rereponseq->cloreCursor();}
+       
         public function connexionbdmail() {
-                      require('Model/front-end/connexion.php');
-                        $reponse = $bdd->query('SELECT * FROM contact');
-                        $reponse->execute();
-                        $data = $reponse->fetchAll();
-                        return $data;
-                       $rereponseq->cloreCursor();}
+        require('Model/front-end/connexion.php');
+        $reponse = $bdd->query('SELECT * FROM contact');
+        $reponse->execute();
+        $data = $reponse->fetchAll();
+        return $data;
+        $rereponseq->cloreCursor();}
                 
                 
 }

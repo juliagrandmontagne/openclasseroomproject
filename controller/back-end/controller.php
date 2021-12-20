@@ -5,7 +5,7 @@
 function tableaudebord()
 {
    require('Model/back-end/tableaudebord.php');
-   require('view/back-end/tableaudebord.php');
+   require('view/front-end/tableaudebord.php');
 }
 function adminchapitre()
 {
@@ -56,4 +56,5 @@ function newchapitre()
 {
    require('view/back-end/creerchapitre.php');
 }
+
 ?>
