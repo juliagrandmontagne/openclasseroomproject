@@ -9,7 +9,7 @@
       <li class="licommentaire" ><a class="tableauxcommentaire" href="index.php?action=admincommentairesignaler">commentaire signaler</a></li>
       </ul>
       </nav>
-      <h4>Bienvenue sur la liste des chapitre signaler</h4>
+      <h4>Bienvenue sur la liste des chapitres signalés</h4>
 <?php  foreach ($databd as $donnees) : ?>
          <div id="commentaire">
             <div id="lecommentaire">
