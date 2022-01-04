@@ -31,9 +31,9 @@
          <div id="messageuser"><?php echo $donnees['comment']?></div>
          <form action="index.php?action=lesignaler" method="post">
                <input id="none" type="text" value="1">
-               <input id="none" type="text" value="$donnees['ID']">
+               <input id="none" type="text" value="<?php echo $donnees['id']?>">
          <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>
-      </form>
+         </form>
          
    </div>
    <?php endforeach; ?>

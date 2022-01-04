@@ -39,7 +39,7 @@ function lesignaler()
 {
    require('Model/front-end/commentaire.php');
    $instanceclasse = new modelcommentaire();
-   $databd = $instanceclasse->admincommentaire();
+   $databd = $instanceclasse->lesignaler();
    require('view/front-end/chapitre.php');
 }
 
