@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : lun. 06 déc. 2021 à 19:10
+-- Généré le : Dim 09 jan. 2022 à 19:41
 -- Version du serveur :  5.7.32
 -- Version de PHP : 7.4.12
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `chapitre` (
   `ID` int(255) NOT NULL,
   `chapitrenumber` int(11) NOT NULL,
-  `chapitre-titre` text NOT NULL,
+  `chapitretitre` text NOT NULL,
   `resumer` text NOT NULL,
-  `chapitre-text` text NOT NULL,
+  `chapitretext` text NOT NULL,
   `images` text NOT NULL,
   `brouillon` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -40,7 +40,7 @@ CREATE TABLE `chapitre` (
 -- Déchargement des données de la table `chapitre`
 --
 
-INSERT INTO `chapitre` (`ID`, `chapitrenumber`, `chapitre-titre`, `resumer`, `chapitre-text`, `images`, `brouillon`) VALUES
+INSERT INTO `chapitre` (`ID`, `chapitrenumber`, `chapitretitre`, `resumer`, `chapitretext`, `images`, `brouillon`) VALUES
 (1, 1, 'La neige', 'Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', ' Ca devient ridicule, ce brol ! Fête de l\'Argenterie, fête des chapeaux... Chaque année, y a une nouvelle guindaille dans le calendrier. D\'mon temps, on ne gâtait pas les objets comme aujourd\'hui, et après on s\'étonne qu\'ils nous fassent des caprices.', 'images/neige-illustration.jpg', 0),
 (2, 2, 'L’illusion', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n', 'Je vais bientôt détruire cette planète...\r\n\r\nMais en attendant, je suis votre professeur.\r\n\r\nEt m\'occuper de vous avec le plus grand sérieux...\r\n\r\nEst plus important que la fin du monde.', 'images/illusion-illustration.jpg', 0),
 (3, 3, 'L\'igloo', ' J’ai quelque peu précipité mon voyage en conséquence.\r\n— Tu as bien fait.\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n« Tu es un assassin, parfait, passe-moi le sel… »', ' — J’ai tué un homme.\r\n\r\nIl avait jeté cela d’un ton nonchalant, comme une banalité, entre deux lampées de soupe. Les lunettes d’Ophélie blêmirent. A côté d’elle, la tante Roseline s’étrangla, au bord de la syncope. Berenilde reposa sa coupe de vin d’un geste calme sur la nappe de dentelle.\r\n\r\n— Où ? Quand ?\r\n\r\nOphélie, elle, aurait demandé : « Qui ? Pourquoi ? »\r\n\r\n— A l’aérogare, avant que je n’embarque pour Anima, répondit Thorn d’une voix posée. Un disgracié qu’un individu mal intentionné m’a dépêché aux trousses. J’ai quelque peu précipité mon voyage en conséquence.\r\n\r\n— Tu as bien fait.\r\n\r\nOphélie se crispa sur sa chaise. Comment donc, c’était tout ?\r\n\r\n« Tu es un assassin, parfait, passe-moi le sel… »', 'images/igloo-illustration.jpg', 0),
@@ -54,7 +54,7 @@ INSERT INTO `chapitre` (`ID`, `chapitrenumber`, `chapitre-titre`, `resumer`, `ch
 --
 
 CREATE TABLE `commentaire` (
-  `ID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `nameuser` text NOT NULL,
   `comment` text NOT NULL,
   `signaler` tinyint(1) DEFAULT NULL,
@@ -66,14 +66,13 @@ CREATE TABLE `commentaire` (
 -- Déchargement des données de la table `commentaire`
 --
 
-INSERT INTO `commentaire` (`ID`, `nameuser`, `comment`, `signaler`, `valider`, `idchapitre`) VALUES
-(1, 'Rembourser', 'nope c\'est pas de jean forteroche sa', 0, 0, 1),
-(8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 0, 0, 1),
+INSERT INTO `commentaire` (`id`, `nameuser`, `comment`, `signaler`, `valider`, `idchapitre`) VALUES
+(1, 'Rembourser', 'nope c\'est pas de jean forteroche sa', 0, 0, 4),
+(8, 'Jean Forteroche', 'ok c\'est un extraits de la passe miroire.', 1, 0, 1),
 (9, 'Paul Forteroche', 'lui c\'est assasinclassroom', 0, 0, 2),
-(10, 'Colleen R. Skelton', 'Super histoire', 0, 0, 1),
-(11, 'Mary R. Brooks', 'Hors de question pas d\'accord', 0, 0, 2),
-(12, 'William Courtois', 'Vraiment très nul', 0, 0, 2),
-(15, 'fds', 'vrcd', 0, 0, 4);
+(10, 'Colleen R. Skelton', 'Super histoire', 1, 0, 1),
+(11, 'Mary R. Brooks', 'Hors de question pas d\'accord', 0, 1, 3),
+(12, 'William Courtois', 'Vraiment très nul', 0, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -95,7 +94,8 @@ CREATE TABLE `contact` (
 
 INSERT INTO `contact` (`ID`, `user_name`, `user_mail`, `user_firstname`, `user_message`) VALUES
 (11, 'Petersen', 'todd@mail.com', 'Todd A. ', 'Je vous écris suite à l’envoi de mon email ci-dessous. Je n’ai eu à ce jour aucun retour de la part de votre équipe. Si cela vous intéresse toujours d’échanger avec moi, n’hésitez pas à me communiquer vos disponibilités.\r\nSi non, savez-vous à quelle personne je pourrais m’adresser pour échanger ?\r\nMerci pour votre aide,\r\nTodd'),
-(12, 'Chun', 'chun@mail.com', 'Carla R. ', 'Merci pour votre email. Je viens de clore votre dossier et aurais juste une petite question à vous poser. Pourquoi n’êtes-vous pas intéressé ? Est-ce à cause de quelque chose que j’ai (mal) fait ?\r\nSi vous avez en tête un point sur lequel je pourrais m’améliorer, faites-le moi savoir. Je suis toujours à la recherche de feedbacks.\r\nMerci pour votre aide,\r\nCarla ');
+(12, 'Chun', 'chun@mail.com', 'Carla R. ', 'Merci pour votre email. Je viens de clore votre dossier et aurais juste une petite question à vous poser. Pourquoi n’êtes-vous pas intéressé ? Est-ce à cause de quelque chose que j’ai (mal) fait ?\r\nSi vous avez en tête un point sur lequel je pourrais m’améliorer, faites-le moi savoir. Je suis toujours à la recherche de feedbacks.\r\nMerci pour votre aide,\r\nCarla '),
+(13, 'bonjours', 'celi', 'est', 'un test');
 
 -- --------------------------------------------------------
 
@@ -105,9 +105,16 @@ INSERT INTO `contact` (`ID`, `user_name`, `user_mail`, `user_firstname`, `user_m
 
 CREATE TABLE `user` (
   `ID` int(11) NOT NULL,
-  `mp` int(11) NOT NULL,
+  `mp` text NOT NULL,
   `login` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`ID`, `mp`, `login`) VALUES
+(1, 'alohomora', 'jeanforteroche');
 
 --
 -- Index pour les tables déchargées
@@ -123,7 +130,7 @@ ALTER TABLE `chapitre`
 -- Index pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  ADD PRIMARY KEY (`ID`),
+  ADD PRIMARY KEY (`id`),
   ADD KEY `commantaire-chapitre` (`idchapitre`);
 
 --
@@ -152,13 +159,13 @@ ALTER TABLE `chapitre`
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Contraintes pour les tables déchargées

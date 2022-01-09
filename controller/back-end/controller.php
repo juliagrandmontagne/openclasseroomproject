@@ -31,29 +31,12 @@ function brouillon()
    $databd =$instanceclasse-> connexionbrouillon();
    require('view/back-end/brouillon.php');
 }
-function admincommentaire()
-{
-   require('Model/back-end/commentaire.php');
-   $instanceclasse = new modelcommentaire();
-   $databd = $instanceclasse->admincommentaire();
-   require('view/back-end/admincommentaire.php');
-}
-function admincommentaireold()
-{
-   require('Model/back-end/commentaire.php');
-   $instanceclasse = new modelcommentaire();
-   $databd = $instanceclasse->admincommentairevalider();
-   require('view/back-end/oldcommentaire.php');
-}  
-function admincommentairesignaler() 
-{
-   require('Model//back-end/commentaire.php');
-   $instanceclasse = new modelcommentaire();
-   $databd = $instanceclasse->admincommentairesignaler();
-   require('view/back-end/admincommentairesignaler.php');
-} 
+
 function newchapitre()
 {
+   require('Model/back-end/creerchapitre.php');
+   $instanceclasse = new modelchapitre ();
+   $databd =$instanceclasse-> creerchapitre();
    require('view/back-end/creerchapitre.php');
 }
 

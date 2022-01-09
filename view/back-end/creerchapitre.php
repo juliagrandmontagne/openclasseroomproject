@@ -7,8 +7,8 @@
 <script>
 tinymce.init({
       selector: 'textarea',
-      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      plugins: '  casechange export formatpainter  autolink lists checklist media mediaembed  permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: '  showcomments casechange checklist  formatpainter  permanentpen table',
       toolbar_mode: 'floating',
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
@@ -17,19 +17,17 @@ tinymce.init({
         <div class="formcreer">
             <form action="#" method="POST" enctype="multipart/form-data" >
                 <label id="ecrire" for="user_name">Titre du chapitre</label>
-                <input type="text" class="name" name="user_name" id="username" required>
+                <input type="text" class="name" name="titre" id="username" required>
                 
                 <label id="ecrire" for="mail">Numero chapitre</label>
-				<input type="mail" name="user_mail" id="mail" required>
+				<input type="mail" name="numero" id="mail" required>
             
-                <label  id="ecrire" for="user_firstname">Nom chapitre</label>
-				<input type="text" name="user_firstname" id="userfirstname" required>
             	<label id="ecrire" for="msg">Résumer</label>
-                <textarea id="msg" name="user_message" type="text" required></textarea>
+                <textarea id="msg" name="resume" type="text" required></textarea>
                 
     
 				<label id="ecrire" for="msg">Texte</label>
-                <textarea id="texteduchapitre" name="user_message" type="text" required></textarea>
+                <textarea id="texteduchapitre" name="histoire" type="text" required></textarea>
               
                 <input type="radio" id="choix" name="drone" value="huey" checked>
                 <label id="ecrire" for="brouillon">brouillon</label>

@@ -5,8 +5,8 @@
  
 
  <div id="chaptirenumber-individuel">
- <div id='chapitre-titre-individuel'><?php echo $donnees['chapitrenumber']?><?php echo $donnees['chapitre-titre']?></div>
- <div id="chapitre-text-individuel"><div id="texte"><?php echo $donnees['chapitre-text']?></div>
+ <div id='chapitre-titre-individuel'><?php echo $donnees['chapitrenumber']?><?php echo $donnees['chapitretitre']?></div>
+ <div id="chapitre-text-individuel"><div id="texte"><?php echo $donnees['chapitretext']?></div>
   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre-inv"> </div>
  </div></div>
  <?php endforeach; ?>
@@ -31,7 +31,7 @@
          <div id="messageuser"><?php echo $donnees['comment']?></div>
          <form action="index.php?action=lesignaler" method="post">
                <input id="none" type="text" value="1">
-               <input id="none" type="text" value="<?php echo $donnees['id']?>">
+               <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
          <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>
          </form>
          

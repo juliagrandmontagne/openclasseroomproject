@@ -42,5 +42,8 @@ function lesignaler()
    $databd = $instanceclasse->lesignaler();
    require('view/front-end/chapitre.php');
 }
-
+function seconnecter()
+{
+   require('view/front-end/connexion.php');
+}
 ?>
