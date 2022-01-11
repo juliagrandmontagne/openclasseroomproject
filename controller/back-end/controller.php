@@ -35,7 +35,12 @@ function brouillon()
 function newchapitre()
 {
    require('Model/back-end/creerchapitre.php');
-   $instanceclasse = new modelchapitre ();
+   require('view/back-end/creerchapitre.php');
+}
+function creerchapitre()
+{
+   require('Model/back-end/creerchapitre.php');
+   $instanceclasse = new creerchapitre();
    $databd =$instanceclasse-> creerchapitre();
    require('view/back-end/creerchapitre.php');
 }

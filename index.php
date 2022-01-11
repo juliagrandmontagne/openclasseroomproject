@@ -58,6 +58,9 @@ if (isset($_GET['action']))
             case 'lesignaler':
             lesignaler ();
             break;
+            case 'creerchapitre':
+            creerchapitre();
+            break;
         }
     }
 }

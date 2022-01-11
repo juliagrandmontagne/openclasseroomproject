@@ -15,25 +15,25 @@ tinymce.init({
     });
   </script>
         <div class="formcreer">
-            <form action="#" method="POST" enctype="multipart/form-data" >
-                <label id="ecrire" for="user_name">Titre du chapitre</label>
-                <input type="text" class="name" name="titre" id="username" required>
+            <form action="index.php?action=creerchapitre" method="POST" enctype="multipart/form-data" >
+                <label  class="ecrire" for="user_name">Titre du chapitre</label>
+                <input  type="text" class="name" name="titre" id="username" required>
                 
-                <label id="ecrire" for="mail">Numero chapitre</label>
-				<input type="mail" name="numero" id="mail" required>
+                <label class="ecrire" for="mail">Numero chapitre</label>
+				<input  type="mail" name="numero" id="mail" required>
             
-            	<label id="ecrire" for="msg">Résumer</label>
+            	<label class="ecrire" for="msg">Résumer</label>
                 <textarea id="msg" name="resume" type="text" required></textarea>
                 
     
-				<label id="ecrire" for="msg">Texte</label>
+				<label class="ecrire" for="msg">Texte</label>
                 <textarea id="texteduchapitre" name="histoire" type="text" required></textarea>
               
                 <input type="radio" id="choix" name="drone" value="huey" checked>
-                <label id="ecrire" for="brouillon">brouillon</label>
+                <label id="radioinput" class="ecrire" for="brouillon">brouillon</label>
                 
                 <input type="radio" id="choix" name="drone" value="dewey">
-                <label id="ecrire" for="publier">publier</label>
+                <label id="radioinpudpublish" class="ecrire" for="publier">publier</label>
 				
  
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>
