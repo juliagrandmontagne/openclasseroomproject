@@ -40,7 +40,7 @@ function newchapitre()
 function creerchapitre()
 {
    require('Model/back-end/creerchapitre.php');
-   $instanceclasse = new creerchapitre();
+   $instanceclasse = new modelcreerchapitre();
    $databd =$instanceclasse-> creerchapitre();
    require('view/back-end/creerchapitre.php');
 }

@@ -225,6 +225,15 @@ margin: auto;
 width:900px; 
 margin-top: 70px;
 }
+#resume, #histoire
+{
+    display: flex;
+margin: auto;
+width:790px; 
+height: 300px;
+border-radius: 10px;
+}
+
 #connexion
 {
 display:block;
