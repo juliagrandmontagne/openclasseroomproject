@@ -233,7 +233,13 @@ width:790px;
 height: 300px;
 border-radius: 10px;
 }
-
+#select
+{
+display:flex;
+width :800px;
+justify-content:center;
+border-radius: 10px;
+}
 #connexion
 {
 display:block;
