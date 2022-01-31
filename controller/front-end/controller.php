@@ -44,6 +44,9 @@ function lesignaler()
 }
 function seconnecter()
 {
+   require('Model/front-end/seconnecteradmin.php');
+   $instanceclasse = new modelconnectionadmin();
+   $databd = $instanceclasse->connexionbdadmin();
    require('view/front-end/connexion.php');
 }
 ?>
