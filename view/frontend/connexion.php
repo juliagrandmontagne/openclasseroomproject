@@ -1,21 +1,10 @@
 <?php $title = 'connexion' ; ?>
 <?php ob_start() ; ?>
 <?php 
-if (isset($_POST['valider']))
-{
-if(!empty($_POST['nameuser']) AND !empty($_POST['mp']) ){
-    $nameadmin = "jeanforteroche";
-    $mpadmin = "alohomora";
-
-    $pseudosaisie = htmlspecialchars($_POST['nameuser']);
-    $mpsaisie = htmlspecialchars($_POST['mp']);
-    if($pseudosaisie == $nameadmin AND $mpsaisie == $mpadmin) {
-        header('Location: index.php?action=tableaudebord');
-    }
-    }else{ echo"mot de passe incorrecte ";}
-}else{ echo"veuillez completer tous les champs ";
-}
-?>
+//require('Model/front-end/connexion.php');
+   // {
+       
+        ?>
 <section class="connexion">
 <h3 id="messageconnexion">Vous êtes un utilisateur ? Alors connectez vous.</h3>
 <div id="formulaire">
