@@ -15,4 +15,4 @@
    <?php endforeach; ?>
 </section>
 <?php $content = ob_get_clean() ; ?>
-<?php include('templateadminagain.php'); ?>
+<?php require('templateadminagain.php'); ?>

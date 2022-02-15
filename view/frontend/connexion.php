@@ -1,9 +1,33 @@
 <?php $title = 'connexion' ; ?>
 <?php ob_start() ; ?>
+   
 <?php 
-//require('Model/front-end/connexion.php');
+
    // {
-       
+        //SELECT * FROM user WHERE login =$_POST['nameuser'] AND mp=$_POST['mp']
+        if (isset($_POST['valider']))
+        {
+        if(!empty($_POST['nameuser']) AND !empty($_POST['mp']) )
+      
+           {
+             
+            $nameadmin = $donnees['nameuser'];
+           //$nameadmin = $bdd ->query('SELECT login FROM user where login= $pseudosaisie');
+            $mpadmin = $donnees['mp'];
+           // $mpadmin = $bdd ->query('SELECT mp FROM user where mp=$mpsaisie');
+            foreach ($databd as $donnees) :
+            $pseudosaisie = htmlspecialchars($donnees['nameuser']);
+            $mpsaisie = htmlspecialchars($donnees['mp']);
+            endforeach 
+                if($pseudosaisie == $nameadmin AND $mpsaisie == $mpadmin) 
+                {
+                    header('Location: index.php?action=tableaudebord') ;
+               }
+            }
+            else{ echo"mot de passe incorrecte ";}
+        }
+        else{ echo"veuillez completer tous les champs ";}
+    
         ?>
 <section class="connexion">
 <h3 id="messageconnexion">Vous êtes un utilisateur ? Alors connectez vous.</h3>
@@ -23,4 +47,4 @@
 </section>
 
 <?php $content = ob_get_clean() ; ?>
-<?php include('template.php'); ?>
+<?php require('template.php'); ?>

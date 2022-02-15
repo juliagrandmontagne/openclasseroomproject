@@ -1,10 +1,10 @@
-<?php 
-require('controller/front-end/controller.php');
-require('controller/front-end/controllerCommentaire.php');
-require('controller/back-end/controller.php');
+<<?php 
+require('controller/frontend/controller.php');
+require('controller/frontend/controllerCommentaire.php');
+require('controller/backend/controller.php');
 if (isset($_GET['action'])) 
 {
-    {
+    
         switch ($_GET['action'])
         {
             case 'accueil':
@@ -48,7 +48,6 @@ if (isset($_GET['action']))
             case 'admincommentaireold':
             admincommentaireold();
             break;
-            break;
             case 'newchapitre':
             newchapitre();
             break;
@@ -62,7 +61,7 @@ if (isset($_GET['action']))
             creerchapitre();
             break;
         }
-    }
+
 }
 else
 {

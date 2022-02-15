@@ -16,4 +16,4 @@
 </section>
 
 <?php $content = ob_get_clean() ; ?>
-<?php include('template.php'); ?>
+<?php require('template.php'); ?>

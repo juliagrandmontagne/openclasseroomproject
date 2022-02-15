@@ -10,25 +10,25 @@ function tableaudebord()
 function adminchapitre()
 {
    require('Model/backend/tableaudebord.php');
-   $instanceclasseadmin = new modeltableaudebord ();
-  $databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
+   $instanceclasseadminadminchapitre = new modeltableaudebord ();
+  $databdadminchapitre = $instanceclasseadminadminchapitre-> connexionbdtableaudebord();
   // $databdmail =$instanceclasseadmin-> connexionbdmail();
-   require('view/backend/chapitrepublieradmin.php');
+  require('view/back-end/chapitrepublieradmin.php');
 }
 function mailadmin()
 {
    require('Model/backend/tableaudebord.php');
-   $instanceclasseadmin = new modeltableaudebord ();
+   $instanceclassemailadmin = new modeltableaudebord ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
-   $databdmail =$instanceclasseadmin-> connexionbdmail();
+   $databdmail =$instanceclassemailadmin-> connexionbdmail();
    require('view/backend/mailadmin.php');
 }
 function brouillon()
 {
    require('Model/backend/brouillon.php');
-   $instanceclasse = new modelbrouillon ();
+   $instanceclassebrouillon = new modelbrouillon ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
-   $databd =$instanceclasse-> connexionbrouillon();
+   $databd =$instanceclassebrouillon-> connexionbrouillon();
    require('view/backend/brouillon.php');
 }
 
@@ -40,8 +40,8 @@ function newchapitre()
 function creerchapitre()
 {
    require('Model/backend/creerchapitre.php');
-   $instanceclasse = new modelcreerchapitre();
-   $databd =$instanceclasse-> creerchapitre();
+   $instanceclassecreerchapitre = new modelcreerchapitre();
+   $databd =$instanceclassecreerchapitre-> creerchapitre();
    require('view/backend/creerchapitre.php');
 }
 

@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 
 <section class="chapitres">
-<?php  foreach ($databd as $donnees) : ?>
+<?php  foreach ($databdchapitres as $donnees) : ?>
  
     
  <div id="chaptirenumber">
@@ -16,4 +16,4 @@
 </section>
 
 <?php $content = ob_get_clean() ; ?>
-<?php include('template.php'); ?>
+<?php require('template.php'); ?>

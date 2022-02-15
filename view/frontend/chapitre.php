@@ -1,7 +1,7 @@
 <?php $title = 'chapitre' ; ?>
 <?php ob_start() ; ?>
 <section id="main">
-<?php  foreach ($databd as $donnees) : ?>
+<?php  foreach ($databdchapitre as $donnees) : ?>
  
 
  <div id="chaptirenumber-individuel">
@@ -17,14 +17,14 @@
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
-       <?php  foreach ($databd3 as $donnees) : ?>
-         <input id="none" name="idchapitre" value= "<?php echo $donnees['idchapitre']?>" >
+       <?php  foreach ($databdchapitrecommentaire as $donnees) : ?>
+         <input id="none" name="idchapitre" value= "<?php echo $donnees['id']?>" >
          <?php endforeach; ?>
       <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
 </form>
 </div>
    
-<?php  foreach ($databd3 as $donnees) : ?>
+<?php  foreach ($databdchapitrecommentaire as $donnees) : ?>
          <div id="commentaire">
          <div id="lecommentaire">
          <div id="nomuser"><?php echo $donnees['nameuser']?></div>
@@ -40,4 +40,4 @@
 
 </section>
 <?php $content = ob_get_clean() ; ?>
-<?php include('template.php'); ?>
+<?php require('template.php'); ?>
