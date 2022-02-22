@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 <section class="brouillon">
 
-<?php  foreach ($databd as $donnees) : ?>
+<?php  foreach ($databdbrouillon as $donnees) : ?>
 
   <div id="main">
    

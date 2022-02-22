@@ -11,8 +11,8 @@ function directionchapitre()
    {
 require('Model/frontend/chapitre.php');
 $instanceclassedirectionchapitre = new modelchapitre();
-$databdchapitre = $instanceclassedirectionchapitre-> connexionbdchapitre();
-$databdchapitrecommentaire = $instanceclassedirectionchapitre-> connexionbdcommentaire();
+$databdchapitre = $instanceclassedirectionchapitre ->connexionbdchapitre();
+$databdchapitrecommentaire = $instanceclassedirectionchapitre ->connexionbdcommentaire();
 require('view/frontend/chapitre.php');
    }
 
@@ -23,7 +23,6 @@ $instanceclassedirectionchapitres = new modelchapitres();
 $databdchapitres = $instanceclassedirectionchapitres-> connexionbdchapitres();
 require('view/frontend/chapitres.php');
    }
-
 function directionauteur()
     { 
       require('view/frontend/auteur.php');

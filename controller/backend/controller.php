@@ -13,7 +13,7 @@ function adminchapitre()
    $instanceclasseadminadminchapitre = new modeltableaudebord ();
   $databdadminchapitre = $instanceclasseadminadminchapitre-> connexionbdtableaudebord();
   // $databdmail =$instanceclasseadmin-> connexionbdmail();
-  require('view/back-end/chapitrepublieradmin.php');
+  require('view/backend/chapitrepublieradmin.php');
 }
 function mailadmin()
 {
@@ -28,7 +28,7 @@ function brouillon()
    require('Model/backend/brouillon.php');
    $instanceclassebrouillon = new modelbrouillon ();
   //$databdadminchapitre = $instanceclasseadmin-> connexionbdtableaudebord();
-   $databd =$instanceclassebrouillon-> connexionbrouillon();
+   $databdbrouillon =$instanceclassebrouillon-> connexionbrouillon();
    require('view/backend/brouillon.php');
 }
 

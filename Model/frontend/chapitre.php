@@ -3,7 +3,7 @@ class modelchapitre {
         
         public function connexionbdchapitre() {
         require('connexion.php');
-        $search='SELECT * FROM Chapitre WHERE id=' . $_GET["id"];
+        $search='SELECT * FROM chapitre WHERE id=' . $_GET["id"];
         $reponse = $bdd->prepare($search);
         $reponse->execute();
                 $data = $reponse->fetchAll();

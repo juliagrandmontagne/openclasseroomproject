@@ -4,14 +4,14 @@ function commentaire()
    require('Model/frontend/commentaire.php');
 $instanceclassecommentaire = new modelcommentaire();
 $databdcommentaire = $instanceclassecommentaire->creercommentaire();
-require('view/front-end/chapitre.php');
+require('view/frontend/chapitre.php');
   }
 function admincommentaire()
 {
    require('Model/backend/commentaire.php');
    $instanceclasseadmincommentaire = new modelcommentaire();
    $databdadmincommentaire = $instanceclasseadmincommentaire->admincommentaire();
-   require('view/back-end/admincommentaire.php');
+   require('view/backend/admincommentaire.php');
 }
 function admincommentaireold()
 {
