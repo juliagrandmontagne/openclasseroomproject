@@ -28,6 +28,33 @@ class modelcommentaire
         return $data;
         $rereponseq->cloreCursor();
       }  
+      public function lesuprimeradminsignaler ()
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
+        $sth->execute(array($_POST['id']));
+        header('Location:index.php?action=admincommentairesignaler');
+        }
+        public function lesuprimeradminold ()
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
+        $sth->execute(array($_POST['id']));
+        header('Location:index.php?action=admincommentaireold');
+        }
+        public function lesuprimeradmin()
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
+        $sth->execute(array($_POST['id']));
+        header('Location:index.php?action=admincommentaire');
+        }
+        public function validationadmins()
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('UPDATE FROM commentaire SET signaler=?, valider=? WHERE id=?');
+        $sth->execute(array(0,1,$_POST['id']));
+        header('Location:index.php?action=admincommentairesignaler');
+        }
 }     
-
 ?>

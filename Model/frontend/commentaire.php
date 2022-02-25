@@ -15,6 +15,7 @@ class modelcommentaire
      $sth->execute(array(1,htmlspecialchars($_POST['id'])));
       header('Location: index.php?action=chapitres');
     }
+   
   }     
 
 ?>
