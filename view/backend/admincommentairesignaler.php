@@ -15,13 +15,8 @@
             <div id="lecommentaire">
                   <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?>
             </div>
-                  <form action="index.php?action=lesuprimeradminsignaler" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                        <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button></div>
-                  </form>
-                  <form action="index.php?action=validationadmins" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                         <button class="send" type="submit" id="btn-admin" value="valider" >valider</button></div>
-                  </form>
-
+         <input class="send" type="submit" id="btn-submit" value="suprimer">
+         <input class="send" type="submit" id="btn-submit" value="valider"></div>
          
    </div>
    <?php endforeach; ?>
