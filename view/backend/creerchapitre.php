@@ -1,6 +1,6 @@
 <?php $title = 'creerchapitre' ; ?>
 <?php ob_start() ; ?>
- <script src="https://cloud.tinymce.com/dev/tinymce.min.js?apiKey=xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lbc"></script>
+ <script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" ></script>
 <section class="main">
 
         <div class="formcreer">

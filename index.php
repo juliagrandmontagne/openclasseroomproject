@@ -45,6 +45,7 @@ if (isset($_GET['action']))
             break;
             case 'admincommentaire':
             admincommentaire();
+            break;
             case 'admincommentaireold':
             admincommentaireold();
             break;
@@ -57,8 +58,23 @@ if (isset($_GET['action']))
             case 'lesignaler':
             lesignaler ();
             break;
+            case'lesuprimeradminsignaler';
+            lesuprimeradminsignaler();
+            break;
+            case'lesuprimeradmin';
+            lesuprimeradmin();
+            break;
+            case'lesuprimeradminold';
+            lesuprimeradminold();
+            break;
+            case'validationadmins';
+            validationadmins();
+            break;
             case 'creerchapitre':
             creerchapitre();
+            break;
+            case'lesuprimerbrouillon';
+            lesuprimerbrouillon();
             break;
         }
 

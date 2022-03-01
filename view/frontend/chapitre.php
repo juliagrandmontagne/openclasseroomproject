@@ -30,6 +30,7 @@
          <div id="nomuser"><?php echo $donnees['nameuser']?></div>
          <div id="messageuser"><?php echo $donnees['comment']?></div>
          <form action="index.php?action=lesignaler" method="post">
+         
                <input id="none" type="text" value="1">
                <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
          <button class="send" type="submit" id="signaler" value="signaler" >signaler</button></div>
