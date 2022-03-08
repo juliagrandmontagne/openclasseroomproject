@@ -1,10 +1,10 @@
 <?php
 //creation de commentaire
-function commentaire()
+function creerCommentaire()
 {
    require('Model/frontend/commentaire.php');
 $instanceclassecommentaire = new modelcommentaire();
-$databdcommentaire = $instanceclassecommentaire->creercommentaire();
+$databdcommentaire = $instanceclassecommentaire->creerCommentaire();
 require('view/frontend/chapitre.php');
   }
   //affichage des commentaire valider

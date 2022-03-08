@@ -26,7 +26,7 @@ if (isset($_GET['action']))
             directioncommentaires();
             break;
             case 'creerCommentaire':
-            commentaire();
+            creerCommentaire();
             break;
             case 'seconnecter':
             seconnecter();

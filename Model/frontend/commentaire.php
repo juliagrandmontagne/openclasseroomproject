@@ -1,11 +1,11 @@
 <?php
 class modelcommentaire 
 {
-    public function creercommentaire()
+    public function creerCommentaire()
     {
       require('connexion.php');
       $sth = $bdd->prepare('INSERT INTO commentaire (comment, nameuser, signaler, valider, idchapitre) VALUES(?, ?, ?, ?, ?)');
-      $sth->execute(array(htmlspecialchars($_POST['comment']), htmlspecialchars($_POST['nameuser']),0,0, htmlspecialchars($_POST["idchapitre"])));   
+      $sth->execute(array($_POST['comment'], $_POST['nameuser'],0,0, $_POST["idchapitre"]));   
       header('Location: index.php?action=chapitres');
     }
     public function lesignaler ()

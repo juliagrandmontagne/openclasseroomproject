@@ -11,13 +11,11 @@
  </div></div>
  <?php endforeach; ?>
  <div id="commentaire-form">
-
-
  <form action="index.php?action=creerCommentaire" method="post" id="commentaireform" >     
    <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
-       <?php  foreach ($databdchapitrecommentaire as $donnees) : ?>
+       <?php  foreach ($databdcommentaire as $donnees) : ?>
          <input id="none" name="idchapitre" value= "<?php echo $donnees['id']?>" >
          <?php endforeach; ?>
       <button class="send" type="submit" id="btn-submit" value="Envoyer" > Envoyer </button>    
