@@ -5,7 +5,7 @@
 <section class="connexion">
 <h3 id="messageconnexion">Vous êtes un utilisateur ? Alors connectez vous.</h3>
 <div id="formulaire">
- <form action="index.php?action=tableaudebord" method="post" id="connexionutilisateur" >     
+ <form action="" method="post" id="connexionutilisateur" >     
                 <div id="titre-commentaire"><legend ></legend></div>
                 <input class="nameuser" name="nameuser" placeholder="pseudo">
             
@@ -26,9 +26,9 @@
     $pseudosaisie = $_POST['nameuser'];
         if(!empty($_POST['nameuser']) && !empty($_POST['mp']) )  
            {
-              if($_POST['nameuser'] == $nameadmin && $_POST['mp'] == $mpadmin ) 
+              if($_POST['nameuser'] == $nameadmin) 
               {
-                header('Location: index.php?action=tableaudebord') ;
+              header('Location:index.php?action=tableaudebord') ;
               }
             }
           else{ echo"veuillez completer tous les champs ";}
