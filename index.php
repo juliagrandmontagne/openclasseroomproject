@@ -73,6 +73,9 @@ if (isset($_GET['action']))
             case 'creerchapitre':
             creerchapitre();
             break;
+            case 'suprlechapitrepublier';
+            suprlechapitrepublier();
+            break;
             case'lesuprimerbrouillon';
             lesuprimerbrouillon();
             break;

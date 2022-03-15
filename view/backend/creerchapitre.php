@@ -29,8 +29,7 @@
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>
             
             </form>
-        </div>
-     
+        </div>  
 <?php
 if(isset($_FILES['file'])){
   $tmpName = $_FILES['file']['tmp_name'];
@@ -67,9 +66,7 @@ tinymce.init({
     '//www.tinymce.com/css/codepen.min.css'
   ]
  });
-
  </script>  
-
   </section>
 <?php $content = ob_get_clean() ; ?>
 <?php require('templateadminagain.php'); ?>

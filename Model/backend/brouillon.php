@@ -13,7 +13,7 @@ public function lesuprimerbrouillon()
         {
         require('connexion.php');
         $sth=$bdd->prepare('DELETE FROM chapitre WHERE ID=?');
-        $sth->execute(array($_POST['ID']));
+        $sth->execute(array(htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=brouillon');
         }
 }

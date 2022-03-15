@@ -36,7 +36,7 @@ class modelcommentaire
         {
         require('connexion.php');
         $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
-        $sth->execute(array($_POST['id']));
+        $sth->execute(array(htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=admincommentairesignaler');
         }
          //supression des commentaires valider
@@ -44,7 +44,7 @@ class modelcommentaire
         {
         require('connexion.php');
         $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
-        $sth->execute(array($_POST['id']));
+        $sth->execute(array(htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=admincommentaireold');
         }
       //supression des commentaires ni valider ni signaler
@@ -52,7 +52,7 @@ class modelcommentaire
         {
         require('connexion.php');
         $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
-        $sth->execute(array($_POST['id']));
+        $sth->execute(array(htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=admincommentaire');
         }
  //validation des commentaire signaler

@@ -22,6 +22,7 @@
                   <button class="send" type="submit" id="btn-admin" value="valider" >valider</button>
             </form>
             </div>
+            </div>
    <?php endforeach; ?>
 </section>
 <?php $content = ob_get_clean() ; ?>

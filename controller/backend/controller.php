@@ -48,5 +48,12 @@ function lesuprimerbrouillon ()
    $databdbrouillon =$instanceclassesuprimerbrouillon->lesuprimerbrouillon();
    require('view/backend/brouillon.php');
 }
+function suprlechapitrepublier()
+{
+   require('Model/backend/tableaudebord.php');
+   $instanceclassesupchapitre = new modeltableaudebord ();
+   $databdsuprchap =$instanceclassesupchapitre->suprimerchapitre();
+   require('view/backend/chapitrepublieradmin.php');
+}
 
 ?>

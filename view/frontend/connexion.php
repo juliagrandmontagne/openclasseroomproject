@@ -17,8 +17,8 @@
 </div>
 <?php 
 //<?//php  foreach ($databdseconnecter as $donnees) : ?//>
-// $nameadmin = //<//?php echo $donnees['login']?//>
-//$mpadmin =<//?php echo $donnees['mp']?//>
+// $nameadmin = <?php echo $donnees['login']?//>
+//$mpadmin =<//?php echo $donnees['mp']?//>//
 //<//?php endforeach; ?//>
     $nameadmin = "coucou";
     $mpadmin = "coucou";
@@ -26,9 +26,10 @@
     $pseudosaisie = $_POST['nameuser'];
         if(!empty($_POST['nameuser']) && !empty($_POST['mp']) )  
            {
-              if($_POST['nameuser'] == $nameadmin) 
+              if($_POST['nameuser'] == $nameadmin && $_POST['mp']== $mpsaisie) 
               {
-              header('Location:index.php?action=tableaudebord') ;
+              //header('Location:index.php?action=tableaudebord');
+              echo"blabla";
               }
             }
           else{ echo"veuillez completer tous les champs ";}

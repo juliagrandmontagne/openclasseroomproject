@@ -14,8 +14,14 @@
  </h3>               
 </div>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
+                <form action="index.php?action=suprlechapitrepublier" method="post">
                     <button class="send" type="submit" id="btn-submit">Editer</button>
-                    <button class="send" type="submit" id="btn-submit">suprimer</button>
+                    </form>
+                    <form action="index.php?action=suprlechapitrepublier" method="post">
+                  <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
+                  <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
+            </form>
+                    
                 </div>
             
         </div>
