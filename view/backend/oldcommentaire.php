@@ -8,10 +8,14 @@
             <div id="lecommentaire">
                   <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?>
             </div>
-            <form action="index.php?action=lesuprimeradminold" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                        <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
-                  </form>
-         <input class="send" type="submit" id="btn-submit" value="VALIDER">
+            <form action="index.php?action=lesuprimeradminold" method="post">
+            <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
+                  <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
+            </form>
+            <form action="" method="post">
+            
+                  <button class="send" type="submit" id="btn-submit" value="VALIDER" >VALIDER</button>
+            </form>
         </div>
          
    </div>

@@ -35,24 +35,24 @@ function admincommentairesignaler()
 function lesuprimeradminsignaler()
 {
    require('Model/backend/commentaire.php');
-   $instanceclasseadmincommentairesuprimers  = new modelcommentaire();
-   $databdadmincommentairesuprimers  = $instanceclasseadmincommentairesuprimers->lesuprimeradminsignaler();
+   $instanceadmincommentairesuprimers  = new modelcommentaire();
+   $databdadmincommentairesuprimers  = $instanceadmincommentairesuprimers->lesuprimeradminsignaler();
    require('view/backend/admincommentairesignaler.php');
 } 
 //supression commentaire sur la page commentaire en attende de validation
 function lesuprimeradmin()
 {
    require('Model/backend/commentaire.php');
-   $instanceclasseadmincommentairesuprimer  = new modelcommentaire();
-   $databdadmincommentairesuprimer  = $instanceclasseadmincommentairesuprimer->lesuprimeradmin();
+   $instanceadmincommsuprimer  = new modelcommentaire();
+   $databdadmincommentairesuprimer  = $instanceadmincommsuprimer->lesuprimeradmin();
    require('view/backend/admincommentaire.php');
 } 
 //supression commentaire sur la page commentaire en deja valider
 function lesuprimeradminold()
 {
    require('Model/backend/commentaire.php');
-   $instanceclasseadmincommentairesuprimero  = new modelcommentaire();
-   $databdadmincommentairesuprimero  = $instanceclasseadmincommentairesuprimero->lesuprimeradminold();
+   $instanceadmincomsuprimero  = new modelcommentaire();
+   $databdadmincommentairesuprimero  = $instanceadmincomsuprimero->lesuprimeradminold();
    require('view/backend/oldcommentaire.php');
 } 
 //validation commentaire sur la page signalisation dees commentaires

@@ -12,14 +12,15 @@
 <?php  foreach ($databdadmincommentairesignaler as $donnees) : ?>
          <div id="commentaire">
             <div id="lecommentaire">
-                  <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?>
-            </div>
-                  <form action="index.php?action=lesuprimeradminsignaler" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                        <button class="send" type="submit" id="btn-admin" value="suprimer" >suprimer</button>
-                  </form>
-                  <form action="index.php?action=validationadmins" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                         <button class="send" type="submit" id="btn-admin" value="valider" >valider</button></div>
-                  </form>
+                  <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?></div>
+            <form action="index.php?action=lesuprimeradminsignaler" method="post">
+                  <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
+                  <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
+            </form>
+                  <form action="index.php?action=validationadmins" method="post">
+                  <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
+                  <button class="send" type="submit" id="btn-admin" value="valider" >valider</button>
+            </form>
             </div>
    <?php endforeach; ?>
 </section>

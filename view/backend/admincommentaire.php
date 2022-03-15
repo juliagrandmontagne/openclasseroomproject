@@ -8,12 +8,15 @@
             <div id="lecommentaire">
                   <div id="nomuser"><?php echo $donnees['nameuser']?></div><div id="messageuser"><?php echo $donnees['comment']?>
             </div>
-            <form>
-            <form action="index.php?action=lesuprimeradmin" method="post"><input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
-                        <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
-                  </form>
+       
+            <form action="index.php?action=lesuprimeradmin" method="post">
+            <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
+                  <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
+            </form>
+            <form action="" method="post">
+            <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
           <input class="send" type="submit" id="btn-submit" value="valider"></div>
-         
+          </form>
    </div>
    <?php endforeach; ?>
 </section>

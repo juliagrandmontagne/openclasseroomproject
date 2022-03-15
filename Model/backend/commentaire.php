@@ -52,15 +52,15 @@ class modelcommentaire
         {
         require('connexion.php');
         $sth=$bdd->prepare('DELETE FROM commentaire WHERE id=?');
-        $sth->execute(array(14));
+        $sth->execute(array($_POST['id']));
         header('Location:index.php?action=admincommentaire');
         }
  //validation des commentaire signaler
         public function validationadmins()
         {
         require('connexion.php');
-        $sth=$bdd->prepare('UPDATE FROM commentaire SET signaler=? , valider=? WHERE id=?');
-        $sth->execute(array(0,1,$_POST['id']));
+        $sth=$bdd->prepare('UPDATE FROM commentaire SET valider=? WHERE id=?');
+        $sth->execute(array(1, htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=admincommentairesignaler');
         }
 }     

@@ -9,7 +9,7 @@ class modelcommentaire
       header('Location: index.php?action=chapitres');
       
     }
-    public function lesignaler ()
+    public function lesignaler()
     {
       require('connexion.php');
      $sth=$bdd->prepare('UPDATE commentaire SET signaler=? WHERE ID=?');
