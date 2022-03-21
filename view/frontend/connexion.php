@@ -15,26 +15,21 @@
             
             </form>
 </div>
-<?php 
-//<?//php  foreach ($databdseconnecter as $donnees) : ?//>
-// $nameadmin = <?php echo $donnees['login']?//>
-//$mpadmin =<//?php echo $donnees['mp']?//>//
-//<//?php endforeach; ?//>
-    $nameadmin = "coucou";
-    $mpadmin = "coucou";
-    $mpsaisie = $_POST['mp'];
-    $pseudosaisie = $_POST['nameuser'];
+
+
+<?php foreach ($databdseconnecter as $donnees) :
+$namesaisie = $donnees['login'];
+$mpsaisie = $donnees['mp'];
         if(!empty($_POST['nameuser']) && !empty($_POST['mp']) )  
            {
-              if($_POST['nameuser'] == $nameadmin && $_POST['mp']== $mpsaisie) 
+              if($_POST['nameuser'] == $namesaisie && $_POST['mp']== $mpsaisie) 
               {
               //header('Location:index.php?action=tableaudebord');
-              echo"blabla";
+              echo" lien http://www.j-gmt.fr/project/index.php?action=tableaudebord";
               }
             }
           else{ echo"veuillez completer tous les champs ";}
-?> 
-
+endforeach; ?>
 </section>
 
 <?php $content = ob_get_clean() ; ?>
