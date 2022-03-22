@@ -79,6 +79,10 @@ if (isset($_GET['action']))
             case'lesuprimerbrouillon';
             lesuprimerbrouillon();
             break;
+            case'lemodifier';
+            lemodifier();
+            break;
+
         }
 
 }

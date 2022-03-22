@@ -18,14 +18,14 @@ function mailadmin()
 {
    require('Model/backend/tableaudebord.php');
    $instanceclassemailadmin = new modeltableaudebord ();
-   $databdmail =$instanceclassemailadmin-> connexionbdmail();
+   $databdmail = $instanceclassemailadmin-> connexionbdmail();
    require('view/backend/mailadmin.php');
 }
 function brouillon()
 {
    require('Model/backend/brouillon.php');
    $instanceclassebrouillon = new modelbrouillon ();
-   $databdbrouillon =$instanceclassebrouillon-> connexionbrouillon();
+   $databdbrouillon = $instanceclassebrouillon-> connexionbrouillon();
    require('view/backend/brouillon.php');
 }
 
@@ -38,22 +38,29 @@ function creerchapitre()
 {
    require('Model/backend/creerchapitre.php');
    $instanceclassecreerchapitre = new modelcreerchapitre();
-   $databd =$instanceclassecreerchapitre-> creerchapitre();
+   $databd = $instanceclassecreerchapitre-> creerchapitre();
    require('view/backend/creerchapitre.php');
 }
 function lesuprimerbrouillon ()
 {
    require('Model/backend/brouillon.php');
    $instanceclassesuprimerbrouillon = new modelbrouillon();
-   $databdbrouillon =$instanceclassesuprimerbrouillon->lesuprimerbrouillon();
+   $databdbrouillon = $instanceclassesuprimerbrouillon->lesuprimerbrouillon();
    require('view/backend/brouillon.php');
 }
 function suprlechapitrepublier()
 {
    require('Model/backend/tableaudebord.php');
    $instanceclassesupchapitre = new modeltableaudebord ();
-   $databdsuprchap =$instanceclassesupchapitre->suprimerchapitre();
+   $databdsuprchap = $instanceclassesupchapitre->suprimerchapitre();
    require('view/backend/chapitrepublieradmin.php');
 }
-
+function lemodifier()
+{
+   require('Model/backend/modifierchapitre.php');
+   $instanceclassemodchapitre = new modelmodifierchap ();
+   $databdmodchap = $instanceclassemodchapitre->modifierchapitre();
+   //$databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
+   require('view/backend/modifierchapitre.php');
+}
 ?>
