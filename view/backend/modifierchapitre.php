@@ -2,21 +2,21 @@
 <?php ob_start() ; ?>
  <script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" ></script>
 <section class="main">
-
+<?php  foreach ( $databdaffiche as $donnees) : ?>
         <div class="formcreer">
             <form action="index.php?action=creerchapitre" method="POST" enctype="multipart/form-data" >
                 <label  class="ecrire" for="titre" >Titre du chapitre</label>
-                <input  type="text" class="name" name="titre" id="titre" value=""required>
+                <input  type="text" class="name" name="titre" id="titre" value="<?php echo $donnees['chapitretitre']?>"required>
                 
                 <label class="ecrire" for="numero">Numero chapitre</label>
-				<input  type="mail" name="numero" id="numero" required>
+				<input  type="mail" name="numero" id="numero" value="<?php echo $donnees['chapitrenumber']?>" required>
             
             	<label class="ecrire" for="resume">Résumer</label>
-                <textarea id="resume" name="resume" type="text" required></textarea>
+                <textarea id="resume" name="resume" type="text" value="<?php echo $donnees['resumer']?>" required></textarea>
                 
     
 				<label class="ecrire" for="histoire">Texte</label>
-                <textarea id="histoire" name="histoire" type="text" required></textarea>
+                <textarea id="histoire" name="histoire" type="text" value="<?php echo $donnees['chapitretext']?>" required></textarea>
                 
                 <label for="file">Image</label>
                 <input type="file" name="file">
@@ -26,7 +26,7 @@
                 <option value="0">publier</option>
                 <option value="1">brouillon</option>
                 </select>
- 
+<?php endforeach; ?>
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>
             
             </form>

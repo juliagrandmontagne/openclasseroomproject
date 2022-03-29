@@ -63,4 +63,12 @@ function lesuprimeradminold()
    $databdadmincommentairevalider  = $instanceclasseadmincommentairevalider->validationadmins();
    require('view/backend/admincommentairesignaler.php');
 } 
+//Validation commentaire sur la page des commmentaire ni valider ni signaller
+function validationadmin()
+ {
+   require('Model/backend/commentaire.php');
+   $instanceclasseadmincommentairevalider  = new modelcommentaire();
+   $databdadmincommentairevalider  = $instanceclasseadmincommentairevalider->validationadmin();
+   require('view/backend/admincommentaire.php');
+} 
   ?>

@@ -13,7 +13,7 @@
             <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
                   <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
             </form>
-            <form action="" method="post">
+            <form action="index.php?action=validationadmin" method="post">
             <input name="id" id="none" type="text" value="<?php echo $donnees['id']?>">
           <input class="send" type="submit" id="btn-submit" value="valider"></div>
           </form>

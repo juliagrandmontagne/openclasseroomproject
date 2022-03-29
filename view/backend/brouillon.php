@@ -9,7 +9,8 @@
                 <div id="chaptireadmin"><h3><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
                 <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div></h3>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
-                <form action="index.php?action=lemodifier" method="POST" enctype="multipart/form-data">
+                <?php $identite=$donnees['ID']?>
+                <form action="index.php?action=affichelechapitre&id=<?php echo "$identite"?>" method="POST" enctype="multipart/form-data">
                 <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
                 <button class="send" type="submit" id="btn-submit">Editer</button>
                 </from>

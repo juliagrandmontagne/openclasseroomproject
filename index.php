@@ -79,8 +79,14 @@ if (isset($_GET['action']))
             case'lesuprimerbrouillon';
             lesuprimerbrouillon();
             break;
-            case'lemodifier';
-            lemodifier();
+            //case'lemodifier';
+            //lemodifier();
+            //break;
+            case 'affichelechapitre';
+            affichelechapitre();
+        break;
+            case'validationadmin';
+            validationadmin();
             break;
 
         }

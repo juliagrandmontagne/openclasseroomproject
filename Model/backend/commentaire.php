@@ -59,9 +59,16 @@ class modelcommentaire
         public function validationadmins()
         {
         require('connexion.php');
-        $sth=$bdd->prepare('UPDATE FROM commentaire SET valider=? WHERE id=?');
-        $sth->execute(array(1, htmlspecialchars($_POST['id'])));
+        $sth=$bdd->prepare('UPDATE commentaire SET valider=?, signaler=? WHERE ID=?');
+        $sth->execute(array(1, 0, htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=admincommentairesignaler');
+        }
+        public function validationadmin()
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('UPDATE commentaire SET valider=?, signaler=? WHERE ID=?');
+        $sth->execute(array(1, 0, htmlspecialchars($_POST['id'])));
+        header('Location:index.php?action=admincommentaire');
         }
 }     
 ?>
