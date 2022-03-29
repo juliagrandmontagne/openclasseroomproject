@@ -20,7 +20,7 @@
                 
                 <label for="file">Image</label>
                 <input type="file" name="file">
-                <input id= "none" value="$name">
+                <input id="none" value="$name">
                 
                 <select name="select" id="select">
                 <option value="0">publier</option>
