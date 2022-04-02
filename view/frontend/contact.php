@@ -9,7 +9,7 @@
             <fieldset>
             <legend class="adresse">
                 <span class="info-soustitre">Jean Forteroche</span><br>
-                Pour toutes requetes merci de remplir ce formulaire ci dessous<br>
+                Pour toute requète merci de remplir le formulaire ci dessous<br>
             </legend>
             </fieldset>
                 <label for="user_name">Nom</label>

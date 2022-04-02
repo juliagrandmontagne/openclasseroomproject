@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 <section id="main">
 <?php include('sousmenu.php'); ?>
-<h4>Bienvenue sur la liste des chapitres déjà validés</h4>
+<h4>Bienvenue sur la liste des commentaire déjà validés</h4>
 <?php  foreach ($databdadmincommentaireold as $donnees) : ?>
          <div id="commentaire">
             <div id="lecommentaire">

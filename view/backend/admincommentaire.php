@@ -2,7 +2,7 @@
 <?php ob_start() ; ?>
 <section id="main">
 <?php include('sousmenu.php'); ?>
-      <h4>Bienvenue sur la liste des chapitres en attente de validation</h4>
+      <h4>Bienvenue sur la liste des commentaires en attente de validation</h4>
 <?php  foreach ($databdadmincommentaire as $donnees) : ?>
          <div id="commentaire">
             <div id="lecommentaire">

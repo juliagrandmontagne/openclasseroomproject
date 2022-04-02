@@ -4,7 +4,7 @@
 <section class="main">
 <?php  foreach ( $databdaffiche as $donnees) : ?>
         <div class="formcreer">
-            <form action="index.php?action=creerchapitre" method="POST" enctype="multipart/form-data" >
+            <form action="index.php?action=lemodifier" method="POST" enctype="multipart/form-data" >
                 <label  class="ecrire" for="titre" >Titre du chapitre</label>
                 <input  type="text" class="name" name="titre" id="titre" value="<?php echo $donnees['chapitretitre']?>"required>
                 
@@ -12,11 +12,11 @@
 				<input  type="mail" name="numero" id="numero" value="<?php echo $donnees['chapitrenumber']?>" required>
             
             	<label class="ecrire" for="resume">Résumer</label>
-                <textarea id="resume" name="resume" type="text" value="<?php echo $donnees['resumer']?>" required></textarea>
+                <textarea id="resume" name="resume" type="text"  required><?php echo $donnees['resumer']?></textarea>
                 
     
 				<label class="ecrire" for="histoire">Texte</label>
-                <textarea id="histoire" name="histoire" type="text" value="<?php echo $donnees['chapitretext']?>" required></textarea>
+                <textarea id="histoire" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
                 
                 <label for="file">Image</label>
                 <input type="file" name="file">
@@ -67,7 +67,7 @@ tinymce.init({
     '//www.tinymce.com/css/codepen.min.css'
   ]
  });
- </script>  
+ </script>
   </section>
 <?php $content = ob_get_clean() ; ?>
 <?php require('templateadminagain.php'); ?>

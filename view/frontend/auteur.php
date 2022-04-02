@@ -5,7 +5,7 @@
 <section id="main">
         <div class="presentation">
           <figure><img src="images/jeanforteroche.jpg" alt="Jean Forteroche " id="auteurpicture"></figure>
-          <div id="authorstory"><p>Qui es Jean Forteroche ? Certain vous dirons qu'il n'existe tout simplement pas .Que ce site est fictif un simple exercice pour une formation openclassroom et que le résumer des chapitre sont de simple extrais d'autre oeuvre mais n'ecoutez pas ces mécréants d'ailleur tout ce qui est sur intenet est vrais et la photos n'est pas du tout prise sur un site libre de droit voyons...</p></div>
+          <div id="authorstory"><p>Qui est Jean Forteroche ? Certains vous diront qu'il n'existe tout simplement pas .Que ce site est fictif, que c'est un simple exercice pour une formation Openclassroom, et que les histoires contenues dans les chapitres sont de simples extraits d'autres oeuvres . Mais ne les écoutez pas ! On sait bien que tout ce qui est sur intenet est vrai et la photo n'est pas du tout prise sur un site libre de droit voyons !...</p></div>
         </div>
     
 	</section>

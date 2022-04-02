@@ -10,9 +10,7 @@
                 <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div></h3>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
                 <?php $identite=$donnees['ID']?>
-                <form action="index.php?action=affichelechapitre&id=<?php echo "$identite"?>" method="POST" enctype="multipart/form-data">
-                <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
-                <button class="send" type="submit" id="btn-submit">Editer</button>
+                <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
                 </from>
                 <form action="index.php?action=lesuprimerbrouillon" method="POST" enctype="multipart/form-data">
                 <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">

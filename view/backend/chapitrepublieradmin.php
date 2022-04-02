@@ -14,9 +14,8 @@
  </h3>               
 </div>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
-                <form action="index.php?action=suprlechapitrepublier" method="post">
-                    <button class="send" type="submit" id="btn-submit">Editer</button>
-                    </form>
+                <?php $identite=$donnees['ID']?>
+                <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
                     <form action="index.php?action=suprlechapitrepublier" method="post">
                   <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
                   <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>

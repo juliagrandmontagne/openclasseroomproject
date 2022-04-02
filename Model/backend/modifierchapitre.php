@@ -1,15 +1,13 @@
 <?php
 class modelmodifierchap 
 {
-   // public function modifierchapitre()
-
-     //{
-       // require('connexion.php');
-        //require('brouillon.php')
-        //$sth=$bdd->prepare('UPDATE FROM chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images) WHERE id=?');
+    public function lemodifier()
+     {
+        require('connexion.php');
+      //  $sth=$bdd->prepare('UPDATE chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images) WHERE id=?');
       //  $sth->execute(array($_POST['numero'], $_POST['titre'],$_POST['resume'], $_POST["histoire"],$_POST["select"],"images/", $_POST['id']));
-       // header('Location:index.php?action=admincommentairesignaler');
-       // }
+        header('Location:index.php?action=brouillon');
+        }
 
   public function affichelechapitre() 
   {
@@ -20,7 +18,6 @@ class modelmodifierchap
             $data = $reponse->fetchAll();
             return $data;
             $rereponseq->cloreCursor();
-
            } 
          
 } 

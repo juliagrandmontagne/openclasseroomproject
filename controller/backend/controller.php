@@ -55,19 +55,17 @@ function suprlechapitrepublier()
    $databdsuprchap = $instanceclassesupchapitre->suprimerchapitre();
    require('view/backend/chapitrepublieradmin.php');
 }
-//function lemodifier()
-//{
-  // require('Model/backend/modifierchapitre.php');
-  // $instanceclassemodchapitre = new modelmodifierchap ();
-  // $databdmodchap = $instanceclassemodchapitre->modifierchapitre();
-   //$databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
-  // require('view/backend/modifierchapitre.php');
-//}
-function affichelechapitre()
+function lemodifier()
 {
    require('Model/backend/modifierchapitre.php');
    $instanceclassemodchapitre = new modelmodifierchap ();
-   //$databdmodchap = $instanceclassemodchapitre->modifierchapitre();
+   $databdmodchap = $instanceclassemodchapitre->lemodifier();
+   require('view/backend/modifierchapitre.php');
+}
+function affichelechapitre()
+{
+   require('Model/backend/modifierchapitre.php');
+   $instanceclassemodchapitre = new modelmodifierchap();
    $databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
    require('view/backend/modifierchapitre.php');
 }
