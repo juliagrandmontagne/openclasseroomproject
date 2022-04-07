@@ -11,7 +11,7 @@
                 <label class="ecrire" for="numero">Numero chapitre</label>
 				<input  type="mail" name="numero" id="numero" required>
             
-            	<label class="ecrire" for="resume">Résumé</label>
+            	<label class="ecrire" for="resume">Résumer</label>
                 <textarea id="resume" name="resume" type="text" required></textarea>
                 
     
@@ -19,8 +19,8 @@
                 <textarea id="histoire" name="histoire" type="text" required></textarea>
                 
                 <label for="file">Image</label>
-                <input type="file" name="file">
-                <input id= "none" name="img" value="<?php echo $name ?>">
+                <input type="file" name="file"  >
+                <input  name="img" >
                 
                 <select name="select" id="select">
                 <option value="0">publier</option>
@@ -39,15 +39,9 @@ if(isset($_FILES['file'])){
   $error = $_FILES['file']['error'];
 }
 move_uploaded_file($tmpName, './images/'.$name);
-$image = basename($_FILES['name'])
 $tabExtension = explode('.', $name);
 $extension = strtolower(end($tabExtension));
-session_start();
-$_SESSION["image"]=$name;
-//$transfert="<script>document.write(localStorage.getItem($name));</script>";
-//echo'<script type='text/javascript'>sessionStorage["35"]</script>'
-//session_start();
-//$_SESSION['name'] = $name;
+//$_SESSION['$name'] = $name;
 //Tableau des extensions que l'on accepte
 $extensions = ['jpg', 'png', 'jpeg', 'gif'];
 if(in_array($extension, $extensions)){

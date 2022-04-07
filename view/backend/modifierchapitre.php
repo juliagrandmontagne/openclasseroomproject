@@ -19,7 +19,7 @@
                 <textarea id="histoire" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
                 
                 <label for="file">Image</label>
-                <input type="file" name="file">
+                <input type="file" name="img">
                 <input id="none" value="$name">
                 
                 <select name="select" id="select">
