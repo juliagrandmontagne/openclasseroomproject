@@ -13,8 +13,7 @@ class modelconnectionadmin{
        public function deconnexionbdadmin()   
     {
         echo "<script type='text/javascript'>sessionStorage.clear();</script>";
-        header('Location:index.php?action=accueil')
-        
+        header('Location:index.php?action=accueil')   ;
     }
 }
 ?>
