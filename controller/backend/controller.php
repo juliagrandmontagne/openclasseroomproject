@@ -71,11 +71,11 @@ function affichelechapitre()
    $databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
    require('view/backend/modifierchapitre.php');
 }
-function deconnecter()
-{
-   require('Model/frontend/seconnecteradmin.php');
-   $instanceclassesdeconnecter = new modelconnectionadmin();
-   $databdseconnecter = $instanceclassesdeconnecter->deconnexionbdadmin();
-   require('view/frontend/connexion.php');
-}
+//function deconnecter()
+//{
+//   require('Model/frontend/seconnecteradmin.php');
+//   $instanceclassesdeconnecter = new modelconnectionadmin();
+//   $databdsdeconnecter = $instanceclassesdeconnecter->deconnexionbdadmin();
+//   require('view/frontend/connexion.php');
+//}
 ?>

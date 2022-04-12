@@ -27,8 +27,6 @@ $mpsaisie = $donnees['mp'];
              // header('Location:http://www.j-gmt.fr/project/index.php?action=tableaudebord');
               //echo" lien http://www.j-gmt.fr/project/index.php?action=tableaudebord";
               echo "<script type='text/javascript'>document.location.replace('index.php?action=tableaudebord');</script>";
-              //echo "<script type='text/javascript'> sessionStorage["$namesaisie"] = "nom";
-              //sessionStorage["$mpsaisie"] = "mp";</script>";
               }
               else{ echo"veuillez completer tous les champs ";}
             }

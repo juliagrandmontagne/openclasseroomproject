@@ -42,7 +42,8 @@ move_uploaded_file($tmpName, './images/'.$name);
 $tabExtension = explode('.', $name);
 $extension = strtolower(end($tabExtension));
 $extensions = ['jpg', 'png', 'jpeg', 'gif'];
-if(in_array($extension, $extensions)){
+if(in_array($extension, $extensions))
+{
     move_uploaded_file($tmpName, './upload/'.$name);
 }
 else{

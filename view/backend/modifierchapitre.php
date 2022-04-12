@@ -13,8 +13,6 @@
             
             	<label class="ecrire" for="resume">Résumer</label>
                 <textarea id="resume" name="resume" type="text"  required><?php echo $donnees['resumer']?></textarea>
-                
-    
 				<label class="ecrire" for="histoire">Texte</label>
                 <textarea id="histoire" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
                 
