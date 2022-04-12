@@ -88,6 +88,9 @@ if (isset($_GET['action']))
             case'validationadmin';
             validationadmin();
             break;
+            case'deconnecter';
+            deconnecter();
+            break;
 
         }
 
