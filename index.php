@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 require('controller/frontend/controller.php');
 require('controller/frontend/controllerCommentaire.php');
 require('controller/backend/controller.php');
@@ -88,9 +88,9 @@ if (isset($_GET['action']))
             case'validationadmin';
             validationadmin();
             break;
-            //case'deconnecter';
-            //deconnecter();
-            //break;
+            case 'affichelechapitre';
+            affichelechapitre();
+            break;
 
         }
 

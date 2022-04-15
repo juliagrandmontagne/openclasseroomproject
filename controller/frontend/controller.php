@@ -45,7 +45,7 @@ function seconnecter()
 {
    require('Model/frontend/seconnecteradmin.php');
    $instanceclasseseconnecter = new modelconnectionadmin();
-   $databdsdeconnecter = $instanceclasseseconnecter->connexionbdadmin();
+   $databdseconnecter = $instanceclasseseconnecter->connexionbdadmin();
    require('view/frontend/connexion.php');
 }
 ?>

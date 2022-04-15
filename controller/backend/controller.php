@@ -58,11 +58,9 @@ function suprlechapitrepublier()
 function lemodifier()
 {
    require('Model/backend/modifierchapitre.php');
-   $instanceclassemodichapitre = new modelmodifierchap();
-   $databdmodchap = $instanceclassemodichapitre ->lafonction();
+   $instanceclassemodchapitre = new modelmodifierchap ();
+   $databdmodchap = $instanceclassemodchapitre->lemodifier();
    require('view/backend/modifierchapitre.php');
-   //require('Model/backend/tableaudebord.php');
-   //require('view/frontend/tableaudebord.php');
 }
 function affichelechapitre()
 {
@@ -71,11 +69,4 @@ function affichelechapitre()
    $databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
    require('view/backend/modifierchapitre.php');
 }
-//function deconnecter()
-//{
-//   require('Model/frontend/seconnecteradmin.php');
-//   $instanceclassesdeconnecter = new modelconnectionadmin();
-//   $databdsdeconnecter = $instanceclassesdeconnecter->deconnexionbdadmin();
-//   require('view/frontend/connexion.php');
-//}
 ?>

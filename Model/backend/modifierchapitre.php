@@ -1,15 +1,13 @@
 <?php
 class modelmodifierchap 
 {
-    public function lafonction()
+    public function lemodifier()
      {
-      //require('connexion.php');
-      //$name = $_FILES['file']['name'];
-      //$sth=$bdd->prepare('UPDATE chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images)');
-      //$sth->execute(array($_POST['numero'], $_POST['titre'],$_POST['resume'], $_POST["histoire"],$_POST["select"],"images/$name",));
-      //header('Location:index.php?action=brouillon');
-      //header('Location:index.php?action=admincommentairesignaler');  
-      }
+        require('connexion.php');
+      //  $sth=$bdd->prepare('UPDATE chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images) WHERE id=?');
+      //  $sth->execute(array($_POST['numero'], $_POST['titre'],$_POST['resume'], $_POST["histoire"],$_POST["select"],"images/", $_POST['id']));
+        header('Location:index.php?action=brouillon');
+        }
 
   public function affichelechapitre() 
   {
@@ -17,10 +15,10 @@ class modelmodifierchap
     $search='SELECT * FROM chapitre WHERE  id=' . $_GET["id"];
     $reponse = $bdd->prepare($search);
     $reponse->execute();
-    $data = $reponse->fetchAll();
-    return $data;
-    $rereponseq->cloreCursor();
-  } 
+            $data = $reponse->fetchAll();
+            return $data;
+            $rereponseq->cloreCursor();
+           } 
          
 } 
 

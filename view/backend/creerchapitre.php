@@ -41,9 +41,10 @@ if(isset($_FILES['file'])){
 move_uploaded_file($tmpName, './images/'.$name);
 $tabExtension = explode('.', $name);
 $extension = strtolower(end($tabExtension));
+//$_SESSION['$name'] = $name;
+//Tableau des extensions que l'on accepte
 $extensions = ['jpg', 'png', 'jpeg', 'gif'];
-if(in_array($extension, $extensions))
-{
+if(in_array($extension, $extensions)){
     move_uploaded_file($tmpName, './upload/'.$name);
 }
 else{
