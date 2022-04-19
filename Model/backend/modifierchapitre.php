@@ -5,7 +5,7 @@ class modelmodifierchap
      {
         require('connexion.php');
       //  $sth=$bdd->prepare('UPDATE chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images) WHERE id=?');
-      //  $sth->execute(array($_POST['numero'], $_POST['titre'],$_POST['resume'], $_POST["histoire"],$_POST["select"],"images/", $_POST['id']));
+      //  $sth->execute(array(htmlspecialchars($_POST['numero']), htmlspecialchars($_POST['titre']),htmlspecialchars($_POST['resume']),htmlspecialchars( $_POST["histoire"]),htmlspecialchars($_POST["select"]),"images/", htmlspecialchars($_POST['id'])));
         header('Location:index.php?action=brouillon');
         }
 
