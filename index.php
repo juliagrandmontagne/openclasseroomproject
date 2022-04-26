@@ -88,9 +88,7 @@ if (isset($_GET['action']))
             case'validationadmin';
             validationadmin();
             break;
-            case 'affichelechapitre';
-            affichelechapitre();
-            break;
+     
 
         }
 

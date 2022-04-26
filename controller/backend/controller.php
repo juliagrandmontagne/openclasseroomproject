@@ -5,7 +5,7 @@
 function tableaudebord()
 {
    require('Model/backend/tableaudebord.php');
-   require('view/frontend/tableaudebord.php');
+   require('view/backend/tableaudebord.php');
 }
 function adminchapitre()
 {

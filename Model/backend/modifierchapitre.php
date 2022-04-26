@@ -1,13 +1,13 @@
 <?php
 class modelmodifierchap 
 {
-    public function lemodifier()
-     {
-        require('connexion.php');
-      //  $sth=$bdd->prepare('UPDATE chapitre SET (chapitrenumber, chapitretitre , resumer,	chapitretext , brouillon, images) WHERE id=?');
-      //  $sth->execute(array(htmlspecialchars($_POST['numero']), htmlspecialchars($_POST['titre']),htmlspecialchars($_POST['resume']),htmlspecialchars( $_POST["histoire"]),htmlspecialchars($_POST["select"]),"images/", htmlspecialchars($_POST['id'])));
-        header('Location:index.php?action=brouillon');
-        }
+  public function lemodifier()
+  {
+     require('connexion.php');
+     $sth=$bdd->prepare('UPDATE chapitre SET chapitrenumber=?, chapitretitre=?, resumer=?, chapitretext=? ,brouillon=? ,images=? WHERE ID=?');
+     $sth->execute(array(htmlspecialchars($_POST['numero']),htmlspecialchars($_POST['titre']),htmlspecialchars($_POST['resume']), htmlspecialchars($_POST["histoire"]),htmlspecialchars($_POST["select"]),htmlspecialchars($_FILES['file']['name']), $_POST["id"]));
+     header('Location:index.php?action=tableaudebord');
+  }
 
   public function affichelechapitre() 
   {

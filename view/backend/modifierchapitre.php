@@ -1,6 +1,6 @@
 <?php $title = 'modifierchapitre' ; ?>
 <?php ob_start() ; ?>
- <script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" ></script>
+<script src="https://cdn.tiny.cloud/1/xzvjm98326mhxxsepc9pzu1hl6661anlsrza944420fp33lb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <section class="main">
 <?php  foreach ( $databdaffiche as $donnees) : ?>
         <div class="formcreer">
@@ -16,11 +16,11 @@
                 
     
 				<label class="ecrire" for="histoire">Texte</label>
-                <textarea id="histoire" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
+                <textarea id="histoire" id="editable" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
                 
                 <label for="file">Image</label>
                 <input type="file" name="img">
-                <input id="none" value="$name">
+                <input  name="id" value="<?php echo $donnees['ID']?>">
                 
                 <select name="select" id="select">
                 <option value="0">publier</option>
@@ -50,24 +50,17 @@ else{
     echo "Mauvaise extension";
 }
 ?>
- <script type="text/javascript">
+<script>
 tinymce.init({
-  selector: 'textarea',
-  height: 500,
-  theme: 'modern',
-  plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help',
-  toolbar1: 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat | code',
-  image_advtab: true,
-  templates: [
-    { title: 'Test template 1', content: 'Test 1' },
-    { title: 'Test template 2', content: 'Test 2' }
-  ],
-  content_css: [
-    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-    '//www.tinymce.com/css/codepen.min.css'
-  ]
- });
- </script>
+      selector: 'textarea',
+      plugins: '    autolink lists  media    table  ',
+      toolbar: '   formatpainter   table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
+  </script>
   </section>
 <?php $content = ob_get_clean() ; ?>
 <?php require('templateadminagain.php'); ?>

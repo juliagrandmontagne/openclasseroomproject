@@ -6,8 +6,8 @@
 
   <div id="main">
    
-                <div id="chaptireadmin"><h3><div id="chifreadmin"><?php echo $donnees['chapitre-number']?></div>
-                <div id="titreadmin"><?php echo $donnees['chapitre-titre']?></div></h3>
+                <div id="chaptireadmin"><h3><div id="chifreadmin"><?php echo $donnees['chapitrenumber']?></div>
+                <div id="titreadmin"><?php echo $donnees['chapitretitre']?></div></h3>
                 <div id="textadmin"><?php echo $donnees['resumer']?>
                 <?php $identite=$donnees['ID']?>
                 <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
