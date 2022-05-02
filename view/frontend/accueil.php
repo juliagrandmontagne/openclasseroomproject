@@ -11,7 +11,7 @@
 			   <div id="lastchapter"><h3>Le dernier chapitre : <?php echo $donnees['chapitretitre']?><?php echo $donnees['chapitrenumber']?></h3><?php echo $donnees['resumer']?>
 			   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> 
 			   <?php $identite=$donnees['ID']?>
-			   <div id="btn-submit"><a id="suite"href="index.php?action=chapitre&id=<?php echo "$identite"?>">lire la suite</a></li></div></div>
+			   <div id="btn-submit"><a id="suite" href="index.php?action=chapitre&id=<?php echo "$identite"?>">lire la suite</a></div></div>
 				<?php endforeach; ?>
 				
 		   </section>

@@ -8,7 +8,7 @@
  <div id="chaptirenumber">
  <div id='chapitre-titre'><?php echo $donnees['chapitrenumber']?><?php echo $donnees['chapitretitre']?></div>
  <?php $identite=$donnees['ID']?>
- <div id="chapitre-text"><?php echo $donnees['resumer']?><br><li id="suite"><a id="suitelien"href="index.php?action=chapitre&id=<?php echo "$identite"?>">lire la suite</a></li> 
+ <div id="chapitre-text"><?php echo $donnees['resumer']?><br><li id="suite"><a id="suitelien" href="index.php?action=chapitre&id=<?php echo "$identite"?>">lire la suite</a></li> 
   <img src="<?php echo $donnees['images']?>" alt="illustrationchapitre" id="illustrationchapitre"> </div>
  </div><?php endforeach; ?></div>
 

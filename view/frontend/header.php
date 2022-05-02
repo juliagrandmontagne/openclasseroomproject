@@ -1,7 +1,7 @@
 <header>
     <section id="menuheader">
         <div id="banniere_menu">
-            <button class="far fa-user" id="admin"><a href="index.php?action=seconnecter"><p id="connection"><br>connection</p></button>	
+            <div class="far fa-user" id="admin"><a href="index.php?action=seconnecter"></a><div id="connection"><br>connection</div></div>	
             <h1 id="titre">Billet simple pour l'Alaska de Jean Forteroche</h1>		
                     
              <div id="barre">
