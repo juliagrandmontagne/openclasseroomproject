@@ -16,10 +16,10 @@
                 <div id="textadmin"><?php echo $donnees['resumer']?>
                 <?php $identite=$donnees['ID']?>
                 <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
-                    <form action="index.php?action=suprlechapitrepublier" method="post">
-                  <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
-                  <button class="send" type="submit" id="btn-submit" value="suprimer" >suprimer</button>
-            </form>
+            <form action="index.php?action=suprlechapitrepublier" method="post">
+                <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
+                <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
+            </from>
                     
                 </div>
             

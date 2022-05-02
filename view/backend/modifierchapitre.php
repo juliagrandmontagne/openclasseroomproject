@@ -20,11 +20,12 @@
                 
                 <label for="file">Image</label>
                 <input type="file" name="img">
-                <input  name="id" value="<?php echo $donnees['ID']?>">
+                <input  name="id" id ="none"value="<?php echo $donnees['ID']?>">
                 
                 <select name="select" id="select">
-                <option value="0">publier</option>
                 <option value="1">brouillon</option>
+                <option value="0">publier</option>
+                
                 </select>
 <?php endforeach; ?>
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>

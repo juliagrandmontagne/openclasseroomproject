@@ -19,12 +19,10 @@ class modeltableaudebord
         
         public function  suprimerchapitre() 
         {
-        require('connexion.php');
-        $sth=$bdd->prepare('DELETE FROM chapitre WHERE ID=?');
-        $sth->execute(array(htmlspecialchars($_POST['id'])));
-        header('Location:index.php?action=adminchapitre');
-        }
-                
-                
+                require('connexion.php');
+                $sth=$bdd->prepare('DELETE FROM chapitre WHERE ID=?');
+                $sth->execute(array(htmlspecialchars($_POST['id'])));
+        header('Location:index.php?action=accueil');
+        }    
 }
 ?>
