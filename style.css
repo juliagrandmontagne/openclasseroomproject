@@ -128,14 +128,45 @@ border-radius: 30px;
 }
 #btn
 {
-    display: block;
-    font-family: "Saudagar";
-    width: 300px;
-    height: 30px;
-    margin: auto;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    }
+display: grid;
+font-family: "Saudagar";
+width: 300px;
+height: 30px;
+margin: auto;
+margin-bottom: auto;
+margin-bottom: auto;
+margin-bottom: 10px;
+border-radius: 30px;
+box-sizing: border-box;
+border: 1px solid grey;
+resize: none;
+justify-content: center;
+text-decoration: none;
+color: black;
+}
+#naviguationutilisateur
+{
+display: grid;
+font-family: "Saudagar";
+width: 300px;
+height: 30px;
+margin: auto;
+margin-bottom: auto;
+margin-bottom: 10px;
+border-radius: 30px;
+border-width: 1px;
+border-style: solid;
+border-color: grey;
+justify-content: center;
+text-decoration: none;
+color: black;
+}
+#place
+{
+display: grid;
+margin-top: 20px;
+margin-left: -20px;
+}
 #sous
 {
 display: none;
@@ -280,6 +311,8 @@ border-radius: 30px;
 border-width:1px; 
 border-style:solid; 
 border-color:grey;
+text-decoration: none;
+color: black;
 }
 #suitelien
 {

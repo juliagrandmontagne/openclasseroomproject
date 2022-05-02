@@ -51,17 +51,13 @@ else{
     echo "Mauvaise extension";
 }
 ?>
-<script>
-tinymce.init({
+  <script>
+    tinymce.init({
       selector: 'textarea',
-      plugins: '    autolink lists  media    table  ',
-      toolbar: '   formatpainter   table',
+      plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
       toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
     });
-  </script>
-  </script>
+ </script>  
   </section>
 <?php $content = ob_get_clean() ; ?>
 <?php require('templateadminagain.php'); ?>

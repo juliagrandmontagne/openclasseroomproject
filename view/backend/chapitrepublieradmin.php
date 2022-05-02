@@ -18,6 +18,7 @@
                 <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
             <form action="index.php?action=suprlechapitrepublier" method="post">
                 <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
+                <input name="idchapitre" id="none" type="text" value="<?php echo $donnees['chapitrenumber']?>">
                 <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
             </from>
                     

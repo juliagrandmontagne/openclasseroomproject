@@ -20,7 +20,7 @@
                 
                 <label for="file">Image</label>
                 <input type="file" name="file"  >
-                <input  name="img" >
+                
                 
                 <select name="select" id="select">
                 <option value="0">publier</option>
@@ -51,16 +51,12 @@ else{
     echo "Mauvaise extension";
 }
 ?>
- <script type="text/javascript">
-tinymce.init({
+  <script>
+    tinymce.init({
       selector: 'textarea',
-      plugins: '    autolink lists  media    table  ',
-      toolbar: '   formatpainter   table',
+      plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
       toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
     });
-  </script>
  </script>  
   </section>
 <?php $content = ob_get_clean() ; ?>
