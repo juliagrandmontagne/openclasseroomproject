@@ -54,7 +54,7 @@ else{
 <script>
 tinymce.init({
       selector: 'textarea',
-      plugins: '    autolink lists  media    table  ',
+      plugins: ' autolink lists  media    table  ',
       toolbar: '   formatpainter   table',
       toolbar_mode: 'floating',
       tinycomments_mode: 'embedded',
