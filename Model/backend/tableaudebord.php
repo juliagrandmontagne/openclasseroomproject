@@ -20,8 +20,8 @@ class modeltableaudebord
         public function  suprimerchapitre() 
         {
         require('connexion.php');
-        $sth=$bdd->prepare('DELETE FROM chapitre WHERE chapitre.ID=?');
-        $sth->execute(array(htmlspecialchars($_POST['id'])));
+        $sth=$bdd->prepare('DELETE FROM chapitre WHERE chapitrenumber =?');
+        $sth->execute(array(htmlspecialchars($_POST['idchapitre'])));
         $sth=$bdd->prepare('DELETE FROM commentaire WHERE idchapitre=?');
         $sth->execute(array(htmlspecialchars($_POST['idchapitre'])));
         header('Location:index.php?action=adminchapitre');
