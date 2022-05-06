@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <header>
     <section id="menuheader">
         <div id="banniere_menu">
@@ -16,7 +17,8 @@
                     </ul>
                  </nav>
             </div>  
-          </div>   	
+          </div>  
+           	
     </section>					
 </header>
 <section class="connexion">
@@ -31,6 +33,6 @@
                         <li class="tableaubord"><a class="soustableaubord"href="index.php?action=mailadmin">lire mes email</a></li>
 					</ul>
 </nav>
- 
+
 
 </section>				

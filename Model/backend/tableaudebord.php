@@ -20,11 +20,16 @@ class modeltableaudebord
         public function  suprimerchapitre() 
         {
         require('connexion.php');
-        $sth=$bdd->prepare('DELETE FROM chapitre WHERE chapitre.chapitrenumber =?');
-        $sth->execute(array(htmlspecialchars($_POST['idchapitre'])));
-        $sth=$bdd->prepare('DELETE FROM commentaire WHERE idchapitre=?');
-        $sth->execute(array(htmlspecialchars($_POST['idchapitre'])));
-        header('Location:index.php?action=adminchapitre');
+               
+                $sth=$bdd->prepare('DELETE FROM chapitre WHERE ID =?');
+                $sth->execute(array(htmlspecialchars($_POST['id'])));
+                header('Location:index.php?action=adminchapitre');
         }    
+        public function  suprimerlescommentairechapitre() 
+        {
+        require('connexion.php');
+        $sth=$bdd->prepare('DELETE FROM commentaire WHERE commentaire.idchapitre=?');
+        $sth->execute(array(htmlspecialchars($_POST['idchapitre'])));
+        }  
 }
 ?>

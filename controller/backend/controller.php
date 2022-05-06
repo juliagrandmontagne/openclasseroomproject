@@ -52,6 +52,7 @@ function suprlechapitrepublier()
 {
    require('Model/backend/tableaudebord.php');
    $instanceclassesupchapitre = new modeltableaudebord ();
+   $databdsuprcomchap = $instanceclassesupchapitre->suprimerlescommentairechapitre();  
    $databdsuprchap = $instanceclassesupchapitre->suprimerchapitre();
    require('view/backend/chapitrepublieradmin.php');
 }

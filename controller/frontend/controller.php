@@ -18,7 +18,7 @@ require('view/frontend/chapitre.php');
 
 function directionchapitres()
    {
-      require('Model/frontend/chapitres.php');
+require('Model/frontend/chapitres.php');
 $instanceclassedirectionchapitres = new modelchapitres();
 $databdchapitres = $instanceclassedirectionchapitres-> connexionbdchapitres();
 require('view/frontend/chapitres.php');
@@ -32,6 +32,13 @@ function directioncontact()
    require('Model/frontend/contact.php');
    $instanceclassecontact = new modelcontact ();
    $databdcontact = $instanceclassecontact-> connexionbdcontact();
+   require('view/frontend/contact.php');
+}
+function contactformulaire()
+{
+   require('Model/frontend/contact.php');
+   $instanceclassecontact = new modelcontact ();
+   $databdcontact = $instanceclassecontact-> formulairecontact();
    require('view/frontend/contact.php');
 }
 function lesignaler()

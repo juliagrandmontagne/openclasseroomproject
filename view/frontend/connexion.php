@@ -24,8 +24,8 @@ $mpsaisie = $donnees['mp'];
            {
               if($_POST['nameuser'] == $namesaisie && $_POST['mp']== $mpsaisie) 
               {
-             // header('Location:http://www.j-gmt.fr/project/index.php?action=tableaudebord');
-              //echo" lien http://www.j-gmt.fr/project/index.php?action=tableaudebord";
+                session_start (); 
+                $_SESSION['login'] = 'toto' ;
               echo "<script type='text/javascript'>document.location.replace('index.php?action=tableaudebord');</script>";
               }
               else{ echo"veuillez completer tous les champs ";}

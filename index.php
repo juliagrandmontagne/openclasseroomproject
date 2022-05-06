@@ -22,6 +22,9 @@ if (isset($_GET['action']))
             case 'contact':
             directioncontact();
             break;
+            case 'contactform':
+            contactformulaire();
+            break;
             case 'commentaires':
             directioncommentaires();
             break;
