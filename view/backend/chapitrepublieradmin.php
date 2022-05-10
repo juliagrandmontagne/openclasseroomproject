@@ -20,7 +20,7 @@
                 <input name="id" id="" type="text" value="<?php echo $donnees['ID']?>">
                 <input name="idchapitre" id="" type="text" value="<?php echo $donnees['chapitrenumber']?>">
                 <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
-            </from>
+            </form>
                     
                 </div>
             
