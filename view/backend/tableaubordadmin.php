@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+if (empty($_SESSION['login'])) 
+        {?>        
 <header>
     <section id="menuheader">
         <div id="banniere_menu">
@@ -35,4 +37,7 @@
 </nav>
 
 
-</section>				
+</section>		
+<?php}
+              else{ echo "<script type='text/javascript'>document.location.replace('index.php?action=accueil');</script>";}
+              ?>		
