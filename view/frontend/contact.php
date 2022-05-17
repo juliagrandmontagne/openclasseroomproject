@@ -12,17 +12,17 @@
                 Pour toute requète merci de remplir le formulaire ci dessous<br>
             </legend>
             </fieldset>
-                <label for="user_name">Nom</label>
+                <label for="username">Nom</label>
                 <input type="text" class="name" name="user_name" id="username" required>
                 
                 <label for="mail">E-mail</label>
-				<input type="mail" name="user_mail" id="mail" required>
+				<input type="email" name="user_mail" id="mail" >
             
-                <label for="user_firstname">Prénom</label>
+                <label for="userfirstname">Prénom</label>
 				<input type="text" name="user_firstname" id="userfirstname" required>
             	
 				<label for="msg">Message</label>
-                <textarea id="msg" name="user_message" type="text" required></textarea>
+                <textarea id="msg" name="user_message"  required></textarea>
 				
 				<button class="send" type="submit" id="btn-submit">Envoyer</button>
             

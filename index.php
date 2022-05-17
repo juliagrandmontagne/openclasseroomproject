@@ -31,6 +31,9 @@ if (isset($_GET['action']))
             case 'creerCommentaire':
             creerCommentaire();
             break;
+            case 'sedeconnecter':
+            sedeconnecter();
+            break;
             case 'seconnecter':
             seconnecter();
             break;

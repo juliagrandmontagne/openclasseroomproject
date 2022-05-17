@@ -6,18 +6,17 @@
 
   <div id="main">
    
-                <div id="chaptireadmin"><h3><div id="chifreadmin"><?php echo $donnees['chapitrenumber']?></div>
-                <div id="titreadmin"><?php echo $donnees['chapitretitre']?></div></h3>
-                <div id="textadmin"><?php echo $donnees['resumer']?>
+            <div class="chaptireadmin"><div class="chifreadmin"><?php echo $donnees['chapitrenumber']?></div></div>
+            <div class="titreadmin"><?php echo $donnees['chapitretitre']?></div>
+            <div class="textadmin"><?php echo $donnees['resumer']?>
                 <?php $identite=$donnees['ID']?>
-                <a id="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
-                </from>
+                <a class="btn" href="index.php?action=affichelechapitre&id=<?php echo "$identite"?>">Editer</a>
                 <form action="index.php?action=lesuprimerbrouillon" method="POST" enctype="multipart/form-data">
-                <input name="id" id="none" type="text" value="<?php echo $donnees['ID']?>">
-                <button class="send" type="submit" id="btn-submit">suprimer</button></div></div>
-                </from>
+                  <input name="id" class="none" type="text" value="<?php echo $donnees['ID']?>">
+                  <button  type="submit" class="btn-submit">suprimer</button>
+                </form>
+              </div>
             <br>
-            
         </div>
    <?php endforeach; ?>
 

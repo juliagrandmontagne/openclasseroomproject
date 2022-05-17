@@ -4,7 +4,7 @@
 <section class="mailadmin">
 <div id="main">
 <?php  foreach ($databdmail as $donnees) : ?>
-    <div id="maileadmin"> <div><strong>pseudo : </strong> <?php echo $donnees['user_name']?><br>
+    <div class="maileadmin"> <div><strong>pseudo : </strong> <?php echo $donnees['user_name']?><br>
 </div><div><strong> email :</strong>  <?php echo $donnees['user_mail']?><br></div>
 <div><strong>prénom : </strong> <?php echo $donnees['user_firstname']?><br></div>
 <div><strong>message : </strong> <?php echo $donnees['user_message']?></div>

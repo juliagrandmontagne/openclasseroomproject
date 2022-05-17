@@ -70,4 +70,11 @@ function affichelechapitre()
    $databdaffiche =$instanceclassemodchapitre ->affichelechapitre();
    require('view/backend/modifierchapitre.php');
 }
+function sedeconnecter()
+{
+   require('Model/backend/modeldeconnectionadmin.php');
+   $instanceclassesedeconnecter = new modeldeconnectionadmin();
+   $databdsedeconnecter = $instanceclassesedeconnecter->connexionbdadmin();
+   require('view/frontend/connexion.php');
+}
 ?>

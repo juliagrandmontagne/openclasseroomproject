@@ -5,30 +5,29 @@
 <?php  foreach ( $databdaffiche as $donnees) : ?>
         <div class="formcreer">
             <form action="index.php?action=lemodifier" method="POST" enctype="multipart/form-data" >
-                <label  class="ecrire" for="titre" >Titre du chapitre</label>
-                <input  type="text" class="name" name="titre" id="titre" value="<?php echo $donnees['chapitretitre']?>"required>
+            <label  class="ecrire" for="titrechap" >Titre du chapitre</label>
+            <input  type="text" class="name" name="titre" id="titrechap" value="<?php echo $donnees['chapitretitre']?>" required>
                 
-                <label class="ecrire" for="numero">Numero chapitre</label>
-				<input  type="mail" name="numero" id="numero" value="<?php echo $donnees['chapitrenumber']?>" required>
+            <label class="ecrire" for="numero">Numero chapitre</label>
+			<input  type="number" name="numero" id="numero" value="<?php echo $donnees['chapitrenumber']?>" required>
             
-            	<label class="ecrire" for="resume">Résumer</label>
-                <textarea id="resume" name="resume" type="text"  required><?php echo $donnees['resumer']?></textarea>
+            <label class="ecrire" for="resume">Résumer</label>
+            <textarea id="resume" name="resume" ><?php echo $donnees['resumer']?></textarea>
                 
-    
-				<label class="ecrire" for="histoire">Texte</label>
-                <textarea id="histoire" id="editable" name="histoire" type="text" required><?php echo $donnees['chapitretext']?></textarea>
+            <label class="ecrire" for="histoire">Texte</label>
+            <textarea id="histoire" name="histoire"  ><?php echo $donnees['chapitretext']?></textarea>
+
                 
-                <label for="file">Image</label>
-                <input type="file" name="img">
-                <input  name="id" id ="none"value="<?php echo $donnees['ID']?>">
+            <label for="file">Image</label>
+            <input type="file" name="img">
+            <input  name="id" id="file" class="none" value="<?php echo $donnees['ID']?>">
                 
-                <select name="select" id="select">
-                <option value="1">brouillon</option>
-                <option value="0">publier</option>
-                
-                </select>
+            <select name="select" id="select">
+            <option value="1">brouillon</option>
+            <option value="0">publier</option>
+            </select>
 <?php endforeach; ?>
-				<button class="send" type="submit" id="btn-submit">Envoyer</button>
+				<button type="submit" id="btn-submit">Envoyer</button>
             
             </form>
         </div>  

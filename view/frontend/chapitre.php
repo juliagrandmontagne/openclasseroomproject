@@ -12,7 +12,7 @@
  <?php endforeach; ?>
  <div id="commentaire-form">
  <form action="index.php?action=creerCommentaire" method="post" id="commentaireform" >     
-   <div id="titre-commentaire"><legend >Espace commentaire</legend></div>
+   <div id="titre-commentaire">Espace commentaire</div>
       <input class="nameuser" name="nameuser" placeholder="pseudo" required>
       <textarea id="comment" name="comment" placeholder="Message" required></textarea>
        <?php  foreach ($databdchapitre as $donnees) : ?>

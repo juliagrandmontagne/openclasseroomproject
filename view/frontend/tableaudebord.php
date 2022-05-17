@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php $title = 'tableaudebord' ; ?>
 <?php ob_start() ; ?>
 <section class="connexion">

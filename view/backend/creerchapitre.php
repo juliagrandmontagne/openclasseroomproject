@@ -5,21 +5,21 @@
 
         <div class="formcreer">
             <form action="index.php?action=creerchapitre" method="POST" enctype="multipart/form-data" >
-                <label  class="ecrire" for="titre" >Titre du chapitre</label>
-                <input  type="text" class="name" name="titre" id="titre" required>
+                <label  class="ecrire" for="titrechap" >Titre du chapitre</label>
+                <input  type="text" class="name" name="titre" id="titrechap" required>
                 
                 <label class="ecrire" for="numero">Numero chapitre</label>
-				<input  type="mail" name="numero" id="numero" required>
+				<input  type="number" name="numero" id="numero" required>
             
             	<label class="ecrire" for="resume">Résumer</label>
-                <textarea id="resume" name="resume" type="text" required></textarea>
+                <textarea id="resume" name="resume" ></textarea>
                 
     
 				<label class="ecrire" for="histoire">Texte</label>
-                <textarea id="histoire" name="histoire" type="text" required></textarea>
+                <textarea id="histoire" name="histoire"  ></textarea>
                 
                 <label for="file">Image</label>
-                <input type="file" name="file"  >
+                <input type="file" name="file" id="file">
                 
                 
                 <select name="select" id="select">

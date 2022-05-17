@@ -26,11 +26,10 @@ margin-top:900px;
 display: block;
 margin-top: 180px;
 }
-#textadmin 
-{
- display: block;
-font-family: "Saudagar";
-justify-content:center ;
+.textadmin {
+    display: block;
+    font-family: "Saudagar";
+    justify-content:center ;
 }
 #titreadmin 
 {
@@ -65,7 +64,7 @@ margin: auto;
 margin-bottom: 40px;
 border-radius: 30px;
 }
- #maileadmin
+.maileadmin
 {
 display: block;
 height: 200px;
@@ -101,11 +100,9 @@ font-size: 15px;
 display: block;
 padding:0px;
 }
-#none
-{
-display: none;
-font-family: "Saudagar";
-}
+.none {
+    display: none;
+  }
 #signaler
 {
 display: block;
@@ -116,7 +113,7 @@ margin: auto;
 margin-bottom: 10px;
 background-color: #faebd7;
 }
-#btn-submit
+.btn-submit
 {
 display: block;
 font-family: "Saudagar";
@@ -125,8 +122,26 @@ height: 30px;
 margin: auto;
 margin-bottom: 10px;
 border-radius: 30px;
+background-color: white;
 }
-#btn
+a.classy {
+    display: grid;
+    font-family: "Saudagar";
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    /* margin-bottom: auto; */
+    /* margin-bottom: auto; */
+    margin-bottom: 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    resize: none;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.btn
 {
 display: grid;
 font-family: "Saudagar";
@@ -201,7 +216,7 @@ text-decoration:none;
 margin-left: 10px;
 }
 /**/
-#illustrationchapitre
+.illustrationchapitre
 {
 display: flex;
 width:400px ;
@@ -297,8 +312,7 @@ width: 100%;
 margin: auto;
 padding-top: 70px;
 }
-#suite
-{
+.suite {
 text-align: center;
 display: block;
 font-family: "Saudagar";
@@ -314,8 +328,7 @@ border-color:grey;
 text-decoration: none;
 color: black;
 }
-#suitelien
-{
+.suitelien {
 text-align: center;
 display: block;
 font-family: "Saudagar";
@@ -341,15 +354,15 @@ margin-top:100px;
 margin-bottom:50px;
 justify-content: center; 
 }
-#chapitre-titre
+.chapitre-titre 
 {
-font-family: caroline;
-font-size:1.9em;
-display: block;
-position: relative;
-width: 180px;
-margin:auto;
-}
+    font-family: caroline;
+    font-size:1.9em;
+    display: block;
+    position: relative;
+    width: 180px;
+    margin:auto;
+    }
 #chapitre-text-individuel
 {
 font-family: "Saudagar";
@@ -359,17 +372,15 @@ position: relative;
 width: 90%;
 margin: auto;
 }
-#chapitre-text
-{
-font-family: "Saudagar";
-display: inline-block;
-word-wrap: break-word;
-position: relative;
-width: 400px;
-height: 380px;
+.chapitre-text {
+    font-family: "Saudagar";
+    display: inline-block;
+    word-wrap: break-word;
+    position: relative;
+    width: 400px;
+    height: 380px;
 }
-#chaptirenumber
-{
+.chaptirenumber {
 display: block;
 height: 480px;
 width: 400px;
@@ -538,35 +549,36 @@ border-radius: 5px;
 display: block;
 justify-content: center;
 } 
-#lecommentaire
-{
-display: block;
-justify-content: center;
-margin:auto;
-font: 1em ;
-width:800px;
-margin-top: 10px;
-box-sizing: border-box;
-border: 1px solid grey; 
-resize:none;
-border-radius: 5px;
-margin-bottom: 40px;
-overflow: scroll;
-border-radius: 30px;
-} 
-#nomuser
-{
+.lecommentaire {
+    display: block;
+    justify-content: center;
+    margin: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font: 1em;
+    width: 800px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    overflow: scroll;
+    border-radius: 30px;
+  }  
+.nomuser {
 font-family: caroline;
 font-size: 1.7em;
 display: flex;
 justify-content: center;
 } 
-#messageuser
-{
-font-family: "Saudagar";
-display: flex;
-justify-content: center;
-} 
+.messageuser {
+    font-family: "Saudagar";
+    display: flex;
+    justify-content: center;
+  }
 /*CHAPITRE*/
 #chapitre
 {
@@ -660,6 +672,21 @@ justify-content: center;
 .send
 {
   background-color: #fff;
+  display: grid;
+  font-family: "Saudagar";
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  /* margin-bottom: auto; */
+  /* margin-bottom: auto; */
+  margin-bottom: 10px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  resize: none;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
 } 
 fieldset
 {
