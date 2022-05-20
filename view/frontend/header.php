@@ -11,7 +11,7 @@
                         <li class="naviguation"><a href="index.php?action=chapitres">Chapitres</a></li>
                         <li class="naviguation"><a href="index.php?action=auteur">Auteur</a></li>
                         <li class="naviguation"><a href="index.php?action=contact">Contact</a></li>
-                        <li class="naviguationutilisateur"><a href="index.php?action=seconnecter">Connection</a></li>
+                        <li class="naviguation"><a href="index.php?action=seconnecter">Connection</a></li>
                     </ul>
                  </nav>
             </div>  

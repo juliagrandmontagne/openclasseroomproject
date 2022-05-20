@@ -55,5 +55,11 @@ function seconnecter()
    $databdseconnecter = $instanceclasseseconnecter->connexionbdadmin();
    require('view/frontend/connexion.php');
 }
-
+function gonnago()
+{
+   require('Model/frontend/seconnecteradmin.php');
+   $instanceclassegonago = new modelconnectionadmin();
+   $databdsegonago = $instanceclassegonago->gonnago();
+   require('view/frontend/connexion.php');
+}
 ?>

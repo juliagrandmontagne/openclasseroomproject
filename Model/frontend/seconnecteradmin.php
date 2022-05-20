@@ -10,6 +10,11 @@ class modelconnectionadmin{
         $rereponseq->cloreCursor();
        
     }
-
+    public function gonnago() {
+        require('connexion.php');
+        $sth = $bdd->prepare('INSERT INTO user (mp, log) VALUES(?, ?)');
+        $sth->execute(array$_POST['mp'], $_POST["nameuser"]);   
+       
+    }
 }
 ?>
