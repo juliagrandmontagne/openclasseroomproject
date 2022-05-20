@@ -3,15 +3,13 @@
     <section class="connexion">
     <h3 id="messageconnexion">Vous êtes un utilisateur ? Alors connectez vous.</h3>
     <div id="formulaire">
-    <form action="" method="post" id="connexionutilisateur" >     
-                    <div id="titre-commentaire"><legend ></legend></div>
-                    <input class="nameuser" name="nameuser" placeholder="pseudo">
+    <form action="#" method="post" id="connexionutilisateur" >     
+      <div id="titre-commentaire"></div>
+        <input class="nameuser" name="nameuser" placeholder="pseudo">
+        <input id="comment" type="password" name="mp" placeholder="mot de passe">
+        <button  type="submit" class="btn-submit" name="valider">VALIDER</button>
                 
-                    <input id="comment" type="pasword" name="mp" placeholder="mot de passe">
-
-                    <button  type="submit" class="btn-submit" value="Envoyer" name="valider">VALIDER
-                
-                </form>
+    </form>
     </div>
     <?php foreach ($databdseconnecter as $donnees) :
     $namesaisie = $donnees['login'];
