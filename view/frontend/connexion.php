@@ -9,16 +9,17 @@
                 
                     <input id="comment" type="pasword" name="mp" placeholder="mot de passe">
 
-                    <input class="send" type="submit" id="btn-submit" value="Envoyer" name="valider">
+                    <button  type="submit" class="btn-submit" value="Envoyer" name="valider">VALIDER
                 
                 </form>
     </div>
     <?php foreach ($databdseconnecter as $donnees) :
     $namesaisie = $donnees['login'];
     $mpsaisie = $donnees['mp'];
+
             if(!empty($_POST['nameuser']) && !empty($_POST['mp']) )  
               {
-                  if($_POST['nameuser'] == $namesaisie && $_POST['mp']== $mpsaisie) 
+                  if( password_verify($_POST['mp'], $mpsaisie,) && password_verify($_POST['nameuser'], $namesaisie,)) 
                   {
                     session_start (); 
                     $_SESSION['login'] = 'toto' ;

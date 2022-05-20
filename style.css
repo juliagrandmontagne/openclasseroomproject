@@ -51,19 +51,19 @@ border:none;
 margin:30px;
 padding:30px;
 }
-#chaptireadmin
-{
-display: block;
-border-radius: 30px;
-width:800px;
-border-width:1px; 
-border-style:solid; 
-border-color:black;
-justify-content: center;
-margin: auto;
-margin-bottom: 40px;
-border-radius: 30px;
-}
+.chaptireadmin {
+    display: block;
+    border-radius: 30px;
+    width: 800px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    margin: auto;
+      margin-bottom: auto;
+    margin-bottom: 40px;
+    border-radius: 30px;
+  }
 .maileadmin
 {
 display: block;
@@ -87,32 +87,34 @@ border-radius: 30px;
 padding: 30px;
 max-width: 900px;
 }
-#buble
-{
-display: block;
-text-decoration:none; 
-padding:0px;
-margin: 0px;
-font-size: 15px;
+.buble {
+    display: grid;
+    text-decoration: none;
+    padding: 0px;
+    margin: auto;
+    font-size: 15px;
+    justify-content: center;
 }
 .connexion
 {
 display: block;
 padding:0px;
 }
-.none {
-    display: none;
-  }
-#signaler
+.none 
 {
-display: block;
-font-family: "Saudagar";
-width: 80%;
-height: 30px;
-margin: auto;
-margin-bottom: 10px;
-background-color: #faebd7;
+display: none;
 }
+.signaler {
+    display: block;
+    font-family: "Saudagar";
+    width: 80%;
+    height: 30px;
+    margin: auto;
+      margin-bottom: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    background-color: #faebd7;
+  }
 .btn-submit
 {
 display: block;
@@ -550,24 +552,24 @@ display: block;
 justify-content: center;
 } 
 .lecommentaire {
-    display: block;
-    justify-content: center;
-    margin: auto;
-      margin-top: auto;
-      margin-bottom: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    font: 1em;
-    width: 800px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    resize: none;
-    border-radius: 5px;
-    margin-bottom: 40px;
-    overflow: scroll;
-    border-radius: 30px;
-  }  
+display: block;
+justify-content: center;
+margin: auto;
+margin-top: auto;
+margin-bottom: auto;
+margin-top: auto;
+margin-bottom: auto;
+font: 1em;
+width: 800px;
+margin-top: 10px;
+box-sizing: border-box;
+border: 1px solid grey;
+resize: none;
+border-radius: 5px;
+margin-bottom: 40px;
+overflow: scroll;
+border-radius: 30px;
+}  
 .nomuser {
 font-family: caroline;
 font-size: 1.7em;
@@ -606,7 +608,6 @@ border-radius: 10%;
 .ecrire
 {    
 color: black;
-
  }
 .form 
 {    

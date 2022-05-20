@@ -9,5 +9,7 @@ class modelconnectionadmin{
        return $data;
         $rereponseq->cloreCursor();
        
-    }}
+    }
+
+}
 ?>

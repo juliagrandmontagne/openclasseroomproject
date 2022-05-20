@@ -55,4 +55,5 @@ function seconnecter()
    $databdseconnecter = $instanceclasseseconnecter->connexionbdadmin();
    require('view/frontend/connexion.php');
 }
+
 ?>
