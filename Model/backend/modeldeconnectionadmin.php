@@ -7,8 +7,16 @@ class modeldeconnectionadmin{
         $data = $reponse->fetchAll();
        return $data;
         $rereponseq->cloreCursor();
-        session_start();
-        unset($_SESSION['login']);
      
-    }}
+    }
+public function deconnection()
+{
+    require('connexion.php');
+    session_start();
+    unset($_SESSION['login']);
+     
+    header('Location:index.php?action=accueil');      
+
+}
+}
 ?>
