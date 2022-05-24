@@ -74,7 +74,7 @@ function sedeconnecter()
 {
    require('Model/backend/modeldeconnectionadmin.php');
    $instanceclassesedeconnecter = new modeldeconnectionadmin();
-   $databdsedeconnecter = $instanceclassesedeconnecter->connexionbdadmin();
+   $databdsedeconnecter = $instanceclassesedeconnecter->deconnection();
    require('view/frontend/connexion.php');
 }
 ?>
