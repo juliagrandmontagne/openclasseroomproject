@@ -94,9 +94,7 @@ if (isset($_GET['action']))
             case'validationadmin';
             validationadmin();
             break;
-            case'gonnago';
-            gonnago();
-            break;
+     
 
         }
 
