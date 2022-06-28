@@ -6,7 +6,7 @@
     <form action="#" method="post" id="connexionutilisateur" >     
       <div id="titre-commentaire"></div>
         <input class="nameuser" name="nameuser" placeholder="pseudo">
-        <input id="comment" type="password" name="mp" placeholder="mot de passe">
+        <input id="comment" type="pasword" name="mp" placeholder="mot de passe">
         <button  type="submit" class="btn-submit" name="valider">VALIDER</button>
                 
     </form>

@@ -1,4 +1,5 @@
 <?php 
+
 require('controller/frontend/controller.php');
 require('controller/frontend/controllerCommentaire.php');
 require('controller/backend/controller.php');
@@ -38,8 +39,10 @@ if (isset($_GET['action']))
             seconnecter();
             break;
             case 'tableaudebord':
-            tableaudebord();
-            break;
+                if (empty($_SESSION['login'])) {
+            tableaudebord();  
+            break;}
+            else{sedeconnecter();}
             case 'adminchapitre':
             adminchapitre();
             break;
@@ -94,7 +97,7 @@ if (isset($_GET['action']))
             case'validationadmin';
             validationadmin();
             break;
-     
+
 
         }
 

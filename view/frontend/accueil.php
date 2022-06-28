@@ -2,7 +2,6 @@
 <?php ob_start() ; ?>
 
 <section id="main">
-			
 			<figure><img src="images/typing.jpg" alt="machine a écrire" id="slider"></figure>	
    		</section> 
 		   <section id="content">
@@ -15,8 +14,5 @@
 				<?php endforeach; ?>
 				
 		   </section>
-		   
-
-
 <?php $content = ob_get_clean() ; ?>
 <?php require('template.php'); ?>
