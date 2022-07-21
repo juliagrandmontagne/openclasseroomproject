@@ -1,109 +1,67 @@
 <?php 
-
-require('controller/frontend/controller.php');
-require('controller/frontend/controllerCommentaire.php');
-require('controller/backend/controller.php');
+require('Controller/Frontend/Controller.php');
+require('Controller/Backend/Controller.php');
 if (isset($_GET['action'])) 
 {
-    
-        switch ($_GET['action'])
-        {
-            case 'accueil':
-            directionaccueil();
-            break;
-            case 'auteur':
-            directionauteur();
-            break;
-            case 'chapitres':
-            directionchapitres();
-            break;
-            case 'chapitre':
-            directionchapitre();
-            break;
-            case 'contact':
-            directioncontact();
-            break;
-            case 'contactform':
-            contactformulaire();
-            break;
-            case 'commentaires':
-            directioncommentaires();
-            break;
-            case 'creerCommentaire':
-            creerCommentaire();
-            break;
-            case 'sedeconnecter':
-            sedeconnecter();
-            break;
-            case 'seconnecter':
-            seconnecter();
-            break;
-            case 'tableaudebord':
-                if (empty($_SESSION['login'])) {
-            tableaudebord();  
-            break;}
-            else{sedeconnecter();}
-            case 'adminchapitre':
-            adminchapitre();
-            break;
-            case 'mailadmin':
-            mailadmin();
-            break;
-            case 'brouillon':
-            brouillon();
-            break;
-            case 'admincommentaire':
-            admincommentaire();
-            break;
-            case 'admincommentaireold':
-            admincommentaireold();
-            break;
-            case 'newchapitre':
-            newchapitre();
-            break;
-            case 'admincommentairesignaler':
-            admincommentairesignaler();
-            break;
-            case 'lesignaler':
-            lesignaler();
-            break;
-            case'lesuprimeradminsignaler';
-            lesuprimeradminsignaler();
-            break;
-            case'lesuprimeradmin';
-            lesuprimeradmin();
-            break;
-            case'lesuprimeradminold';
-            lesuprimeradminold();
-            break;
-            case'validationadmins';
-            validationadmins();
-            break;
-            case 'creerchapitre':
-            creerchapitre();
-            break;
-            case 'suprlechapitrepublier';
-            suprlechapitrepublier();
-            break;
-            case'lesuprimerbrouillon';
-            lesuprimerbrouillon();
-            break;
-            case'lemodifier';
-            lemodifier();
-            break;
-            case 'affichelechapitre';
-            affichelechapitre();
-            break;
-            case'validationadmin';
-            validationadmin();
-            break;
-
-
-        }
+  switch ($_GET['action'])
+  {//charge la page acceuil
+    case'PageAccueil':
+    PageAccueil();
+    break;
+    //charge la page des liste recettes debutant
+    case'PageRecetteDebutant':
+    PageRecetteDebutant();
+    break;
+    //charge la page des liste recettes intermediaire
+    case'PageRecetteIntermediaire':
+    PageRecetteIntermediaire();
+    break;
+    //charge la page des liste recettes confirmer
+    case'PageRecetteConfirmer':
+    PageRecetteConfirmer();
+    break;
+    //charge la page inscription
+    case'PageInscription':
+    PageInscription();
+    break;
+    //lance la page de connexion
+    case'PageLogin':
+    PageLogin();
+    break;
+    //lance l'action qui trie le profil de celui qui ce connecte et qui redirigera vers utilisateur ou administrateur
+    case'SignIn':
+    SignIn();
+    break;
+    //lance la page gestion utilisateur
+    case'ProfilUtilisateur':
+    ProfilUtilisateur();
+    break;
+    //lance la page gestion administratif (moderateur)
+    case'PageAdministration':
+    ProfilAdministration();
+    break;
+    //charge la page du recette (sera incrementer methode get pour recuperer la recette intdividuelle)
+    case'PageRecette':
+    PageRecette();
+    break;
+    //Lance l'interface de creation d'une recette
+    case'PageCreationEdition':
+    PageCreationEdition();
+    break;
+    //lance la page contact
+    case'PageContact':
+    PageContact();
+    break;
+    //lance la fonction qui créé un uilisateur
+    case'CreerUtilisateur';
+    CreerUtilisateur();
+    break;
+   }
 
 }
 else
 {
-directionaccueil();
+  pageAccueil();
 }
+
 ?>
