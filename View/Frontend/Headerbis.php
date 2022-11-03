@@ -1,15 +1,17 @@
 <header>
     <section id="menuheader"> 
-              <nav class="espaceUtilisateur">
+
+        <div id="banniere_menu">
+               <h1 id="titre">Bonjour <?php  foreach ($DataUtilisateurperso as $donnees) : ?>
+          <?php echo $donnees['PseudoUtilisateur']?>
+        <?php endforeach; ?>
+         bienvenue sur votre espace personelle</h1>	 
+           <nav class="espaceUtilisateur">
                      <ul class="laconnexion">
-                        <li class="menuconnexion"><a class="boutonconnexion"href="index.php?action=PageLogin">connexion</a></li>
-                        <li class="menuconnexion"><a class="boutonconnexion"href="index.php?action=PageInscription">m'incrire</a></li>
+                        <li class="menuconnexion"><a class="boutonconnexion"href="index.php?action=PageAccueil">Déconnexion</a></li>
+                        <li class="menuconnexion"><a class="boutonconnexion"href="index.php?action=ProfilUtilisateur&id=1">tableau de bord</a></li>
                     </ul>
                  </nav>
-        <div id="banniere_menu"> 
-            <h1 id="titre">bienvenue chez les Tout-en-canons</h1>		
-            <div id="barre">
-             <a href="index.php?action=PageRecetteDebutant"><img src="Images/Mojito.jpg"  alt="logo de OH-lique" id="logo"></a>
                  <nav>
                      <ul>
                         <li class="naviguation">
@@ -29,6 +31,11 @@
                         </li>
                     </ul>
                  </nav>
+      	
+            <div id="barre">
+            <a href="index.php?action=PageRecetteDebutant"><img src="Images/Mojito.jpg"  alt="logo de OH-lique" id="logo"></a>
+         
+
             </div>  
         </div>   	
     </section>					

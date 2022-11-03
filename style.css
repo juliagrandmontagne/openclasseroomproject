@@ -112,6 +112,7 @@ a.boutonconnexion {
   display: grid;
   justify-content: center;
   margin: auto;
+  padding: 60px;
 }
 /*menu trie alcool*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -229,6 +230,7 @@ input
   margin-bottom: 40px;
   border-radius: 30px;
   width: 300px;
+  padding: 10px;
 }
 #motdepasse 
 {
@@ -266,8 +268,23 @@ p.titreconnection {
 .ajout {
   display: grid;
   justify-content: center;
+  color: #ffffff;
 }
-.carrégestionrecette {
+#chercher
+{
+
+ 
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 30px;
+    color: white;
+    border-color: black;
+    border-width: 1px;
+    height: 30px;
+    margin-top: 25px;
+
+}
+.carregestionrecette {
   width: 800px;
   height: 800PX;
   border-width: 1px;
@@ -278,13 +295,7 @@ p.titreconnection {
   margin-top: 40px;
   overflow: scroll;
 }
-.liste {
-  border-bottom: 1px solid #c0bbbb;
-  /* border-width: 1px; */
-  /* border-style: solid; */
-  margin-left: 20px;
-  margin-right: 20PX;
-}
+
 /*administratif*/
 .gestionadministratifrecette {
   width: 45%;
@@ -296,7 +307,22 @@ p.titreconnection {
   margin: auto;
   margin-top: 40px;
   overflow: scroll;
- 
+}
+.icone {
+  background-color: green;
+  width: 30px;
+  border-radius: 10px;
+  color: white;
+  border-color: black;
+  border-width: 1px;
+  justify-items: right;
+  padding: 0px;
+  height: 40px;
+}
+element.style {
+  display: block;
+  justify-content: center;
+  margin: auto;
 }
 .gestionadministratifuilisateur {
   width: 45%;
@@ -331,17 +357,37 @@ section#admin {
     border-radius: 30px;
 }
 .bouttonretour {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+
   background-color: green;
   margin-top: 40px;
   margin-left: 40px;
   border-radius: 30PX;
+  display: block;
+  padding: 10px;
+}
+.boutton {
+  background-color: green;
+  border-radius: 30px;
+}
+.none
+{
+display: none;
+}
+.retour
+{
+  margin: 8px;
+  margin-top: 15px;
+color: #ffffff;
+text-decoration: none;
+}
+#valider {
+  width: 100%;
 }
 /*editionrecette*/
-.recetteprevous {
+#recetteprevous {
   width: 75%;
-  height: 700px;
+  height: 742px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
@@ -354,6 +400,7 @@ section#admin {
   border-style: solid;
   border-color: black;
   border-radius: 30px;
+  padding: 20px;
 }
 section#editionrecette {
   display: flex;
@@ -362,27 +409,90 @@ section#editionrecette {
   margin-top: 100px;
   margin-left: auto;
 }
+.iconeactionrecette
+{
+  display: flex;
+  flex-wrap: wrap;
+ height: 20px;
+ margin: auto;
+ margin-left:40px;
+}
+.recherche
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.elementrecette{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+}
+.classementrecette {
+  margin-top: 20px;
+  font-family: "Merienda-Regular";
+}
 /**/
 #creationrecette {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #titrerecette {
-  width: 90%;
+  width: 98%;
+  margin: auto;
 }
 .titrerecette {
   display: grid;
   justify-items: center;
   font-family: Quintessential-Regular;
+  margin-left: -10px;
 }
 label {
   display: grid;
   justify-items: center;
   font-family: Quintessential-Regular;
 }
+.titrerecetteutilisateur 
+  {
+ display: grid;
+  justify-items: left;
+}
+#valider {
+  display: block;
+  margin: auto;
+}
+.listeutilisateur {
+  justify-items: right;
+  display: grid;
+  margin-left: 40px;
+}
+.larecette {
+  display: grid;
+  justify-items: center;
+  margin: 1;
+  margin: 10px;
+  /* min-height: 300px; */
+}
+.lesingrédients {
+  display: grid;
+  justify-items: center;
+  margin: 10px;
+}
+.titrecette {
+  justify-items: center;
+  display: grid;
+  font-size: 20px;
+}
 textarea {
-  width: 90%;
+  width: 99%;
   display: grid;
   align-items: center;
+  border-radius: 30px;
+  height: 100px;
+  padding: 10px;
+  margin-left: -10px;
 }
 #Difficulte {
   margin: 0px;
@@ -390,13 +500,21 @@ textarea {
 #site-search {
   margin-top: 30px;
   display: block;
-  width: 75%;
+  width: 70%;
   margin-left: 20px;
+}
+#previoustitrecette {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#previouslesingrédients {
+  margin-bottom: 50px;
 }
 /*footer*/
 
 footer {
   display: grid;
+justify-content: space-around;
   margin-top: 80px;
   bottom: 0px;
   width: 100%;
@@ -410,15 +528,15 @@ footer {
 }
 .piedpage {
   display: grid;
- align-self: center;
+  padding: 10px;
   color: black;
   text-decoration: none;
 
 }
 #baspage {
-  display: block;
-  align-items: center;
-  margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
 .contact {
   width: 80%;
@@ -436,8 +554,30 @@ footer {
   font-family: Merienda-Regular;
   margin-top: 100px;
 }
+#listedifficuter {
+  display: block;
+  justify-items: center;
+  margin: auto;
+    margin-bottom: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1300px)
+{
+.edition
+{
+width: 50%;
+}
+#recetteprevous
+{
+  width: 49%;
+  }
+}
 @media screen and (max-width: 913px)
 {
+  .carregestionrecette {
+    width: 100%;
+  }
+  
   .gestionadministratifrecette {
 
     margin: auto;
@@ -491,5 +631,44 @@ ul.laconnexion {
   position: relative;
   width: 10px;
   margin-left: 50px;
+}
+}
+@media screen and (max-width: 740px)
+{
+  .gestionadministratifrecette {
+
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;
+}
+.gestionadministratifuilisateur {
+  margin: auto;
+  margin-top: 0px;
+  width: 90%;
+}}
+@media screen and (max-width: 556px)
+{
+  .edition {
+    width: 100%;
+    margin:0px;
+  }
+  #recetteprevous {
+    width: 100%;
+    margin:0px;
+  }
+  .elementrecette {
+    display: flex;
+    height: 140px;
+  }
+
+  .listeutilisateur {
+
+    margin-bottom: 20px;
+  }
+  .carré {
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 }

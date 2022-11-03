@@ -45,16 +45,34 @@ function ProfilUtilisateur()
     require('Model/Frontend/EspaceGestion.php'); 
     $ICUtilisateur = new EspaceGestion();
     $DataUtilisateur = $ICUtilisateur->ProfilUtilisateur();
+    //$DataUtilisateurperso = $ICUtilisateur-> Searchbar();
     require('View/Frontend/GestionUtilisateur.php');
+   // require('View/Frontend/Headerbis.php')
 }
+function Searchbar()
+{ 
+    require('Model/Frontend/EspaceGestion.php'); 
+    $ICsearch = new EspaceGestion();
+   $DataUtilisateurperso = $ICsearch-> Searchbar();
+    require('View/Frontend/GestionUtilisateur.php');
+   // require('View/Frontend/Headerbis.php')
+}
+
 //lance la page gestion administratif (moderateur)
 function ProfilAdministration()
 { 
+    require('Model/Frontend/EspaceGestion.php'); 
+    $ICAdministrateur = new EspaceGestion();
+    $DataAdministrateur= $ICAdministrateur->ProfilAdministrateur();
+    $DataAdministrateurutilisateur= $ICAdministrateur->ProfilAdministrateurutilisateur();
     require('View/Frontend/CompteModerateur.php');
 }
 //charge la page du recette (sera incrementer methode get pour recuperer la recette intdividuelle)
 function PageRecette()
 { 
+    require('Model/Frontend/Recette.php');    
+    $ICPagerecette = new Recette();
+    $DataPagerecette= $ICPagerecette->RecupereRecette ();
     require('View/Frontend/PageRecette.php');
 }
 //lance la page qui cree l'edition des recettes
@@ -70,17 +88,24 @@ function pageContact()
 //lance la fonction qui créé un utilisateur
 function CreerUtilisateur()
 { 
-    require('Model/Backend/EspaceGestion.php'); 
+    require('Model/Backend/CreationUtilisateur.php'); 
     $ICCreationUtilisateur = new modelcreerutilisateur();
-    $DataUtilisateur = $ICCreationUtilisateur->CreeUtilisateur();
+    $DataCréeUtilisateur = $ICCreationUtilisateur->CreeUtilisateur();
     require('View/Frontend/Inscription.php');
 }
 //lance la fonction qui redirige la presone sur sont compte (utilisateur ou administrateur)
 function SignIn()
 { 
     require('Model/Frontend/EspaceGestion.php'); 
-    $instanceseconnecter = new EspaceGestion();
-    $databdseconnecterutilisateur = $instanceseconnecter->SignIn();
+    $ICConnecter = new EspaceGestion();
+    $DataConnecter = $ICConnecter->SignIn();
     require('View/Frontend/ConnexionUtilisateur.php');
+}
+function boutonretour()
+{ 
+    require('Model/Frontend/Retour.php'); 
+    $ICRetour = new Retour();
+    $DataRetour = $ICRetour->BoutonRetour();
+    require('View/Frontend/PageRecette.php');
 }
 ?>
