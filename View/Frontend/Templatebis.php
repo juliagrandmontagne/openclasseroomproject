@@ -1,4 +1,4 @@
-     <?php session_start();?>
+ <?php session_start();?>
      <!DOCTYPE html>
 <html>
 	<head>
@@ -13,8 +13,8 @@
    
         <?php if (isset($_SESSION['connecter']))
          {
-           //require ('Headerbis.php'); 
-           require ('Header.php');
+           require ('Headerbis.php'); 
+           //require ('Header.php');
           } 
            else  {
              require ('Header.php');
@@ -22,5 +22,8 @@
             <?=$content ?>
             <?php require ('Footer.php'); ?>
         </div>
+        <script src="View/js/donnees.js"></script>
+    <script src="View/js/javascript.js"></script>
+    <script src="View/js/gestioncouleurdynamique.js"></script>
     </body>	
 </html> 

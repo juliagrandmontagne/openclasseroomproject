@@ -53,18 +53,41 @@ if (isset($_GET['action']))
     PageContact();
     break;
     //lance la fonction qui créé un uilisateur
-    case'EditionRecette';
+    case'Creationrecette';
     EditionRecette();
     break;
+    //supression des recette sur l'espace
     case'SupressionRecette';
     SupressionRecette();
     break;
+    //
     case'boutonretour';
     boutonretour();
     break;
+    //instauration de la searchbar
     case'Searchbar';
     Searchbar();
-  break;
+    break;
+    //suppression des recette pour le moderateur
+    case'SupressionRecetteAdmin';
+    SupressionRecetteAdmin();
+    break;
+    //suppression des profil pour le moderateur
+    case'SupressionProfilAdmin';
+    SupressionProfilAdmin();
+    break;
+    //creation profil
+    case'CreerUtilisateur';
+    CreerUtilisateur();
+    break;
+    //Modifier recette
+    case'ModifierRecette';
+    ModifierRecette();
+    break;
+    //creation de l'interface de modification de la recette
+    case'AfficherRecette';
+    AfficherRecette();
+    break;
    }
 }
 else
